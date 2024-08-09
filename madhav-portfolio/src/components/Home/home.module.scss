@@ -1,0 +1,28 @@
+div.background * {
+    color: #e2dfd1 !important;
+}
+
+.name_line_1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.name_line_2 {
+    font-size: 64px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.name_line_3 {
+    font-size: 42px;
+}
+
+.background {
+    background: transparent url('../../assets/Home Background 2.jpg') 0% 0% no-repeat padding-box;
+    height: 100vh;
+    background-size: cover;
+    opacity: 0.70;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
