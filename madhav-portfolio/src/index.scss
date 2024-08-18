@@ -2,9 +2,21 @@ body {
     margin: 0px;
 }
 
+* {
+    font-family: "Playfair Display", serif;
+}
+
 .playfair-font {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+hr {
+    margin: 1rem auto !important;
 }
