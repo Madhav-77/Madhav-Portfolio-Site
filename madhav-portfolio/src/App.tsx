@@ -2,6 +2,7 @@ import './App.scss'
 import About from './components/About/About'
 import Achievements from './components/Achievements/Achievements'
 import Career from './components/Career/Career'
+import Certifications from './components/Certifications/Certifications'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
@@ -16,6 +17,7 @@ function App() {
       <Career />
       <Portfolio />
       <Testimonials />
+      <Certifications />
       <Achievements />
       <Contact />
       <Footer />
