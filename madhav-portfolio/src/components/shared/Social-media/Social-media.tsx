@@ -34,6 +34,11 @@ export default function Social_media() {
                         <img src="../src/assets/svg/freecodecamp.svg" alt="Github" width="30" height="30" />
                     </a>
                 </span>
+                <span title="Download Resume">
+                    <a href="https://www.freecodecamp.org/madhavtrivedi77">
+                        <img src="../src/assets/svg/resume.svg" alt="Download Resume" width="30" height="30" />
+                    </a>
+                </span>
             </div>
         </>
     )

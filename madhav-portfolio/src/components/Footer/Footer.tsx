@@ -2,6 +2,7 @@ import Social_media from "../shared/Social-media/Social-media";
 import styles from "./footer.module.scss";
 
 export default function Footer() {
+    const currentYear = new Date().getFullYear();
     return (
         <div className={`${styles.footer}`}>
             <div className={`row m-0 justify-content-center`}>
@@ -15,7 +16,10 @@ export default function Footer() {
             </div>
             <div className={`row m-0 justify-content-center`}>
                 <div className={`col-12 text-center`}>
-                    &copy; <span>2024</span> <b>Madhav Trivedi</b>. All Rights Reserved.
+                    &copy; <span>{currentYear}</span> <b>Madhav Trivedi</b>. All Rights Reserved.
+                </div>
+                <div className={`col-12 text-center`}>
+                    Built from scratch! 🥂
                 </div>
             </div>
         </div>

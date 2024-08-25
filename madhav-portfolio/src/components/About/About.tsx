@@ -37,8 +37,59 @@ export default function About() {
                         <div className={`${styles.social_media} col-9`}>
                             <Social_media />
                         </div>
+                    </div>
+                    <div className="row m-0 justify-content-center">
                         <div className={`${styles.skills} col-9`}>
                             Skills
+                        </div>
+                    </div>
+                    <div className="row m-0 justify-content-center pt-1">
+                        <div className={`col-3`}>
+                            <div className={`cursor-pointer`}>
+                                Python
+                            </div>
+                            <div className={`cursor-pointer`}>
+                                C# 
+                            </div>
+                            <div className={`cursor-pointer`}>
+                                .NET                             
+                            </div>
+                            <div className={`cursor-pointer`}>
+                                JavaScript
+                            </div>
+                        </div>
+                        <div className={`col-3`}>
+                            <div className={`cursor-pointer`}>
+                                TypeScript
+                            </div>
+                            <div className={`cursor-pointer`}>
+                                Angular 
+                            </div>
+                            <div className={`cursor-pointer`}>
+                                React 
+                            </div>
+                            <div className={`cursor-pointer`}>
+                                SQL
+                            </div>
+                        </div>
+                        <div className={`col-3`}>
+                            <div className={`cursor-pointer`}>
+                                Data structures and Algorithms
+                            </div>
+                            <div className={`cursor-pointer`}>
+                                System Design
+                            </div>
+                            <div className={`cursor-pointer`}>
+                                Problem solving 
+                            </div>
+                            <div className={`cursor-pointer`}>
+                                Debugging and Troubleshooting
+                            </div>
+                        </div>
+                        <div className={`col-9 pt-3`}>
+                            <div className="progress">
+                                <div className={`progress-bar ${styles.custom_progress_bar}`} role="progressbar" aria-valuenow={50} aria-valuemin={0} aria-valuemax={100} style={{width: '70%'}}></div>
+                            </div>
                         </div>
                     </div>
                 </div>

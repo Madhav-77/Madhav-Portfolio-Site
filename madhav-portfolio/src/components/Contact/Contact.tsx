@@ -31,7 +31,7 @@ export default function Contact() {
                 <div className={`${styles.about_body}`}>
                     <div className="row m-0 justify-content-center">
                         <div className={`${styles.content} col-9 text-justify`}>
-                            As a software engineer with 4+ years of industrial exposure, I have strong problem-solving ability and expertise in Angular, JavaScript, SQL, .Net, PHP, and Python. I bring along experience working in an Agile environment, managing juniors, delegating responsibilities, building good connections with clients and stakeholders, engaging in effective communication to understand requirements, and delivering great solutions that exceed expectations.
+                            Thanks for stopping by, let's connect! 
                         </div>
                         <div className={`${styles.social_media} col-9`}>
                             LinkedIn
