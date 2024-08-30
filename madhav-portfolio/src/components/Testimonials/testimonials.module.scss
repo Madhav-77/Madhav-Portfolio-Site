@@ -4,54 +4,42 @@
     font-weight: 700;
 }
 
-// .sub_heading {
-//     margin: auto;
-//     width: auto !important;
-//     font-size: 28px;
-//     line-height: 1.2;
-//     font-weight: 600;
-// }
-// .journey_body .heading {
-//     font-size: 24px;
-//     line-height: 1.5;
-// }
-// .journey_body .sub_heading {
-//     font-size: 18px;
-//     line-height: 1.2;
-// }
-// .journey_sub_section {
-//     margin-top: 10px;
-// }
-// .non_technical {
-//     margin-left: 10%;
-//     cursor: pointer;
-// }
-// .technical {
-//     margin-right: 10%;
-//     cursor: pointer;
-// }
-// .vertical_divider {
-//     width: 1px !important;
-//     border-left: 1px solid #000000;
-// }
-// .divider {
-//     padding-left: 50px;
-//     padding-right: 50px;
-// }
-// .horizontal_divider {
-//     width: auto;
-//     border-top: 1px solid #000000;
-//     border: 1px solid;
-//     height: 1px;
-//     margin: 15px 0 !important;
-// }
-// .journey {
-//     margin: 0px 200px;
-// }
-// .journey_body {
-//     margin: 0 100px;
-// }
-// .company_logo {
-//     height: 25px;
-//     margin-right: 5px;
-// }
+.profile_picture {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.designation {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.testimony {
+    padding-top: 15px;
+}
+
+.testimony>img {
+    padding: 0 5px;
+}
+
+.custom_position {
+    bottom: -50px !important;
+}
+
+.carousel_custom_style {
+    background-color: #000 !important;
+    height: 12px !important;
+    width: 12px !important;
+    border-radius: 50%;
+}

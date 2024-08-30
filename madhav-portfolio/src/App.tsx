@@ -1,9 +1,9 @@
 import './App.scss'
 import About from './components/About/About'
-import Achievements from './components/Achievements/Achievements'
+// import Achievements from './components/Achievements/Achievements'
 import Career from './components/Career/Career'
 import Certifications from './components/Certifications/Certifications'
-import Contact from './components/Contact/Contact'
+// import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
 import Portfolio from './components/Portfolio/Portfolio'
@@ -18,8 +18,8 @@ function App() {
       <Portfolio />
       <Testimonials />
       <Certifications />
-      <Achievements />
-      <Contact />
+      {/* <Achievements /> */}
+      {/* <Contact /> */}
       <Footer />
     </>
   )

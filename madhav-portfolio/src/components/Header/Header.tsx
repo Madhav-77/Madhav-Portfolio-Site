@@ -26,7 +26,7 @@ export default function Header() {
             <a className="nav-link playfair-font" href="#">Testimonials</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link playfair-font" href="#">Achievements</a>
+            <a className="nav-link playfair-font" href="#">Certifications</a>
           </li>
           <li className="nav-item">
             <a className="nav-link playfair-font" href="#">Contact</a>

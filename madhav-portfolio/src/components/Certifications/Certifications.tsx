@@ -1,10 +1,89 @@
+import CertificateModal from "./Certificate-modal/CertificateModal";
 import styles from "./certifications.module.scss";
+import { CertificateInterface } from "./interfaces/CertificateInterface";
+import { useState } from 'react';
+
+const certificateList:CertificateInterface[] = [
+    {
+        id: 1,
+        certificateImg: ".\\src\\assets\\certificates\\workInProgress.png",
+        name: "Data Structures and Algorithms",
+        organization: "GeeksForGeeks",
+        skills: ["Python", "Data Structures", "Algorithms", "Problem Solving"],
+        link: "string"
+    },
+    {
+        id: 2,
+        certificateImg: ".\\src\\assets\\certificates\\systemDesignGFG.png",
+        name: "System Design from Low Level to High Level",
+        organization: "GeeksForGeeks",
+        skills: ["System Architecture", "High Level System Design", "Low Level System Design", "Design Patterns"],
+        link: "string"
+    },
+    {
+        id: 3,
+        certificateImg: ".\\src\\assets\\certificates\\virtualInternshipFORAGE.png",
+        name: "J.P. Morgan's Software Engineering Virtual Experience ",
+        organization: "Forage",
+        skills: ["Python", "Data Analysis", "Data Processing"],
+        link: "string"
+    },
+    {
+        id: 4,
+        certificateImg: ".\\src\\assets\\certificates\\dataAnalysisFCC.png",
+        name: "Data Analytics with Python",
+        organization: "FreeCodeCamp",
+        skills: ["Python", "NumPy", "Pandas", "MatplotLib", "Data Analysis", "Data Visualization"],
+        link: "string"
+    },
+    {
+        id: 5,
+        certificateImg: ".\\src\\assets\\certificates\\pythonFCC.png",
+        name: "Scientific Computing with Python",
+        organization: "FreeCodeCamp",
+        skills: ["Python", "Problem Solving"],
+        link: "string"
+    },
+    {
+        id: 6,
+        certificateImg: ".\\src\\assets\\certificates\\dataStructureJavaScriptFCC.png",
+        name: "JavaScript Algorithms and Data Structures",
+        organization: "FreeCodeCamp",
+        skills: ["JavaScript", "ES6", "Data Structures", "Problem Solving"],
+        link: "string"
+    },
+    {
+        id: 7,
+        certificateImg: ".\\src\\assets\\certificates\\nodejsFCC.png",
+        name: "Back End Development and APIs",
+        organization: "FreeCodeCamp",
+        skills: ["NodeJS"],
+        link: "string"
+    },
+]
 
 export default function Certifications() {
+
+    const [modalContent, setModalContent] = useState<CertificateInterface>(
+        { 
+            id: 0, 
+            certificateImg: "", 
+            link: "", 
+            name: "", 
+            organization: "", 
+            skills: []
+        }
+    );
+
+    function setModalContentFunc(id: number) {
+        const certificateContent = certificateList.find(obj => obj.id == id);
+        setModalContent(certificateContent!)
+    }
+
     return (
         <>
-            <div className={`${styles.contact}`}>
-                <div className={`${styles.contact_header}`}>
+            <div className={`${styles.certification}`}>
+                <div className={`${styles.certification_header}`}>
                     <div className="row m-0 pt-5 text-center justify-content-center">
                         <div className={`col-12 ${styles.heading}`}>
                             Certifications
@@ -13,201 +92,28 @@ export default function Certifications() {
                             <hr />
                         </div>
                     </div>
-                    {/* <div className="row m-0 pt-3">
-                        <div className={`col-5 ${styles.sub_heading} ${styles.technical}`}>
-                            Technical
-                        </div>
-                        <div className={`col-2 p-0 ${styles.vertical_divider}`}></div>
-                        <div className={`col-5 ${styles.sub_heading} ${styles.non_technical}`}>
-                            !Technical
-                        </div>
-                    </div>
-                    <div className="row m-0">
-                        <div className={`col-12 ${styles.divider}`}>
-                            <div className={`${styles.horizontal_divider}`}></div>
-                        </div>
-                    </div> */}
                 </div>
-                <div className={`${styles.about_body}`}>
+                <div className={`${styles.certification_body}`}>
                     <div className="row m-0 justify-content-center">
-                        <div className={`${styles.content} col-9 text-justify`}>
-                            Thanks for stopping by, let's connect! 
-                        </div>
-                        <div className={`${styles.social_media} col-9`}>
-                            LinkedIn
-                            GitHub
-                            HackerRank
-                            GeeksForGeeks
-                            FreeCodeCamp
+                        <div className={`${styles.content} col-9`}>
+                            <div className="row m-0">
+                                {certificateList.map((obj, index) => (
+                                <div className="col-3">
+                                    <div className={`card w-auto ${styles.custom_card_style}`} onClick={() => setModalContentFunc(index + 1)} data-bs-toggle="modal" data-bs-target="#certificateModal">
+                                        <img src={obj.certificateImg} className={`card-img-top ${styles.custom_image_style}`} alt="..." />
+                                        <div className={`card-body ${styles.custom_card_body_style}`}>
+                                            <div className={`card-title ${styles.custom_card_title_style}`}>{obj.name}</div>
+                                            <div className={`${styles.custom_card_sub_title_style}`}>{obj.organization}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
-                {/* <div className={`${styles.journey_body}`}>
-                    <div className={`${styles.tech}`}>
-                        <div className={`${styles.summary} ${styles.journey_sub_section}`}>
-                            <div className={`${styles.heading}`}>
-                                Summary
-                            </div>
-                            <div className={`${styles.content} text-justify`}>
-                                As a software engineer with 4+ years of industrial exposure, I have strong problem-solving ability and expertise in Angular, 
-                                JavaScript, SQL, .Net, PHP, and Python. I bring along experience working in an Agile environment, managing juniors, delegating 
-                                responsibilities, building good connections with clients and stakeholders, engaging in effective communication to understand 
-                                requirements, and delivering great solutions that exceed expectations.
-                            </div>
-                        </div>
-                        <div className={`${styles.career} ${styles.journey_sub_section}`}>
-                            <div className={`${styles.heading}`}>
-                                Career
-                            </div>
-                            <div className={`${styles.content}`}>
-                                <div className={`${styles.company}`}>
-                                    <div className={`${styles.sub_heading}`}>
-                                        <div>
-                                            <img className={`${styles.company_logo}`} src="..\..\src\assets\logos\thinkbridge.jpeg" alt="" />
-                                            <span>Thinkbridge</span>
-                                        </div>
-                                        <div className="row">
-                                            <div className={`float-start`}>
-                                                <div>Software Engineer</div>
-                                                <div>Pune, Maharashtra, IN</div>
-                                            </div>
-                                            <div className={`float-end`}>
-                                                Nov, 2020 - Currently working
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className={`${styles.content}`}>
-                                        Work
-                                        <ul>
-                                            <li>
-                                                Worked on a variety of projects, Fintech Web Application for an US based client, Career Service Portal with over 1 million users, and Product Subscription tool.
-                                            </li>
-                                            <li>
-                                                Developed a maintainable and scalable application along with multilingual support through Internationalization (I18N) and Localization (L10N). Expanding the application's global reach and around 2x increase in client’s revenue.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className={`${styles.company}`}>
-                                    <div className={`${styles.company_name}`}>
-                                        (company logo) Thinkbridge
-                                        (time period) 
-                                        (position) 
-                                        (location) 
-                                    </div>
-                                    <div className={`${styles.content}`}>
-                                        Work
-                                        <ul>
-                                            <li>
-                                                Worked on a variety of projects, Fintech Web Application for an US based client, Career Service Portal with over 1 million users, and Product Subscription tool.
-                                            </li>
-                                            <li>
-                                                Developed a maintainable and scalable application along with multilingual support through Internationalization (I18N) and Localization (L10N). Expanding the application's global reach and around 2x increase in client’s revenue.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={`${styles.projects} ${styles.journey_sub_section}`}>
-                            <div className={`${styles.heading}`}>
-                                Projects
-                            </div>
-                            <div className={`${styles.project}`}>
-                                <div className={`${styles.sub_heading}`}>
-                                    (Project logo) Tab’s Archive
-                                    (skills) 
-                                </div>
-                                <div className={`${styles.content}`}>
-                                    Project description
-                                </div>
-                                <div className={`${styles.projects_links}`}>
-                                    Github: https://github.com/Madhav-77<br/>
-                                    Project URL: https://github.com/Madhav-77
-                                </div>
-                            </div>
-                        </div>
-                        <div className={`${styles.certifications} ${styles.journey_sub_section}`}>
-                            <div className={`${styles.heading}`}>
-                                Certifications
-                            </div>
-                            <div className={`${styles.certificate}`}>
-                                <div className={`${styles.certificate_name}`}>
-                                    Data Structures and Algorithms
-                                    (Issued by name)
-                                    (year)
-                                </div>
-                                <div className={`${styles.content}`}>
-                                    (Skills learnt)
-                                </div>
-                                <div className={`${styles.certificate_link}`}>
-                                    Certificate: https://github.com/Madhav-77
-                                </div>
-                            </div>
-                            <div className={`${styles.certificate}`}>
-                                <div className={`${styles.certificate_name}`}>
-                                    Data Structures and Algorithms
-                                    (Issued by name)
-                                    (year)
-                                </div>
-                                <div className={`${styles.content}`}>
-                                    (Skills learnt)
-                                </div>
-                                <div className={`${styles.certificate_link}`}>
-                                    Certificate: https://github.com/Madhav-77
-                                </div>
-                            </div>
-                        </div>
-                        <div className={`${styles.achievements} ${styles.journey_sub_section}`}>
-                            <div className={`${styles.heading}`}>
-                                Achievements
-                            </div>
-                            <div className={`${styles.content}`}>
-                                <ul>
-                                    <li>Graduated with an 8.15 GPA from MIT Pune.</li>
-                                    <li>Graduated with an 8.15 GPA from MIT Pune.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className={`${styles.skills} ${styles.journey_sub_section}`}>
-                            <div className={`${styles.heading}`}>
-                                Skills
-                            </div>
-                            <div className={`${styles.content}`}>
-                                <div className={`${styles.sub_heading}`}>
-                                    Technical Skills
-                                </div>
-                                <div className={`${styles.skill_list}`}>
-                                    <ul>
-                                        <li>Languages: JavaScript, TypeScript, HTML/CSS, SQL, Python, C#, PHP, Dart</li>
-                                        <li>Frameworks: Angular, CodeIgniter, Laravel, Flask, Node JS, Express JS, .NET, .NET Core, Flutter</li>
-                                    </ul>
-                                </div>
-                                <div className={`${styles.sub_heading}`}>
-                                    Soft Skills
-                                </div>
-                                <div className={`${styles.skill_list}`}>
-                                    <ul>
-                                        <li>Leadership</li>
-                                        <li>Team Collaboration</li>
-                                        <li>Adaptability</li>
-                                        <li>Interpersonal Communication</li>
-                                        <li>Delegation</li>
-                                        <li>Self-motivation</li>
-                                        <li>Detail-oriented</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`${styles.non_tech}`}>
-                        <div className={`${styles.summary}`}></div>
-                        <div className={`${styles.hobbies}`}></div>
-                        <div className={`${styles.gallary}`}></div>
-                        <div className={`${styles.achievements}`}></div>
-                    </div>
-                </div> */}
             </div>
+            <CertificateModal id={modalContent.id} certificateImg={modalContent.certificateImg} link={modalContent.link} name={modalContent.name} organization={modalContent.organization} skills={modalContent.skills}></CertificateModal>
         </>
     )
 } 

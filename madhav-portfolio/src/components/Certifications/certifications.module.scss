@@ -1,57 +1,44 @@
-.contact_header .heading {
+.certification_header .heading {
     font-size: 30px;
     line-height: 1.2;
     font-weight: 700;
 }
 
-// .sub_heading {
-//     margin: auto;
-//     width: auto !important;
-//     font-size: 28px;
-//     line-height: 1.2;
-//     font-weight: 600;
-// }
-// .journey_body .heading {
-//     font-size: 24px;
-//     line-height: 1.5;
-// }
-// .journey_body .sub_heading {
-//     font-size: 18px;
-//     line-height: 1.2;
-// }
-// .journey_sub_section {
-//     margin-top: 10px;
-// }
-// .non_technical {
-//     margin-left: 10%;
-//     cursor: pointer;
-// }
-// .technical {
-//     margin-right: 10%;
-//     cursor: pointer;
-// }
-// .vertical_divider {
-//     width: 1px !important;
-//     border-left: 1px solid #000000;
-// }
-// .divider {
-//     padding-left: 50px;
-//     padding-right: 50px;
-// }
-// .horizontal_divider {
-//     width: auto;
-//     border-top: 1px solid #000000;
-//     border: 1px solid;
-//     height: 1px;
-//     margin: 15px 0 !important;
-// }
-// .journey {
-//     margin: 0px 200px;
-// }
-// .journey_body {
-//     margin: 0 100px;
-// }
-// .company_logo {
-//     height: 25px;
-//     margin-right: 5px;
-// }
+.custom_image_style {
+    height: 200px;
+    object-fit: contain;
+}
+
+.custom_card_style {
+    margin: 10px 0px;
+}
+
+.custom_card_body_style {
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.custom_card_title_style {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.custom_card_style {
+    transition: transform .2s;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.custom_card_style:hover {
+    transform: scale(1.05);
+    border-radius: 16px;
+    filter: blur(1.5px);
+}

@@ -13,47 +13,34 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                   <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div className="modal-body">
-                  <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-                    <div className="carousel-indicators">
-                    {data.screenshotsList.map((_, index) => ( 
-                      index === 0 ? 
-                      (
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} className="active" aria-current="true" aria-label={`Slide ${index+1}`}></button>
-                      ) :
-                      (
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} aria-label={`Slide ${index+1}`}></button>
-                      )
-                    ))}
-                    </div>
-                    <div className="carousel-inner">
-                      {data.screenshotsList.map((screenshot) => (
-                        <div className="carousel-item active">
-                          <img src={screenshot} className="d-block w-100" alt="..." />
-                        </div>
+                  {data.screenshotsList.length > 0 &&  
+                    <div id="carouselExampleIndicators" className={`carousel slide ${styles.mb_30px}`} data-bs-ride="carousel">
+                      <div className={`carousel-indicators ${styles.custom_position}`}>
+                      {data.screenshotsList.map((_, index) => ( 
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} className={`${styles.carousel_custom_style} ${index === 0 ? "active" : ""}`} aria-current={index === 0 ? "true" : undefined} aria-label={`Slide ${index+1}`}></button>
                       ))}
+                      </div>
+                      <div className="carousel-inner">
+                        {data.screenshotsList.map((screenshot, index) => (
+                          <div className={`carousel-item ${styles.carousel_container} ${index === 0 ? "active" : ""}`}>
+                            <img src={screenshot} className={`d-block ${styles.carousel_img}`} alt="..." />
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                    {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span className="visually-hidden">Next</span>
-                    </button> */}
-                  </div>
-                  <div className="row">
+                  }
+                  <div className={`row`}>
                     <div className={`${styles.project_modal_heading}`}>Description</div>
                     <div className={`${styles.project_description_body}`}>
                       {data.description}
                     </div>
-                    {/* <div><a href="https://chromewebstore.google.com/detail/tabs-archive/pjidfmalicjodbajneapigbaahobhgdh" target="_blank">Link to Project</a> | <a href="https://github.com/Madhav-77/TabsArchive" target="_blank">Source code</a></div> */}
-                    <div className={`${styles.project_modal_heading}`}>Technologies and Skills</div>
+                    <div className={`${styles.project_modal_heading} mt-2`}>Technologies and Skills</div>
                     <div>
                       {data.techList.map((tech) => (
-                        tech
+                        tech + ", "
                       ))}
                     </div>
-                    <div className={`${styles.project_modal_heading}`}>Key Learnings</div>
+                    <div className={`${styles.project_modal_heading} mt-2`}>Key Learnings</div>
                     <div>
                       <ul>
                         {data.learnings.map((learning) => (
@@ -63,15 +50,23 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                     </div>
                   </div>
                 </div>
-                <div className="modal-footer">
-                  <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Project URL</button>
-                  <button type="button" className="btn btn-primary">
-                  <span title="GitHub">
-                    <a href={data.sourceCode}>
-                        <img src="../src/assets/svg/github.svg" alt="Github" width="30" height="30" />
-                    </a>
-                </span>Source code</button>
-                </div>
+                {
+                (data.projectURL || data.sourceCode) &&
+                  <div className="modal-footer">
+                    {data.projectURL && 
+                      <button type="button" className="btn btn-primary" title="Open project">
+                        <div className={`${styles.redirect_icon}`}></div>
+                        Project URL
+                      </button>
+                    }
+                    {data.sourceCode && 
+                      <button type="button" className="btn btn-primary" title="GitHub">
+                        <div className={`${styles.github_icon}`}></div>
+                        Source code
+                      </button>
+                    }
+                  </div>
+                }
               </div>
             </div>
           </div>

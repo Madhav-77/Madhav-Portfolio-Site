@@ -7,6 +7,7 @@ export default function Footer() {
         <div className={`${styles.footer}`}>
             <div className={`row m-0 justify-content-center`}>
                 <div className={`col-12 text-center`}>
+                    <div className={`${styles.sub_heading}`}>Thanks for stopping by, let's connect!</div>
                     <div className={`${styles.heading}`}>Madhav Trivedi</div>
                     <div className={`${styles.social_media}`}><Social_media /></div>
                 </div>

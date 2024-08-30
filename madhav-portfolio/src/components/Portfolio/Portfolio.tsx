@@ -95,7 +95,7 @@ export default function Portfolio() {
               data: 'Applying analytical and creative thinking to solve challenges encountered during development.'
             }
           ],
-          projectURL: 'https://chromewebstore.google.com/detail/tabs-archive/pjidfmalicjodbajneapigbaahobhgdh',
+          projectURL: '',
           sourceCode: 'https://github.com/Madhav-77/TabsArchive'
         }, 
         id: 'dynamicModal'
@@ -106,7 +106,7 @@ export default function Portfolio() {
       setModalContent({
         title: 'Face Detection System', 
         data: {
-          screenshotsList: ['./src/assets/project-screenshots/Home.png', './src/assets/project-screenshots/Open.png', './src/assets/project-screenshots/Archive.png', './src/assets/project-screenshots/Window.png'],
+          screenshotsList: [],
           description: "Tab's Archive, a Chrome extension designed to close inactive windows and tabs, saving them in local storage for easy retrieval. With Tab's Archive, you can instantly boost RAM performance, enhance browsing speed, and reduce clutter. Perfect for anyone who handles multiple windows and tabs, aiming for a smoother browsing experience. Your saved archive stays intact until you decide to delete it.",
           techList: ['HTML', 'CSS', 'JavaScript', 'Chrome APIs', 'Design Patterns', 'Problem solving'],
           learnings: [
@@ -135,8 +135,8 @@ export default function Portfolio() {
               data: 'Applying analytical and creative thinking to solve challenges encountered during development.'
             }
           ],
-          projectURL: 'https://chromewebstore.google.com/detail/tabs-archive/pjidfmalicjodbajneapigbaahobhgdh',
-          sourceCode: 'https://github.com/Madhav-77/TabsArchive'
+          projectURL: '',
+          sourceCode: ''
         }, 
         id: 'dynamicModal'
       });
@@ -146,7 +146,7 @@ export default function Portfolio() {
       setModalContent({
         title: 'Fund GOGO', 
         data: {
-          screenshotsList: ['./src/assets/project-screenshots/Home.png', './src/assets/project-screenshots/Open.png', './src/assets/project-screenshots/Archive.png', './src/assets/project-screenshots/Window.png'],
+          screenshotsList: [],
           description: "Tab's Archive, a Chrome extension designed to close inactive windows and tabs, saving them in local storage for easy retrieval. With Tab's Archive, you can instantly boost RAM performance, enhance browsing speed, and reduce clutter. Perfect for anyone who handles multiple windows and tabs, aiming for a smoother browsing experience. Your saved archive stays intact until you decide to delete it.",
           techList: ['HTML', 'CSS', 'JavaScript', 'Chrome APIs', 'Design Patterns', 'Problem solving'],
           learnings: [
@@ -175,8 +175,8 @@ export default function Portfolio() {
               data: 'Applying analytical and creative thinking to solve challenges encountered during development.'
             }
           ],
-          projectURL: 'https://chromewebstore.google.com/detail/tabs-archive/pjidfmalicjodbajneapigbaahobhgdh',
-          sourceCode: 'https://github.com/Madhav-77/TabsArchive'
+          projectURL: '',
+          sourceCode: ''
         }, 
         id: 'dynamicModal'
       });
