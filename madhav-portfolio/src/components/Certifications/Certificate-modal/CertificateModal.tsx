@@ -1,8 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import styles from "./certificateModal.module.scss";
-import { CertificateInterface } from "../interfaces/CertificateInterface";
+import { CertificateInterface } from "../../../interfaces/CertificateInterface";
 
 export default function CertificateModal({id, certificateImg, link, name, organization, skills}: CertificateInterface) {
+    const redirectTo = (link:string) => {
+      window.open(link, '_blank');  // Replace with your target URL
+    };
+
     return (
         <>          
           <div className="modal fade" id="certificateModal" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -27,7 +31,7 @@ export default function CertificateModal({id, certificateImg, link, name, organi
                 </div>
                 {(link) &&
                   <div className="modal-footer">
-                      <button type="button" className="btn btn-primary" title="View certificate">
+                      <button type="button" className="btn btn-primary" title="View certificate" onClick={() => redirectTo(link)}>
                         <div className={`${styles.redirect_icon}`}></div>
                         View certificate
                       </button>

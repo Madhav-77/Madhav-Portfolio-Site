@@ -14,22 +14,22 @@ export default function Header() {
             <a className="nav-link active playfair-font" aria-current="page" href="#">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link playfair-font" href="#">About</a>
+            <a className="nav-link playfair-font" href="#about">About</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link playfair-font" href="#">Career</a>
+            <a className="nav-link playfair-font" href="#career">Career</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link playfair-font" href="#">Portfolio</a>
+            <a className="nav-link playfair-font" href="#portfolio">Portfolio</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link playfair-font" href="#">Testimonials</a>
+            <a className="nav-link playfair-font" href="#testimonials">Testimonials</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link playfair-font" href="#">Certifications</a>
+            <a className="nav-link playfair-font" href="#certifications">Certifications</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link playfair-font" href="#">Contact</a>
+            <a className="nav-link playfair-font" href="#footer">Contact</a>
           </li>
         </ul>
       </div>

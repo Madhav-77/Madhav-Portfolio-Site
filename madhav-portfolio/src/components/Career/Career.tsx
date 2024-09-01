@@ -1,9 +1,70 @@
 import styles from "./career.module.scss";
+import { CompanyInterface } from "../../interfaces/CompanyInterface";
+
+const companyList: CompanyInterface[] = [
+  {
+    id: 1,
+    company: "ThinkBridge Software",
+    companySite: "https://www.thinkbridge.com/",
+    companyLogo: ".\\src\\assets\\logos\\company\\thinkbridge.jpeg",
+    position: "Software Engineer",
+    location: {
+      city: "Pune",
+      state: "MH",
+      country: "India"
+    },
+    joining: "Nov 2020",
+    ending: "Current",
+    summary: [
+      "Developed and managed Fintech applications, a Career Service Portal with 1M+ users, and a Product Subscription tool.",
+      "Built a maintainable and scalable system with multilingual support (I18N/L10N) and optimized performance by handling data efficiently and implementing caching. Increasing client's revenue by 2x and expanding the application's global reach.",
+      "Designed a high-performance system for handling a large dataset of 1M+ entries on Client side, and improved the page performance by around 50%.",
+      "Migrated a Monolithic (MVC) Architecture to Microservices, increasing application performance by by 30-40%.",
+      "Implementing CI/CD pipelines, code reviews, task delegation, and training new team members to ensure coding standards and quality."
+    ]
+  },
+  {
+    id: 2,
+    company: "Ubisoft India",
+    companySite: "https://www.ubisoft.com/en-us/",
+    companyLogo: ".\\src\\assets\\logos\\company\\ubisoft_india.jpeg",
+    position: "Junior Web Developer",
+    location: {
+      city: "Pune",
+      state: "MH",
+      country: "India"
+    },
+    joining: "Jan 2020",
+    ending: "Nov 2020",
+    summary: [
+      "Drove key initiatives at Ubisoft India, crafting responsive UI screens, developing APIs, and optimizing backend systems.", 
+      "Developed an automated HR system, enhancing accuracy by up to 15% and reducing manual workload by 80%."
+    ]
+  },
+  {
+    id: 3,
+    company: "iTalent Management Consultants",
+    companyLogo: ".\\src\\assets\\logos\\company\\iTalent.jpeg",
+    companySite: "",
+    position: "Web Developer Intern",
+    location: {
+      city: "Pune",
+      state: "MH",
+      country: "India"
+    },
+    joining: "May 2019",
+    ending: "Jun 2019",
+    summary: [
+      "As a proactive intern at iTalent India, I contributed effectively in a dynamic environment, gaining hands-on experience with a range of web development technologies.", 
+      "I worked on PHP, Laravel, HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, and MySQL, where I demonstrated adaptability and a commitment to delivering high-quality solutions."
+    ]
+  }
+]
 
 export default function Career() {
     return (
         <>
-            <div className={`${styles.career}`}>
+            <div className={`${styles.career}`} id="career">
                 <div className={`${styles.career_header}`}>
                     <div className="row m-0 pt-5 text-center justify-content-center">
                         <div className={`col-12 ${styles.heading}`}>
@@ -19,62 +80,38 @@ export default function Career() {
                         <div className={`${styles.content} col-9 text-justify`}>
                         <section className={styles.company_section}>
                           <ul className={styles.company_list}>
-                            <li className={`${styles.company} ${styles.current}`}>
-                              <div className={`${styles.company_heading} row`}>
-                                <div className={`${styles.company_name} col-12`}>
-                                  <span className={styles.company_name}><a href="#">ThinkBridge Software</a> (Software Engineer)</span>
-                                  <span className="float-end">Pune, MH, India</span>
-                                </div>
-                                <div className={`${styles.company_name} col-12 mb-2`}>
-                                  <span className="">Nov 2020 - Current</span>
-                                </div>
-                              </div>
-                              <p className="">
-                                <ul>
-                                  <li>Worked on a variety of projects, Fintech Web Application for an US based client, Career Service Portal with over 1 million users, and Product Subscription tool.</li>
-                                  <li>Developed a maintainable and scalable application along with multilingual support through Internationalization (I18N) and Localization (L10N). Expanding the application's global reach and around 2x increase in client’s revenue.</li>
-                                  <li>Implemented client-side Caching and a file versioning system to detect file changes and invalidate Cache when file is updated.</li>
-                                  <li>Designed a high-performance system for handling a large dataset with dropdown options ranging from 10 to 100,000 entries. It improved the page performance by around 60%.</li>
-                                  <li>Migrated a project from Monolith(MVC) Architecture to Microservice Architecture. This reduced the page response time by around 20-30%.</li>
-                                </ul>
-                              </p>
-                            </li>
 
-                            <li className={`${styles.company}`}>
-                              <div className={`${styles.company_heading} row`}>
-                                <div className={`${styles.company_name} col-12`}>
-                                  <span className={styles.company_name}><a href="#">Ubisoft India</a> (Junior Web Developer)</span>
-                                  <span className="float-end">Pune, MH, India</span>
+                            {companyList.map((carrer_obj, index) => (
+                              <li className={`${styles.company} ${index == 0 ? styles.current : ``}`}>
+                                <div className={`${styles.company_heading} row`}>
+                                  <div className={`${styles.company_name} col-12`}>
+                                    {carrer_obj.companySite != "" &&
+                                      <a href={carrer_obj.companySite}>
+                                        {/* <span className={styles.company_logo}><img src={carrer_obj.companyLogo} alt="" /></span> */}
+                                        <span className={styles.company_name}>{carrer_obj.company} ({carrer_obj.position})</span>
+                                      </a>
+                                    }
+                                    {carrer_obj.companySite == "" &&
+                                      <span>
+                                        {/* <span className={styles.company_logo}><img src={carrer_obj.companyLogo} alt="" /></span> */}
+                                        <span className={styles.company_name}>{carrer_obj.company} ({carrer_obj.position})</span>
+                                      </span>
+                                    }
+                                    <span className="float-end">{carrer_obj.location.city}, {carrer_obj.location.state}, {carrer_obj.location.country}</span>
+                                  </div>
+                                  <div className={`${styles.company_name} col-12 mb-2`}>
+                                    <span className="">{carrer_obj.joining} - {carrer_obj.ending}</span>
+                                  </div>
                                 </div>
-                                <div className={`${styles.company_name} col-12 mb-2`}>
-                                  <span className="">Jan 2020 - Nov 2020</span>
-                                </div>
-                              </div>
-                              <p className="">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                                necessitatibus adipisci, ad alias, voluptate pariatur officia
-                                repellendus repellat inventore fugit perferendis totam dolor
-                                voluptas et corrupti distinctio maxime corporis optio?
-                              </p>
-                            </li>
-
-                            <li className={`${styles.company}`}>
-                              <div className={`${styles.company_heading} row`}>
-                                <div className={`${styles.company_name} col-12`}>
-                                  <span className={styles.company_name}><a href="#">iTalent Management Consultants</a> (Web Developer Intern)</span>
-                                  <span className="float-end">Pune, MH, India</span>
-                                </div>
-                                <div className={`${styles.company_name} col-12 mb-2`}>
-                                  <span className="">May 2019 - Jun 2019</span>
-                                </div>
-                              </div>
-                              <p className="">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                                necessitatibus adipisci, ad alias, voluptate pariatur officia
-                                repellendus repellat inventore fugit perferendis totam dolor
-                                voluptas et corrupti distinctio maxime corporis optio?
-                              </p>
-                            </li>
+                                <p className="">
+                                  <ul>
+                                    {carrer_obj.summary.map((obj) => (
+                                      <li>{obj}</li>  
+                                    ))}
+                                  </ul>
+                                </p>
+                              </li>
+                            ))}
                           </ul>
                         </section>
                         </div>

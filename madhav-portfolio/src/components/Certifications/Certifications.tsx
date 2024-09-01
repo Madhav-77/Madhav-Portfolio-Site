@@ -1,6 +1,6 @@
 import CertificateModal from "./Certificate-modal/CertificateModal";
 import styles from "./certifications.module.scss";
-import { CertificateInterface } from "./interfaces/CertificateInterface";
+import { CertificateInterface } from "../../interfaces/CertificateInterface";
 import { useState } from 'react';
 
 const certificateList:CertificateInterface[] = [
@@ -10,7 +10,7 @@ const certificateList:CertificateInterface[] = [
         name: "Data Structures and Algorithms",
         organization: "GeeksForGeeks",
         skills: ["Python", "Data Structures", "Algorithms", "Problem Solving"],
-        link: "string"
+        link: ""
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const certificateList:CertificateInterface[] = [
         name: "System Design from Low Level to High Level",
         organization: "GeeksForGeeks",
         skills: ["System Architecture", "High Level System Design", "Low Level System Design", "Design Patterns"],
-        link: "string"
+        link: ""
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ const certificateList:CertificateInterface[] = [
         name: "J.P. Morgan's Software Engineering Virtual Experience ",
         organization: "Forage",
         skills: ["Python", "Data Analysis", "Data Processing"],
-        link: "string"
+        link: ""
     },
     {
         id: 4,
@@ -34,7 +34,7 @@ const certificateList:CertificateInterface[] = [
         name: "Data Analytics with Python",
         organization: "FreeCodeCamp",
         skills: ["Python", "NumPy", "Pandas", "MatplotLib", "Data Analysis", "Data Visualization"],
-        link: "string"
+        link: "https://www.freecodecamp.org/certification/madhavtrivedi77/data-analysis-with-python-v7"
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const certificateList:CertificateInterface[] = [
         name: "Scientific Computing with Python",
         organization: "FreeCodeCamp",
         skills: ["Python", "Problem Solving"],
-        link: "string"
+        link: "https://www.freecodecamp.org/certification/madhavtrivedi77/scientific-computing-with-python-v7"
     },
     {
         id: 6,
@@ -50,7 +50,7 @@ const certificateList:CertificateInterface[] = [
         name: "JavaScript Algorithms and Data Structures",
         organization: "FreeCodeCamp",
         skills: ["JavaScript", "ES6", "Data Structures", "Problem Solving"],
-        link: "string"
+        link: "https://www.freecodecamp.org/certification/madhavtrivedi77/javascript-algorithms-and-data-structures"
     },
     {
         id: 7,
@@ -58,7 +58,7 @@ const certificateList:CertificateInterface[] = [
         name: "Back End Development and APIs",
         organization: "FreeCodeCamp",
         skills: ["NodeJS"],
-        link: "string"
+        link: "https://www.freecodecamp.org/certification/madhavtrivedi77/back-end-development-and-apis"
     },
 ]
 
@@ -82,7 +82,7 @@ export default function Certifications() {
 
     return (
         <>
-            <div className={`${styles.certification}`}>
+            <div className={`${styles.certification}`} id="certifications">
                 <div className={`${styles.certification_header}`}>
                     <div className="row m-0 pt-5 text-center justify-content-center">
                         <div className={`col-12 ${styles.heading}`}>

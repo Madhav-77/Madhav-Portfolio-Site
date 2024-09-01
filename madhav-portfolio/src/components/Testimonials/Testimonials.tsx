@@ -1,72 +1,18 @@
 import styles from "./testimonials.module.scss";
-import { TestimonialModel } from "./interfaces/TestimonialModel";
+import { TestimonialModel } from "../../interfaces/TestimonialModel";
 
 const testimonialList:TestimonialModel[] = [
     {
         id: 1,
-        profilePicture: ".\\src\\assets\\profile-pictures\\abhinav-das.jpeg",
-        name: "Abhinav Das",
-        designation: "Head of Engineering",
-        company: "Stealth",
-        testimony: "Madhav brings strong engineering craft and utmost reliability to his team. At Talent, Inc., he was involved with the successful operation of our core revenue generating products. Madhav has also shown that he's able to pick up new technologies with ease.",
-        linkedIn: "https://www.linkedin.com/in/theabhinavdas/"
-    },
-    {
-        id: 2,
-        profilePicture: ".\\src\\assets\\profile-pictures\\cedric-richardeau.jpeg",
-        name: "Cedric Richardeau",
-        designation: "Studio Operations Director",
-        company: "Ubisoft",
-        testimony: "As Madhav's senior manager at Ubisoft India, I was consistently impressed by his performance as a Junior Web Developer. His ability to tackle complex requirements and deliver effective solutions stood out. Madhav's majorly worked on our HR Portal and helped automating routine emails which reduced manual workload of users on this process by 40%. Throughout his tenure, Madhav demonstrated a strong grasp of best coding practices, efficient troubleshooting, and a collaborative approach. His quick learning and dedication made him a valuable asset to our development team. Based on his performance at Ubisoft India, I'm confident Madhav would be an excellent addition to any organization seeking a skilled and motivated developer. All the best Madhav!",
-        linkedIn: "https://www.linkedin.com/in/cedric-richardeau/"
-    },
-    {
-        id: 3,
-        profilePicture: ".\\src\\assets\\profile-pictures\\hasmukh-tank.jpeg",
-        name: "Hasmukh Tank",
-        designation: "Senior Technical Project Manager",
-        company: "career.io",
-        testimony: "Madhav is one of the most dedicated professionals I’ve had the pleasure of working with. He consistently goes above and beyond to solve problems and provide support whenever needed. His commitment to delivering 100% effort significantly contributed to our team’s success and was crucial in meeting deadlines. His skills allowed us to create more efficient solutions for various projects. His contributions were invaluable, and his collaborative spirit made him an essential part of our team. I highly recommend Madhav and would be delighted to work with him again.",
-        linkedIn: "https://www.linkedin.com/in/hasmukh-tank-5/"
-    },
-    {
-        id: 4,
-        profilePicture: ".\\src\\assets\\profile-pictures\\rajneesh-bali.jpeg",
-        name: "Rajneesh Bali",
-        designation: "Associate Director Corporate Relations",
-        company: "Indira Group of Institutes, Pune",
-        testimony: "I am delighted to recommend Madhav Trivedi for his exceptional contributions to the Training and Placement Cell at MIT WPU, Pune. He has built strong relationships with companies, significantly improving our campus recruitment efforts. His organizational skills, proactive approach, and ability to manage multiple tasks while maintaining professionalism have been truly commendable. I highly recommend Madhav for any future endeavors he chooses to pursue. His skills, commitment, and positive attitude will undoubtedly be an asset to any organization.",
-        linkedIn: "https://www.linkedin.com/in/rajneesh-bali-052968b/"
-    },
-    {
-        id: 5,
         profilePicture: ".\\src\\assets\\profile-pictures\\salaad-nur.jpeg",
         name: "Salaad Nur",
         designation: "Principal & Solution Architect",
         company: "Samla Technology, Inc.",
-        testimony: "I have worked with Madhav in the design and the deployment of a complex Cash Management solution for Consero Global. He is a consummate professional that is able to understand complex projects. He was a key resource both in documenting the requirements and deliverables, and executing the development tasks. The business need that we needed to tackle was how to manage cash processes for 200+ clients with combined daily volumes of tens of thousands of transactions in a 4 hour window. With his support, my team was able to deliver a custom solution that ensured clients were able to get their updated cash positions by the start of their business day. I would recommend Madhav for anyone that is looking for a highly skilled developer.",
+        testimony: "I have worked with Madhav on a complex Cash Management solution for Consero Global. He is a consummate professional who understands complex projects. He was a key resource for deliverables. The business need was to manage cash processes for 200+ clients, with combined volumes of tens of thousands of transactions daily, within a 4 hour window. With his support, we delivered a solution that allowed clients to get their updated cash positions by the start of their business day. I would recommend Madhav to anyone looking for a highly skilled developer.",
         linkedIn: "https://www.linkedin.com/in/sanur/"
     },
     {
-        id: 6,
-        profilePicture: ".\\src\\assets\\profile-pictures\\rakesh-kodagali.jpeg",
-        name: "Rakesh Kodagali",
-        designation: "Senior Engineer - Product Development",
-        company: "Harman Connected Services",
-        testimony: "Madhav is an excellent resource for building web apps, his skills in Javascript is exceptional. I remember working with him at Thinkbridge, even though his primary skill was Angular he didn't hesitate in helping us with building a React project. Since most of the team members were new to Typescript, Madhav was a go to person for anything related to TS. Thanks Madhav for being there! I am sure he has built a lot of knowledge around JS ecosystems. I wish him all the very best.",
-        linkedIn: "https://www.linkedin.com/in/rakesh-kodagali/"
-    },
-    {
-        id: 7,
-        profilePicture: ".\\src\\assets\\profile-pictures\\rishi-nanda.jpeg",
-        name: "Rishi Nanda",
-        designation: "IT Manager Enterprise",
-        company: "Ubisoft",
-        testimony: "I had the pleasure of managing the team Madhav was on. He worked on several projects within our team, where he played a pivotal role in the development of our HR portal and Workday integrations. Madhav consistently demonstrated his technical expertise in PHP, SharePoint, and SQL, delivering high-quality solutions with minimal bugs. His ability to understand complex requirements and translate them into efficient, reliable code was impressive. Madhav’s work ethic and attention to detail were evident in every task he undertook. He not only met project deadlines but also ensured that the end products were robust and easy to maintain. His contributions significantly improved the functionality and user experience of our HR systems. Moreover, Madhav was a collaborative team member who communicated effectively and was always willing to lend a hand or share his knowledge with others. His positive attitude and problem-solving skills made him a valuable asset to our team. I highly recommend Madhav for any development role. His technical skills, combined with his dedication and team-oriented approach, make him a standout professional in his field.",
-        linkedIn: "https://www.linkedin.com/in/rishi-nanda/"
-    },
-    {
-        id: 8,
+        id: 2,
         profilePicture: ".\\src\\assets\\profile-pictures\\thomas-hessler.jpeg",
         name: "Thomas Hessler",
         designation: "Co-Founder & Managing Director",
@@ -75,20 +21,74 @@ const testimonialList:TestimonialModel[] = [
         linkedIn: "https://www.linkedin.com/in/thomas-hessler/"
     },
     {
-        id: 9,
+        id: 3,
+        profilePicture: ".\\src\\assets\\profile-pictures\\abhinav-das.jpeg",
+        name: "Abhinav Das",
+        designation: "Head of Engineering",
+        company: "Stealth",
+        testimony: "Madhav brings strong engineering craft and utmost reliability to his team. At Talent, Inc., he was involved with the successful operation of our core revenue generating products. Madhav has also shown that he's able to pick up new technologies with ease.",
+        linkedIn: "https://www.linkedin.com/in/theabhinavdas/"
+    },
+    {
+        id: 4,
+        profilePicture: ".\\src\\assets\\profile-pictures\\cedric-richardeau.jpeg",
+        name: "Cedric Richardeau",
+        designation: "Studio Operations Director",
+        company: "Ubisoft",
+        testimony: "As Madhav's senior manager at Ubisoft India, I was consistently impressed by his performance as a Junior Web Developer. His work on automating routine emails for our HR Portal reduced manual workload by 40%. Madhav's quick learning, strong coding practices, and collaborative approach made him a valuable asset to our team. I'm confident Madhav would be an excellent addition to any organization.",
+        linkedIn: "https://www.linkedin.com/in/cedric-richardeau/"
+    },
+    {
+        id: 5,
+        profilePicture: ".\\src\\assets\\profile-pictures\\rishi-nanda.jpeg",
+        name: "Rishi Nanda",
+        designation: "IT Manager Enterprise",
+        company: "Ubisoft",
+        testimony: "I had the pleasure of managing Madhav, who played a crucial role in developing our HR portal and Workday integrations. His expertise in PHP, SharePoint, and SQL resulted in high-quality solutions with minimal bugs. Madhav’s ability to translate complex requirements into reliable code, along with his collaborative and positive attitude, made him a valuable asset. I highly recommend him for any development role.",
+        linkedIn: "https://www.linkedin.com/in/rishi-nanda/"
+    },
+    {
+        id: 6,
+        profilePicture: ".\\src\\assets\\profile-pictures\\rajneesh-bali.jpeg",
+        name: "Rajneesh Bali",
+        designation: "Associate Director Corporate Relations",
+        company: "Indira Group of Institutes, Pune",
+        testimony: "I am delighted to recommend Madhav Trivedi for his outstanding contributions to the Training and Placement Cell at MIT WPU, Pune. He built a strong company relationships, enhancing our campus recruitment efforts. His organizational skills, proactive approach, and professionalism were commendable. Madhav’s skills and positive attitude will be a great asset to any organization.",
+        linkedIn: "https://www.linkedin.com/in/rajneesh-bali-052968b/"
+    },
+    {
+        id: 7,
+        profilePicture: ".\\src\\assets\\profile-pictures\\hasmukh-tank.jpeg",
+        name: "Hasmukh Tank",
+        designation: "Senior Technical Project Manager",
+        company: "career.io",
+        testimony: "Madhav is an exceptionally dedicated professional who consistently goes above and beyond. His problem-solving skills and commitment greatly contributed to our team's success and helped meet critical deadlines. His ability to create efficient solutions and his collaborative spirit made him an invaluable team member. I highly recommend Madhav and would be thrilled to work with him again.",
+        linkedIn: "https://www.linkedin.com/in/hasmukh-tank-5/"
+    },
+    {
+        id: 8,
         profilePicture: ".\\src\\assets\\profile-pictures\\priyanka-raikar.jpeg",
         name: "Priyanka Raikar",
         designation: "Senior Test Engineer",
         company: "Visa",
-        testimony: "As a Full-Stack developer, Madhav has always demonstrated a keen eye for design and usability. His expertise in front-end and back end technologies was evident seamlessly. Beyond his technical skills, Madhav is an excellent collaborator. He consistently contributed to team discussions with valuable insights and innovative ideas. His approach to problem-solving was both analytical and creative, often leading to the development of effective solutions that addressed our most pressing challenges.",
+        testimony: "As a Full-Stack developer, Madhav showed exceptional design and usability skills. His expertise in front-end and back end technologies was evident seamlessly. Beyond his technical acumen, Madhav’s collaborative nature and innovative insights greatly benefited team discussions. His analytical and creative problem-solving approach led to effective solutions for our key challenges.",
         linkedIn: "https://www.linkedin.com/in/priyanka-raikar-64274119b/"
     },
+    {
+        id: 9,
+        profilePicture: ".\\src\\assets\\profile-pictures\\rakesh-kodagali.jpeg",
+        name: "Rakesh Kodagali",
+        designation: "Senior Engineer - Product Development",
+        company: "Harman Connected Services",
+        testimony: "Madhav is an exceptional web app developer with outstanding JavaScript skills. At Thinkbridge, despite his primary expertise in Angular, he contributed significantly to a React project. As the team’s go-to person for TypeScript, he provided invaluable support. His deep knowledge of the JS ecosystem is impressive. I wish him all the best!",
+        linkedIn: "https://www.linkedin.com/in/rakesh-kodagali/"
+    }
 ]
 
 export default function Testimonials() {
     return (
         <>
-            <div className={`${styles.testimonials}`}>
+            <div className={`${styles.testimonials}`} id="testimonials">
                 <div className={`${styles.testimonial_header}`}>
                     <div className="row m-0 pt-5 text-center justify-content-center">
                         <div className={`col-12 ${styles.heading}`}>
@@ -111,9 +111,9 @@ export default function Testimonials() {
                                     </div>
                                     <div className="carousel-inner">
                                         {testimonialList.map((obj, index) => (
-                                        <div className={`carousel-item ${index === 0 ? "active" : ""}`}>
+                                        <div className={`carousel-item ${styles.custom_carousel_item} ${index === 0 ? "active" : ""}`}>
                                             <div className={`${styles.profile_picture_container} w-auto text-center`}>
-                                                <a href={obj.linkedIn}>
+                                                <a href={obj.linkedIn} target="_blank">
                                                     <img className={`${styles.profile_picture}`} src={obj.profilePicture} alt="" />
                                                 </a>
                                                 <div className={`${styles.name}`}>{obj.name}</div>

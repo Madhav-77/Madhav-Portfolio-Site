@@ -7,6 +7,7 @@ import Certifications from './components/Certifications/Certifications'
 import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
 import Portfolio from './components/Portfolio/Portfolio'
+import ScrollToTop from './components/shared/ScrollToTop/ScrollToTop'
 import Testimonials from './components/Testimonials/Testimonials'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       {/* <Achievements /> */}
       {/* <Contact /> */}
       <Footer />
+      <ScrollToTop />
     </>
   )
 }

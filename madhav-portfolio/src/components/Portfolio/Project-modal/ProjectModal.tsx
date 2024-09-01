@@ -1,8 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import styles from "./projectModal.module.scss";
-import { ProjectModalProps } from "../interfaces/ProjectModalProps";
+import { ProjectModalProps } from "../../../interfaces/ProjectModalProps";
 
 export default function ProjectModal({ title, data, id }: ProjectModalProps) {
+    const redirectTo = (link:string) => {
+      window.open(link, '_blank');  // Replace with your target URL
+    };
     return (
         <>          
           <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -31,8 +34,7 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                   }
                   <div className={`row`}>
                     <div className={`${styles.project_modal_heading}`}>Description</div>
-                    <div className={`${styles.project_description_body}`}>
-                      {data.description}
+                    <div className={`${styles.project_description_body}`} dangerouslySetInnerHTML={{ __html: data.description }}>
                     </div>
                     <div className={`${styles.project_modal_heading} mt-2`}>Technologies and Skills</div>
                     <div>
@@ -42,7 +44,7 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                     </div>
                     <div className={`${styles.project_modal_heading} mt-2`}>Key Learnings</div>
                     <div>
-                      <ul>
+                      <ul className="text-justify">
                         {data.learnings.map((learning) => (
                           <li><b>{learning.heading}: </b>{learning.data}</li>
                         ))}
@@ -54,13 +56,13 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                 (data.projectURL || data.sourceCode) &&
                   <div className="modal-footer">
                     {data.projectURL && 
-                      <button type="button" className="btn btn-primary" title="Open project">
+                      <button type="button" className="btn btn-primary" title="Open project" onClick={() => redirectTo(data.projectURL)}>
                         <div className={`${styles.redirect_icon}`}></div>
                         Project URL
                       </button>
                     }
                     {data.sourceCode && 
-                      <button type="button" className="btn btn-primary" title="GitHub">
+                      <button type="button" className="btn btn-primary" title="GitHub" onClick={() => redirectTo(data.sourceCode)}>
                         <div className={`${styles.github_icon}`}></div>
                         Source code
                       </button>

@@ -28,7 +28,8 @@
                 width: 11px;
             }
             .company_name {
-                a {
+                a,
+                span {
                     text-decoration: none;
                     color: #000000;
                     font-size: 18px;
@@ -41,5 +42,11 @@
                 background-color: #35ab55;
             }
         }
+    }
+}
+
+.company_logo {
+    img {
+        height: 35px;
     }
 }
