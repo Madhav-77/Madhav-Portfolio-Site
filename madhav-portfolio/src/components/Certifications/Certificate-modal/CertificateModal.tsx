@@ -2,7 +2,7 @@
 import styles from "./certificateModal.module.scss";
 import { CertificateInterface } from "../../../interfaces/CertificateInterface";
 
-export default function CertificateModal({id, certificateImg, link, name, organization, skills}: CertificateInterface) {
+export default function CertificateModal({id, certificateImg, link, name, skills}: CertificateInterface) {
     const redirectTo = (link:string) => {
       window.open(link, '_blank');  // Replace with your target URL
     };
