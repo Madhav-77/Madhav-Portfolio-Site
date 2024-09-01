@@ -1,0 +1,49 @@
+.testimonial_header .heading {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.profile_picture {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.designation {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.testimony {
+    padding-top: 15px;
+}
+
+.testimony>img {
+    padding: 0 5px;
+}
+
+.custom_position {
+    bottom: -50px !important;
+}
+
+.carousel_custom_style {
+    background-color: #000 !important;
+    height: 12px !important;
+    width: 12px !important;
+    border-radius: 50%;
+}
+
+.custom_carousel_item {
+    height: 280px;
+}

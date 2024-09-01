@@ -1,0 +1,52 @@
+.career_header .heading {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.company_section {
+    .company_list {
+        border-left: 1px solid #bdac9a;
+        position: relative;
+        list-style: none;
+        padding-left: 32px;
+        .company {
+            position: relative;
+            padding-left: 20px;
+            &:not(:last-child) {
+                margin-bottom: 3rem; // Adjust as needed
+            }
+            &:after {
+                position: absolute;
+                display: block;
+                top: 6px;
+                left: -38px;
+                content: "";
+                background-color: #bdac9a;
+                border-radius: 50%;
+                height: 11px;
+                width: 11px;
+            }
+            .company_name {
+                a,
+                span {
+                    text-decoration: none;
+                    color: #000000;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .company.current {
+            &:after {
+                background-color: #35ab55;
+            }
+        }
+    }
+}
+
+.company_logo {
+    img {
+        height: 35px;
+    }
+}

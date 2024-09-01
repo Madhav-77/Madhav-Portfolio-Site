@@ -1,0 +1,23 @@
+.portfolio_header .heading {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.project>.card>img {
+    height: 270px;
+    width: 270px;
+    transition: transform .2s;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.project>.card>img:hover {
+    transform: scale(1.05);
+    border-radius: 16px;
+    filter: blur(1.5px);
+}
+
+.project>.card {
+    text-align: center;
+}
