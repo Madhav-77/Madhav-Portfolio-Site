@@ -2,7 +2,7 @@
     "name": "madhav-portfolio",
     "private": true,
     "version": "1.0.0",
-    "homepage": "https://madhav-77.github.io/madhav-portfolio",
+    "homepage": "https://madhav-77.github.io/Madhav-Portfolio-Site",
     "type": "module",
     "scripts": {
         "dev": "vite",
