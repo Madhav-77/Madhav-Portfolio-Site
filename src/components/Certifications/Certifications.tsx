@@ -6,7 +6,7 @@ import { useState } from 'react';
 const certificateList:CertificateInterface[] = [
     {
         id: 1,
-        certificateImg: ".\\src\\assets\\certificates\\workInProgress.png",
+        certificateImg: ".\\public\\assets\\certificates\\workInProgress.png",
         name: "Data Structures and Algorithms",
         organization: "GeeksForGeeks",
         skills: ["Python", "Data Structures", "Algorithms", "Problem Solving"],
@@ -14,7 +14,7 @@ const certificateList:CertificateInterface[] = [
     },
     {
         id: 2,
-        certificateImg: ".\\src\\assets\\certificates\\systemDesignGFG.png",
+        certificateImg: ".\\public\\assets\\certificates\\systemDesignGFG.png",
         name: "System Design from Low Level to High Level",
         organization: "GeeksForGeeks",
         skills: ["System Architecture", "High Level System Design", "Low Level System Design", "Design Patterns"],
@@ -22,7 +22,7 @@ const certificateList:CertificateInterface[] = [
     },
     {
         id: 3,
-        certificateImg: ".\\src\\assets\\certificates\\virtualInternshipFORAGE.png",
+        certificateImg: ".\\public\\assets\\certificates\\virtualInternshipFORAGE.png",
         name: "J.P. Morgan's Software Engineering Virtual Experience ",
         organization: "Forage",
         skills: ["Python", "Data Analysis", "Data Processing"],
@@ -30,7 +30,7 @@ const certificateList:CertificateInterface[] = [
     },
     {
         id: 4,
-        certificateImg: ".\\src\\assets\\certificates\\dataAnalysisFCC.png",
+        certificateImg: ".\\public\\assets\\certificates\\dataAnalysisFCC.png",
         name: "Data Analytics with Python",
         organization: "FreeCodeCamp",
         skills: ["Python", "NumPy", "Pandas", "MatplotLib", "Data Analysis", "Data Visualization"],
@@ -38,7 +38,7 @@ const certificateList:CertificateInterface[] = [
     },
     {
         id: 5,
-        certificateImg: ".\\src\\assets\\certificates\\pythonFCC.png",
+        certificateImg: ".\\public\\assets\\certificates\\pythonFCC.png",
         name: "Scientific Computing with Python",
         organization: "FreeCodeCamp",
         skills: ["Python", "Problem Solving"],
@@ -46,7 +46,7 @@ const certificateList:CertificateInterface[] = [
     },
     {
         id: 6,
-        certificateImg: ".\\src\\assets\\certificates\\dataStructureJavaScriptFCC.png",
+        certificateImg: ".\\public\\assets\\certificates\\dataStructureJavaScriptFCC.png",
         name: "JavaScript Algorithms and Data Structures",
         organization: "FreeCodeCamp",
         skills: ["JavaScript", "ES6", "Data Structures", "Problem Solving"],
@@ -54,7 +54,7 @@ const certificateList:CertificateInterface[] = [
     },
     {
         id: 7,
-        certificateImg: ".\\src\\assets\\certificates\\nodejsFCC.png",
+        certificateImg: ".\\public\\assets\\certificates\\nodejsFCC.png",
         name: "Back End Development and APIs",
         organization: "FreeCodeCamp",
         skills: ["NodeJS"],

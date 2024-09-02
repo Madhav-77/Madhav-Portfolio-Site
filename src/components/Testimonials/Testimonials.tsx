@@ -4,7 +4,7 @@ import { TestimonialModel } from "../../interfaces/TestimonialModel";
 const testimonialList:TestimonialModel[] = [
     {
         id: 1,
-        profilePicture: ".\\src\\assets\\profile-pictures\\salaad-nur.jpeg",
+        profilePicture: ".\\public\\assets\\profile-pictures\\salaad-nur.jpeg",
         name: "Salaad Nur",
         designation: "Principal & Solution Architect",
         company: "Samla Technology, Inc.",
@@ -13,7 +13,7 @@ const testimonialList:TestimonialModel[] = [
     },
     {
         id: 2,
-        profilePicture: ".\\src\\assets\\profile-pictures\\thomas-hessler.jpeg",
+        profilePicture: ".\\public\\assets\\profile-pictures\\thomas-hessler.jpeg",
         name: "Thomas Hessler",
         designation: "Co-Founder & Managing Director",
         company: "One Stop German Shop Inc.",
@@ -22,7 +22,7 @@ const testimonialList:TestimonialModel[] = [
     },
     {
         id: 3,
-        profilePicture: ".\\src\\assets\\profile-pictures\\abhinav-das.jpeg",
+        profilePicture: ".\\public\\assets\\profile-pictures\\abhinav-das.jpeg",
         name: "Abhinav Das",
         designation: "Head of Engineering",
         company: "Stealth",
@@ -31,7 +31,7 @@ const testimonialList:TestimonialModel[] = [
     },
     {
         id: 4,
-        profilePicture: ".\\src\\assets\\profile-pictures\\cedric-richardeau.jpeg",
+        profilePicture: ".\\public\\assets\\profile-pictures\\cedric-richardeau.jpeg",
         name: "Cedric Richardeau",
         designation: "Studio Operations Director",
         company: "Ubisoft",
@@ -40,7 +40,7 @@ const testimonialList:TestimonialModel[] = [
     },
     {
         id: 5,
-        profilePicture: ".\\src\\assets\\profile-pictures\\rishi-nanda.jpeg",
+        profilePicture: ".\\public\\assets\\profile-pictures\\rishi-nanda.jpeg",
         name: "Rishi Nanda",
         designation: "IT Manager Enterprise",
         company: "Ubisoft",
@@ -49,7 +49,7 @@ const testimonialList:TestimonialModel[] = [
     },
     {
         id: 6,
-        profilePicture: ".\\src\\assets\\profile-pictures\\rajneesh-bali.jpeg",
+        profilePicture: ".\\public\\assets\\profile-pictures\\rajneesh-bali.jpeg",
         name: "Rajneesh Bali",
         designation: "Associate Director Corporate Relations",
         company: "Indira Group of Institutes, Pune",
@@ -58,7 +58,7 @@ const testimonialList:TestimonialModel[] = [
     },
     {
         id: 7,
-        profilePicture: ".\\src\\assets\\profile-pictures\\hasmukh-tank.jpeg",
+        profilePicture: ".\\public\\assets\\profile-pictures\\hasmukh-tank.jpeg",
         name: "Hasmukh Tank",
         designation: "Senior Technical Project Manager",
         company: "career.io",
@@ -67,7 +67,7 @@ const testimonialList:TestimonialModel[] = [
     },
     {
         id: 8,
-        profilePicture: ".\\src\\assets\\profile-pictures\\priyanka-raikar.jpeg",
+        profilePicture: ".\\public\\assets\\profile-pictures\\priyanka-raikar.jpeg",
         name: "Priyanka Raikar",
         designation: "Senior Test Engineer",
         company: "Visa",
@@ -76,7 +76,7 @@ const testimonialList:TestimonialModel[] = [
     },
     {
         id: 9,
-        profilePicture: ".\\src\\assets\\profile-pictures\\rakesh-kodagali.jpeg",
+        profilePicture: ".\\public\\assets\\profile-pictures\\rakesh-kodagali.jpeg",
         name: "Rakesh Kodagali",
         designation: "Senior Engineer - Product Development",
         company: "Harman Connected Services",

@@ -6,7 +6,7 @@ const companyList: CompanyInterface[] = [
     id: 1,
     company: "ThinkBridge Software",
     companySite: "https://www.thinkbridge.com/",
-    companyLogo: ".\\src\\assets\\logos\\company\\thinkbridge.jpeg",
+    companyLogo: ".\\public\\assets\\logos\\company\\thinkbridge.jpeg",
     position: "Software Engineer",
     location: {
       city: "Pune",
@@ -27,7 +27,7 @@ const companyList: CompanyInterface[] = [
     id: 2,
     company: "Ubisoft India",
     companySite: "https://www.ubisoft.com/en-us/",
-    companyLogo: ".\\src\\assets\\logos\\company\\ubisoft_india.jpeg",
+    companyLogo: ".\\public\\assets\\logos\\company\\ubisoft_india.jpeg",
     position: "Junior Web Developer",
     location: {
       city: "Pune",
@@ -44,7 +44,7 @@ const companyList: CompanyInterface[] = [
   {
     id: 3,
     company: "iTalent Management Consultants",
-    companyLogo: ".\\src\\assets\\logos\\company\\iTalent.jpeg",
+    companyLogo: ".\\public\\assets\\logos\\company\\iTalent.jpeg",
     companySite: "",
     position: "Web Developer Intern",
     location: {

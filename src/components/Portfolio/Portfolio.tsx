@@ -26,7 +26,7 @@ export default function Portfolio() {
       setModalContent({ 
         title: 'Tab\'s Archive', 
         data: {
-          screenshotsList: ['./src/assets/project-screenshots/Tabs-archive/Home.png', './src/assets/project-screenshots/Tabs-archive/Open.png', './src/assets/project-screenshots/Tabs-archive/Archive.png', './src/assets/project-screenshots/Tabs-archive/Window.png'],
+          screenshotsList: ['./public/assets/project-screenshots/Tabs-archive/Home.png', './public/assets/project-screenshots/Tabs-archive/Open.png', './public/assets/project-screenshots/Tabs-archive/Archive.png', './public/assets/project-screenshots/Tabs-archive/Window.png'],
           description: "Tab's Archive, a Chrome extension designed to close inactive windows and tabs, saving them in local storage for easy retrieval. With Tab's Archive, you can instantly boost RAM performance, enhance browsing speed, and reduce clutter. Perfect for anyone who handles multiple windows and tabs, aiming for a smoother browsing experience. Your saved archive stays intact until you decide to delete it.",
           techList: ['HTML', 'CSS', 'JavaScript', 'Chrome APIs', 'Design Patterns', 'Problem solving'],
           learnings: [
@@ -67,16 +67,16 @@ export default function Portfolio() {
         title: 'Curve 19', 
         data: {
           screenshotsList: [
-            './src/assets/project-screenshots/Curve-19/Dashboard.jpeg', 
-            './src/assets/project-screenshots/Curve-19/Dashboard2.jpeg', 
-            './src/assets/project-screenshots/Curve-19/Dashboard3.jpeg', 
-            './src/assets/project-screenshots/Curve-19/District Details.jpeg', 
-            './src/assets/project-screenshots/Curve-19/District List Table.jpeg', 
-            './src/assets/project-screenshots/Curve-19/District List.jpeg', 
-            './src/assets/project-screenshots/Curve-19/Home.jpeg', 
-            './src/assets/project-screenshots/Curve-19/Searching.jpeg', 
-            './src/assets/project-screenshots/Curve-19/State List.jpeg', 
-            './src/assets/project-screenshots/Curve-19/Watch List.jpeg'],
+            './public/assets/project-screenshots/Curve-19/Dashboard.jpeg', 
+            './public/assets/project-screenshots/Curve-19/Dashboard2.jpeg', 
+            './public/assets/project-screenshots/Curve-19/Dashboard3.jpeg', 
+            './public/assets/project-screenshots/Curve-19/District Details.jpeg', 
+            './public/assets/project-screenshots/Curve-19/District List Table.jpeg', 
+            './public/assets/project-screenshots/Curve-19/District List.jpeg', 
+            './public/assets/project-screenshots/Curve-19/Home.jpeg', 
+            './public/assets/project-screenshots/Curve-19/Searching.jpeg', 
+            './public/assets/project-screenshots/Curve-19/State List.jpeg', 
+            './public/assets/project-screenshots/Curve-19/Watch List.jpeg'],
           description: "Curve-19 aimed to spread awareness about Covid-19 and monitor its rising cases. Using Flutter, Dart, and Firebase, I developed a mobile app to receive notifications for new cases in selected regions. I utilized an open-source API (https://www.covid19india.org/) for data collection and integrated data visualization libraries for a better user experience. I planned to release Curve on iOS and Android, but work constraints paused development. Taking a real-world problem from concept to 70% completion solo fills me with pride. It's a testament to perseverance, learning, and ability to understand and solve real-world problems.",
           techList: ['Flutter', 'Dart', 'Firebase', 'Data Visualization', 'Design Patterns', 'Problem solving'],
           learnings: [
@@ -183,22 +183,22 @@ export default function Portfolio() {
                 <div className="row m-0">
                   <div className={`col-3 ${styles.project}`}>
                     <div className={`${styles.card}`}>
-                      <img src=".\src\assets\logos\portfolios\tabs-archive.png" className="card-img-top" alt="..." onClick={openModal1} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+                      <img src=".\public\assets\logos\portfolios\tabs-archive.png" className="card-img-top" alt="..." onClick={openModal1} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                     </div>
                   </div>
                   <div className={`col-3 ${styles.project}`}>
                     <div className={`${styles.card}`}>
-                      <img src=".\src\assets\logos\portfolios\curve19.png" className="card-img-top" alt="..." onClick={openModal2} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+                      <img src=".\public\assets\logos\portfolios\curve19.png" className="card-img-top" alt="..." onClick={openModal2} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                     </div>
                   </div>
                   <div className={`col-3 ${styles.project}`}>
                     <div className={`${styles.card}`}>
-                      <img src=".\src\assets\logos\portfolios\face-detection-attendance.png" className="card-img-top" alt="..." onClick={openModal3} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+                      <img src=".\public\assets\logos\portfolios\face-detection-attendance.png" className="card-img-top" alt="..." onClick={openModal3} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                     </div>
                   </div>
                   <div className={`col-3 ${styles.project}`}>
                     <div className={`${styles.card}`}>
-                      <img src=".\src\assets\logos\portfolios\fund-gogo.png" className="card-img-top" alt="..." onClick={openModal4} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+                      <img src=".\public\assets\logos\portfolios\fund-gogo.png" className="card-img-top" alt="..." onClick={openModal4} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                     </div>
                   </div>
                 </div>

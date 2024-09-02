@@ -23,37 +23,37 @@ export default function Social_media() {
             <div className={`${styles.social_media_links}`}>
                 <span title="madhavtrivedi.work17@gmail.com">
                     <a href="javascript:void(0)" onClick={copyToClipboard}>
-                        <img src="./src/assets/svg/mail.svg" alt="email" width="30" height="30" />
+                        <img src="./public/assets/svg/mail.svg" alt="email" width="30" height="30" />
                     </a>
                 </span>
                 <span title="LinkedIn">
                     <a href="https://www.linkedin.com/in/madhavpt">
-                        <img src="./src/assets/svg/linkedin.svg" alt="linkedIn" width="30" height="30" />
+                        <img src="./public/assets/svg/linkedin.svg" alt="linkedIn" width="30" height="30" />
                     </a>
                 </span>
                 <span title="GitHub">
                     <a href="https://github.com/Madhav-77">
-                        <img src="./src/assets/svg/github.svg" alt="github" width="30" height="30" />
+                        <img src="./public/assets/svg/github.svg" alt="github" width="30" height="30" />
                     </a>
                 </span>
                 <span title="Hacker Rank">
                     <a href="https://www.hackerrank.com/profile/madhavtrivedi_77">
-                        <img src="./src/assets/svg/hackerrank.svg" alt="hacker rank" width="35" height="35" />
+                        <img src="./public/assets/svg/hackerrank.svg" alt="hacker rank" width="35" height="35" />
                     </a>
                 </span>
                 <span title="Geeks For Geeks">
                     <a href="https://www.geeksforgeeks.org/user/madhavtrivedi77/">
-                        <img src="./src/assets/svg/geeksforgeeks.svg" alt="geeks for geeks" width="30" height="30" />
+                        <img src="./public/assets/svg/geeksforgeeks.svg" alt="geeks for geeks" width="30" height="30" />
                     </a>
                 </span>
                 <span title="Free Code Camp">
                     <a href="https://www.freecodecamp.org/madhavtrivedi77">
-                        <img src="./src/assets/svg/freecodecamp.svg" alt="free code camp" width="30" height="30" />
+                        <img src="./public/assets/svg/freecodecamp.svg" alt="free code camp" width="30" height="30" />
                     </a>
                 </span>
                 <span title="Download Resume">
                     <a href="https://www.freecodecamp.org/madhavtrivedi77">
-                        <img src="./src/assets/svg/resume.svg" alt="resume" width="30" height="30" />
+                        <img src="./public/assets/svg/resume.svg" alt="resume" width="30" height="30" />
                     </a>
                 </span>
             </div>
