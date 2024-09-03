@@ -88,9 +88,9 @@ const testimonialList:TestimonialModel[] = [
 export default function Testimonials() {
     return (
         <>
-            <div className={`${styles.testimonials}`} id="testimonials">
+            <div className={`${styles.testimonials} pt-5 pb-5`} id="testimonials">
                 <div className={`${styles.testimonial_header}`}>
-                    <div className="row m-0 pt-5 text-center justify-content-center">
+                    <div className="row m-0 text-center justify-content-center">
                         <div className={`col-12 ${styles.heading}`}>
                             Testimonials
                         </div>
@@ -119,7 +119,7 @@ export default function Testimonials() {
                                                 <div className={`${styles.name}`}>{obj.name}</div>
                                                 <div className={`${styles.designation}`}>{obj.designation}, {obj.company}</div>
                                                 <div className={`${styles.testimony}`}>
-                                                    <img src=".\src\assets\svg\quote-open.svg" alt="" />{obj.testimony}<img src=".\src\assets\svg\quote-close.svg" alt="" />
+                                                    <img src=".\assets\svg\quote-open.svg" alt="" />{obj.testimony}<img src=".\assets\svg\quote-close.svg" alt="" />
                                                 </div>
                                             </div>
                                         </div>

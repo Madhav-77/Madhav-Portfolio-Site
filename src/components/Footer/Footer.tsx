@@ -4,7 +4,7 @@ import styles from "./footer.module.scss";
 export default function Footer() {
     const currentYear = new Date().getFullYear();
     return (
-        <div className={`${styles.footer}`} id="footer">
+        <div className={`${styles.footer} pt-4 pb-3`} id="footer">
             <div className={`row m-0 justify-content-center`}>
                 <div className={`col-12 text-center`}>
                     <div className={`${styles.sub_heading}`}>Thanks for stopping by, let's connect!</div>

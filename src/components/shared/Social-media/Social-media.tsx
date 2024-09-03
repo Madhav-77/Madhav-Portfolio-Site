@@ -52,7 +52,7 @@ export default function Social_media() {
                     </a>
                 </span>
                 <span title="Download Resume">
-                    <a href="https://www.freecodecamp.org/madhavtrivedi77">
+                    <a href="./assets/Madhav_Trivedi_Resume.pdf" download="Madhav_Trivedi_Resume.pdf">
                         <img src="./assets/svg/resume.svg" alt="resume" width="30" height="30" />
                     </a>
                 </span>

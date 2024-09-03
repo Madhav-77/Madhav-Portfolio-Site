@@ -11,9 +11,9 @@ export default function About() {
 
     return (
         <>
-            <div className={`${styles.about}`} id="about">
+            <div className={`${styles.about} pt-5 pb-5`} id="about">
                 <div className={`${styles.about_header}`}>
-                    <div className="row m-0 pt-5 text-center justify-content-center">
+                    <div className="row m-0 text-center justify-content-center">
                         <div className={`col-12 ${styles.heading}`}>
                             About
                         </div>
@@ -75,7 +75,7 @@ export default function About() {
                             <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("85%")}>
                                 Problem solving 
                             </div>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("80%")}>
+                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("88%")}>
                                 Debugging and Troubleshooting
                             </div>
                         </div>

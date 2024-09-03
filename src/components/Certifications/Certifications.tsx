@@ -82,9 +82,9 @@ export default function Certifications() {
 
     return (
         <>
-            <div className={`${styles.certification}`} id="certifications">
+            <div className={`${styles.certification} pt-5 pb-5`} id="certifications">
                 <div className={`${styles.certification_header}`}>
-                    <div className="row m-0 pt-5 text-center justify-content-center">
+                    <div className="row m-0 text-center justify-content-center">
                         <div className={`col-12 ${styles.heading}`}>
                             Certifications
                         </div>

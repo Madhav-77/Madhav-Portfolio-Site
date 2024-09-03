@@ -166,9 +166,9 @@ export default function Portfolio() {
 
     return (
       <>
-        <div className={`${styles.portfolio}`} id="portfolio">
+        <div className={`${styles.portfolio} pt-5 pb-5`} id="portfolio">
           <div className={`${styles.portfolio_header}`}>
-              <div className="row m-0 pt-5 text-center justify-content-center">
+              <div className="row m-0 text-center justify-content-center">
                   <div className={`col-12 ${styles.heading}`}>
                       Portfolio
                   </div>
