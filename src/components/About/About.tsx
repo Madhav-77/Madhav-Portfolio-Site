@@ -33,55 +33,73 @@ export default function About() {
                     </div>
                     <div className="row m-0 justify-content-center">
                         <div className={`${styles.skills} col-9`}>
-                            Skills
-                        </div>
-                    </div>
-                    <div className="row m-0 justify-content-center pt-1" onMouseLeave={() => updateProgressBar("0%")}>
-                        <div className={`col-3`}>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("65%")}>
-                                Python
-                            </div>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("55%")}>
-                                C# 
-                            </div>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("60%")}>
-                                .NET                             
-                            </div>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("80%")}>
-                                JavaScript
-                            </div>
-                        </div>
-                        <div className={`col-3`}>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("80%")}>
-                                TypeScript
-                            </div>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("80%")}>
-                                Angular 
-                            </div>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("40%")}>
-                                React 
-                            </div>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("70%")}>
-                                SQL
-                            </div>
-                        </div>
-                        <div className={`col-3`}>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("70%")}>
-                                Data structures and Algorithms
-                            </div>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("65%")}>
-                                System Design
-                            </div>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("85%")}>
-                                Problem solving 
-                            </div>
-                            <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("88%")}>
-                                Debugging and Troubleshooting
-                            </div>
-                        </div>
-                        <div className={`col-9 pt-3`}>
-                            <div className="progress">
-                                <div className={`progress-bar ${styles.custom_progress_bar}`} role="progressbar" aria-valuenow={50} aria-valuemin={0} aria-valuemax={100} style={{width: progressBarWidth}}></div>
+                            <div className={`${styles.skills_heading}`}>Skills</div>
+                            <div className="row justify-content-center pt-1" onMouseLeave={() => updateProgressBar("0%")}>
+                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("65%")}>
+                                        Python
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("55%")}>
+                                        C# 
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("60%")}>
+                                        .NET                             
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("80%")}>
+                                        JavaScript
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("80%")}>
+                                        TypeScript
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("80%")}>
+                                        Angular 
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("40%")}>
+                                        React 
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("70%")}>
+                                        SQL
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("70%")}>
+                                        Data structures and Algorithms
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("65%")}>
+                                        System Design
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("85%")}>
+                                        Problem solving 
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("88%")}>
+                                        Debugging and Troubleshooting
+                                    </div>
+                                </div>
+                                <div className={`col-12 pt-3`}>
+                                    <div className="progress">
+                                        <div className={`progress-bar ${styles.custom_progress_bar}`} role="progressbar" aria-valuenow={50} aria-valuemin={0} aria-valuemax={100} style={{width: progressBarWidth}}></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

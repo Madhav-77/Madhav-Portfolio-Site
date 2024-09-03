@@ -98,7 +98,7 @@ export default function Certifications() {
                         <div className={`${styles.content} col-9`}>
                             <div className="row m-0">
                                 {certificateList.map((obj, index) => (
-                                <div className="col-3">
+                                <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                                     <div className={`card w-auto ${styles.custom_card_style}`} onClick={() => setModalContentFunc(index + 1)} data-bs-toggle="modal" data-bs-target="#certificateModal">
                                         <img src={obj.certificateImg} className={`card-img-top ${styles.custom_image_style}`} alt="..." />
                                         <div className={`card-body ${styles.custom_card_body_style}`}>

@@ -181,22 +181,22 @@ export default function Portfolio() {
             <div className="row m-0 justify-content-center">
               <div className={`${styles.content} col-9`}>
                 <div className="row m-0">
-                  <div className={`col-3 ${styles.project}`}>
+                  <div className={`col-12 col-md-6 col-xl-3 mb-2 mr-5 ml-5 ${styles.project}`}>
                     <div className={`${styles.card}`}>
                       <img src=".\assets\logos\portfolios\tabs-archive.png" className="card-img-top" alt="..." onClick={openModal1} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                     </div>
                   </div>
-                  <div className={`col-3 ${styles.project}`}>
+                  <div className={`col-12 col-md-6 col-xl-3 mb-2 mr-5 ml-5 ${styles.project}`}>
                     <div className={`${styles.card}`}>
                       <img src=".\assets\logos\portfolios\curve19.png" className="card-img-top" alt="..." onClick={openModal2} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                     </div>
                   </div>
-                  <div className={`col-3 ${styles.project}`}>
+                  <div className={`col-12 col-md-6 col-xl-3 mb-2 mr-5 ml-5 ${styles.project}`}>
                     <div className={`${styles.card}`}>
                       <img src=".\assets\logos\portfolios\face-detection-attendance.png" className="card-img-top" alt="..." onClick={openModal3} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                     </div>
                   </div>
-                  <div className={`col-3 ${styles.project}`}>
+                  <div className={`col-12 col-md-6 col-xl-3 mb-2 mr-5 ml-5 ${styles.project}`}>
                     <div className={`${styles.card}`}>
                       <img src=".\assets\logos\portfolios\fund-gogo.png" className="card-img-top" alt="..." onClick={openModal4} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                     </div>
