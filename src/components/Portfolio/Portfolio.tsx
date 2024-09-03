@@ -183,22 +183,22 @@ export default function Portfolio() {
                 <div className="row m-0">
                   <div className={`col-3 ${styles.project}`}>
                     <div className={`${styles.card}`}>
-                      <img src=".\public\assets\logos\portfolios\tabs-archive.png" className="card-img-top" alt="..." onClick={openModal1} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+                      <img src=".\assets\logos\portfolios\tabs-archive.png" className="card-img-top" alt="..." onClick={openModal1} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                     </div>
                   </div>
                   <div className={`col-3 ${styles.project}`}>
                     <div className={`${styles.card}`}>
-                      <img src=".\public\assets\logos\portfolios\curve19.png" className="card-img-top" alt="..." onClick={openModal2} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+                      <img src=".\assets\logos\portfolios\curve19.png" className="card-img-top" alt="..." onClick={openModal2} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                     </div>
                   </div>
                   <div className={`col-3 ${styles.project}`}>
                     <div className={`${styles.card}`}>
-                      <img src=".\public\assets\logos\portfolios\face-detection-attendance.png" className="card-img-top" alt="..." onClick={openModal3} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+                      <img src=".\assets\logos\portfolios\face-detection-attendance.png" className="card-img-top" alt="..." onClick={openModal3} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                     </div>
                   </div>
                   <div className={`col-3 ${styles.project}`}>
                     <div className={`${styles.card}`}>
-                      <img src=".\public\assets\logos\portfolios\fund-gogo.png" className="card-img-top" alt="..." onClick={openModal4} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+                      <img src=".\assets\logos\portfolios\fund-gogo.png" className="card-img-top" alt="..." onClick={openModal4} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                     </div>
                   </div>
                 </div>
