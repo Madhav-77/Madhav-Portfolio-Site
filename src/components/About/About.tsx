@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Social_media from "../shared/Social-media/Social-media";
+import SocialMedia from "../shared/SocialMedia/SocialMedia";
 import styles from "./about.module.scss";
 
 export default function About() {
@@ -28,7 +28,7 @@ export default function About() {
                             As a software engineer with 4+ years of industrial exposure, I have strong problem-solving ability and expertise in Angular, JavaScript, SQL, .Net, and Python. I bring along experience working in an Agile environment, managing juniors, delegating responsibilities, building good connections with clients and stakeholders, engaging in effective communication to understand requirements, and delivering great solutions that exceed expectations.
                         </div>
                         <div className={`${styles.social_media} col-9`}>
-                            <Social_media />
+                            <SocialMedia />
                         </div>
                     </div>
                     <div className="row m-0 justify-content-center">
@@ -96,6 +96,7 @@ export default function About() {
                                     </div>
                                 </div>
                                 <div className={`col-12 pt-3`}>
+                                    <b>Proficiency</b>
                                     <div className="progress">
                                         <div className={`progress-bar ${styles.custom_progress_bar}`} role="progressbar" aria-valuenow={50} aria-valuemin={0} aria-valuemax={100} style={{width: progressBarWidth}}></div>
                                     </div>

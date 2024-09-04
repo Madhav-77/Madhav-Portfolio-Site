@@ -77,16 +77,16 @@ export default function Career() {
                 </div>
                 <div className={`${styles.about_body}`}>
                     <div className="row m-0 justify-content-center">
-                        <div className={`${styles.content} col-9 text-justify`}>
+                        <div className={`${styles.content} col-9`}>
                         <section className={styles.company_section}>
                           <ul className={styles.company_list}>
 
                             {companyList.map((carrer_obj, index) => (
                               <li className={`${styles.company} ${index == 0 ? styles.current : ``}`}>
                                 <div className={`${styles.company_heading} row`}>
-                                  <div className={`${styles.company_name} col-12`}>
+                                  <div className={`${styles.company_name} col-12 col-md-6`}>
                                     {carrer_obj.companySite != "" &&
-                                      <a href={carrer_obj.companySite}>
+                                      <a href={carrer_obj.companySite} target="_blank">
                                         {/* <span className={styles.company_logo}><img src={carrer_obj.companyLogo} alt="" /></span> */}
                                         <span className={styles.company_name}>{carrer_obj.company} ({carrer_obj.position})</span>
                                       </a>
@@ -97,6 +97,8 @@ export default function Career() {
                                         <span className={styles.company_name}>{carrer_obj.company} ({carrer_obj.position})</span>
                                       </span>
                                     }
+                                  </div>
+                                  <div className={`${styles.company_name} col-12 col-md-6`}>
                                     <span className="float-end">{carrer_obj.location.city}, {carrer_obj.location.state}, {carrer_obj.location.country}</span>
                                   </div>
                                   <div className={`${styles.company_name} col-12 mb-2`}>
@@ -106,7 +108,7 @@ export default function Career() {
                                 <p className="">
                                   <ul>
                                     {carrer_obj.summary.map((obj) => (
-                                      <li>{obj}</li>  
+                                      <li className="text-justify">{obj}</li>  
                                     ))}
                                   </ul>
                                 </p>

@@ -1,5 +1,6 @@
+@import '../../variables';
 .career {
-    background-color: #f0f0f0;
+    background-color: $gray-background;
 }
 
 .career_header .heading {
@@ -10,7 +11,7 @@
 
 .company_section {
     .company_list {
-        border-left: 1px solid #bdac9a;
+        border-left: 1px solid $golden-timeline-highlights;
         position: relative;
         list-style: none;
         padding-left: 32px;
@@ -26,7 +27,7 @@
                 top: 6px;
                 left: -38px;
                 content: "";
-                background-color: #bdac9a;
+                background-color: $golden-timeline-highlights;
                 border-radius: 50%;
                 height: 11px;
                 width: 11px;
@@ -35,7 +36,7 @@
                 a,
                 span {
                     text-decoration: none;
-                    color: #000000;
+                    color: $text-color;
                     font-size: 18px;
                     font-weight: bold;
                 }
@@ -43,7 +44,7 @@
         }
         .company.current {
             &:after {
-                background-color: #35ab55;
+                background-color: $primary-color;
             }
         }
     }

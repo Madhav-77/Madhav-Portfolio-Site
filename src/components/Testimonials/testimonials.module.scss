@@ -1,5 +1,6 @@
+@import '../../variables';
 .testimonials {
-    background-color: #f0f0f0;
+    background-color: $gray-background;
 }
 
 .testimonial_header .heading {
@@ -42,7 +43,7 @@ a {
 }
 
 .carousel_custom_style {
-    background-color: #000 !important;
+    background-color: $text-color !important;
     height: 12px !important;
     width: 12px !important;
     border-radius: 50%;

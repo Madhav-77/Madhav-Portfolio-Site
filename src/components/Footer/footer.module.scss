@@ -1,10 +1,11 @@
+@import '../../variables';
 .footer>* {
-    color: #f0f0f0;
+    color: $secondary-color;
 }
 
 .footer {
     height: auto;
-    background-color: #36454F;
+    background-color: $accent-color;
     // padding: 20px;
 }
 
@@ -18,5 +19,5 @@
 }
 
 .social_media img {
-    filter: invert(100%) sepia(0%);
+    filter: $invert-svg-color-filter;
 }

@@ -9,7 +9,7 @@
     object-fit: contain;
 }
 
-.custom_card_style {
+.card_margin {
     margin: 10px 0px;
 }
 
@@ -29,16 +29,4 @@
     white-space: normal;
     font-size: 18px;
     font-weight: 500;
-}
-
-.custom_card_style {
-    transition: transform .2s;
-    cursor: pointer;
-    border-radius: 16px;
-}
-
-.custom_card_style:hover {
-    transform: scale(1.05);
-    border-radius: 16px;
-    filter: blur(1.5px);
 }

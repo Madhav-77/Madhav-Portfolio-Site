@@ -1,10 +1,11 @@
+@import '../../../variables';
 .scrollToTopButton {
     display: flex !important;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    color: #f3ecdc !important;
-    background-color: #648195 !important;
+    color: $secondary-color !important;
+    background-color: $primary-color !important;
     border: none !important;
     border-radius: 50% !important;
     width: 50px;

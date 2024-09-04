@@ -1,5 +1,23 @@
-div.background * {
-    color: #e2dfd1 !important;
+@import '../../variables';
+// Utility Classes
+.background {
+    background: transparent url($home-background-image) 0% 0% no-repeat padding-box;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.83;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & * {
+        color: $secondary-color !important;
+    }
+}
+
+// Name Lines
+.name_line_1,
+.name_line_2,
+.name_line_3 {
+    font-optical-sizing: auto;
 }
 
 .name_line_1 {
@@ -15,14 +33,4 @@ div.background * {
 
 .name_line_3 {
     font-size: 42px;
-}
-
-.background {
-    background: transparent url('./Home_Background.jpg') 0% 0% no-repeat padding-box;
-    height: 100vh;
-    background-size: cover;
-    opacity: 0.83;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }

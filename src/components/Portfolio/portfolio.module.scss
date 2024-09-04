@@ -7,15 +7,6 @@
 .project>.card>img {
     height: 270px;
     width: 270px;
-    transition: transform .2s;
-    cursor: pointer;
-    border-radius: 16px;
-}
-
-.project>.card>img:hover {
-    transform: scale(1.05);
-    border-radius: 16px;
-    filter: blur(1.5px);
 }
 
 .project>.card {

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Alert from "../Alert/Alert";
-import styles from "./social-media.module.scss";
+import styles from "./socialMedia.module.scss";
 
-export default function Social_media() {
+export default function SocialMedia() {
     const [alertVisible, setAlertVisible] = useState<boolean>(false);
     const myWorkEmail = "madhavtrivedi.work17@gmail.com";
     const copyToClipboard = async () => {
@@ -27,27 +27,27 @@ export default function Social_media() {
                     </a>
                 </span>
                 <span title="LinkedIn">
-                    <a href="https://www.linkedin.com/in/madhavpt">
+                    <a href="https://www.linkedin.com/in/madhavpt" target="_blank">
                         <img src="./assets/svg/linkedin.svg" alt="linkedIn" width="30" height="30" />
                     </a>
                 </span>
                 <span title="GitHub">
-                    <a href="https://github.com/Madhav-77">
+                    <a href="https://github.com/Madhav-77" target="_blank">
                         <img src="./assets/svg/github.svg" alt="github" width="30" height="30" />
                     </a>
                 </span>
                 <span title="Hacker Rank">
-                    <a href="https://www.hackerrank.com/profile/madhavtrivedi_77">
+                    <a href="https://www.hackerrank.com/profile/madhavtrivedi_77" target="_blank">
                         <img src="./assets/svg/hackerrank.svg" alt="hacker rank" width="35" height="35" />
                     </a>
                 </span>
                 <span title="Geeks For Geeks">
-                    <a href="https://www.geeksforgeeks.org/user/madhavtrivedi77/">
+                    <a href="https://www.geeksforgeeks.org/user/madhavtrivedi77/" target="_blank">
                         <img src="./assets/svg/geeksforgeeks.svg" alt="geeks for geeks" width="30" height="30" />
                     </a>
                 </span>
                 <span title="Free Code Camp">
-                    <a href="https://www.freecodecamp.org/madhavtrivedi77">
+                    <a href="https://www.freecodecamp.org/madhavtrivedi77" target="_blank">
                         <img src="./assets/svg/freecodecamp.svg" alt="free code camp" width="30" height="30" />
                     </a>
                 </span>

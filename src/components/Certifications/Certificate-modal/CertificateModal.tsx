@@ -31,8 +31,8 @@ export default function CertificateModal({id, certificateImg, link, name, skills
                 </div>
                 {(link) &&
                   <div className="modal-footer">
-                      <button type="button" className="btn btn-primary" title="View certificate" onClick={() => redirectTo(link)}>
-                        <div className={`${styles.redirect_icon}`}></div>
+                      <button type="button" className={`btn btn-primary modal-button`} title="View certificate" onClick={() => redirectTo(link)}>
+                        <img className={`modal-button-icon`} src="./assets/svg/redirect.svg" alt="free code camp" width="24" height="24" />
                         View certificate
                       </button>
                   </div>

@@ -56,14 +56,14 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                 (data.projectURL || data.sourceCode) &&
                   <div className="modal-footer">
                     {data.projectURL && 
-                      <button type="button" className="btn btn-primary" title="Open project" onClick={() => redirectTo(data.projectURL)}>
-                        <div className={`${styles.redirect_icon}`}></div>
+                      <button type="button" className={`btn btn-primary modal-button`} title="Open project" onClick={() => redirectTo(data.projectURL)}>
+                        <img className={`modal-button-icon`} src="./assets/svg/redirect.svg" alt="free code camp" width="24" height="24" />
                         Project URL
                       </button>
                     }
                     {data.sourceCode && 
-                      <button type="button" className="btn btn-primary" title="GitHub" onClick={() => redirectTo(data.sourceCode)}>
-                        <div className={`${styles.github_icon}`}></div>
+                      <button type="button" className={`btn btn-primary modal-button`} title="GitHub" onClick={() => redirectTo(data.sourceCode)}>
+                        <img className={`modal-button-icon`} src="./assets/svg/github.svg" alt="free code camp" width="24" height="24" />
                         Source code
                       </button>
                     }

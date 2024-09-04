@@ -1,3 +1,4 @@
+@import 'variables';
 html {
     scroll-behavior: smooth;
 }
@@ -7,14 +8,7 @@ body {
 }
 
 * {
-    font-family: "Playfair Display", serif;
-}
-
-.playfair-font {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
+    font-family: $font-family;
 }
 
 .text-justify {
@@ -31,4 +25,25 @@ hr {
 
 .w-fit-content {
     width: fit-content;
+}
+
+.custom-card-style {
+    transition: transform .2s;
+    cursor: pointer;
+    border-radius: 16px;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.modal-button-icon {
+    vertical-align: bottom;
+    margin-right: 5px;
+    filter: $invert-svg-color-filter;
+}
+
+.modal-button {
+    background-color: $primary-color !important;
+    color: $secondary-color;
 }
