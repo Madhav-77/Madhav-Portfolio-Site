@@ -1,0 +1,15 @@
+@mixin responsive-float($default-float, $responsive-float, $breakpoint: 768px) {
+    float: $default-float !important;
+    @media (max-width: $breakpoint) {
+        float: $responsive-float !important;
+        padding-bottom: 10px;
+    }
+}
+
+@mixin responsive-image-container-modal($default-max-height, $responsive-max-height, $breakpoint: 992px) {
+    max-height: $default-max-height;
+    height: fit-content !important;
+    @media (max-width: $breakpoint) {
+        max-height: $responsive-max-height;
+    }
+}

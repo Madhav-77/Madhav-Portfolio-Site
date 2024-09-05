@@ -17,7 +17,7 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                 </div>
                 <div className="modal-body">
                   {data.screenshotsList.length > 0 &&  
-                    <div id="carouselExampleIndicators" className={`carousel slide ${styles.mb_30px}`} data-bs-ride="carousel">
+                    <div id="carouselExampleIndicators" className={`carousel slide mb-30px`} data-bs-ride="carousel">
                       <div className={`carousel-indicators ${styles.custom_position}`}>
                       {data.screenshotsList.map((_, index) => ( 
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} className={`${styles.carousel_custom_style} ${index === 0 ? "active" : ""}`} aria-current={index === 0 ? "true" : undefined} aria-label={`Slide ${index+1}`}></button>
@@ -26,7 +26,7 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                       <div className="carousel-inner">
                         {data.screenshotsList.map((screenshot, index) => (
                           <div className={`carousel-item ${styles.carousel_container} ${index === 0 ? "active" : ""}`}>
-                            <img src={screenshot} className={`d-block ${styles.carousel_img}`} alt="..." />
+                            <img src={screenshot} className={`d-block modal-image`} alt="..." />
                           </div>
                         ))}
                       </div>

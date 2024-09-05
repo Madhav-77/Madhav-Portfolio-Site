@@ -183,8 +183,8 @@ export default function Portfolio() {
               <div className={`${styles.content} col-9`}>
                 <div className="row m-0">
                   {projectList.map((obj, index) => (
-                    <div className={`col-12 col-md-6 col-xl-3 mb-2 mr-5 ml-5 ${styles.project}`}>
-                      <div className={`${styles.card}`}>
+                    <div className={`col-12 col-sm-6 col-md-4 col-lg-3 ${styles.project}`}>
+                      <div className={`card w-auto custom-card-style ${styles.card_margin}`}>
                         <img src={obj.logo} className="custom-card-style" alt="..." onClick={() => setModalContentFunc(index + 1)} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                       </div>
                     </div>

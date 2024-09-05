@@ -1,4 +1,5 @@
 @import '../../variables';
+@import '../../mixins';
 .career {
     background-color: $gray-background;
 }
@@ -54,4 +55,8 @@
     img {
         height: 35px;
     }
+}
+
+.location_float {
+    @include responsive-float(right, left);
 }

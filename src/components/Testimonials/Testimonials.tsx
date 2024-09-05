@@ -1,5 +1,6 @@
 import styles from "./testimonials.module.scss";
 import { TestimonialModel } from "../../interfaces/TestimonialModel";
+import React, { useEffect, useRef, useState } from "react";
 
 const testimonialList:TestimonialModel[] = [
     {
@@ -86,6 +87,31 @@ const testimonialList:TestimonialModel[] = [
 ]
 
 export default function Testimonials() {
+    const divRefs = useRef<(HTMLDivElement | null)[]>([]);
+    const [maxHeight, setMaxHeight] = useState(0);
+
+    const updateMaxHeight = () => {
+        const heights = divRefs.current.map(div => div ? div.offsetHeight : 0);
+        const largestHeight = Math.max(...heights);
+        setMaxHeight(largestHeight);
+    };
+
+    useEffect(() => {
+        // Calculate the initial height
+        updateMaxHeight();
+    
+        // Listen to the resize event and update height
+        const handleResize = () => {
+          updateMaxHeight();
+        };
+        
+        window.addEventListener("resize", handleResize);
+    
+        // Cleanup the event listener on component unmount
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+    }, []);
     return (
         <>
             <div className={`${styles.testimonials} pt-5 pb-5`} id="testimonials">
@@ -111,7 +137,13 @@ export default function Testimonials() {
                                     </div>
                                     <div className="carousel-inner">
                                         {testimonialList.map((obj, index) => (
-                                        <div className={`carousel-item ${styles.custom_carousel_item} ${index === 0 ? "active" : ""}`}>
+                                        <div 
+                                        key={index}
+                                        ref={el => (divRefs.current[index] = el)}
+                                        style={{
+                                            height: maxHeight ? `${maxHeight}px` : "auto"
+                                        }}
+                                        className={`carousel-item ${styles.custom_carousel_item} ${index === 0 ? "active" : ""}`}>
                                             <div className={`${styles.profile_picture_container} w-auto text-center`}>
                                                 <a href={obj.linkedIn} target="_blank">
                                                     <img className={`${styles.profile_picture}`} src={obj.profilePicture} alt="" />

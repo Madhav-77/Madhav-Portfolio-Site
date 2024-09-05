@@ -1,4 +1,5 @@
 @import '../../../variables';
+@import '../../../mixins';
 .modal_title {
     font-size: 24px;
     font-weight: 700;
@@ -13,10 +14,6 @@
     text-align: justify;
 }
 
-.mb_30px {
-    margin-bottom: 30px;
-}
-
 .custom_position {
     bottom: -50px !important;
 }
@@ -26,40 +23,5 @@
 }
 
 .carousel_container {
-    height: 550px !important;
-}
-
-.carousel_img {
-    height: 100%;
-    width: auto;
-    margin: auto;
-}
-
-.github_icon {
-    height: 24px;
-    width: 24px;
-    background-color: rgb(255, 255, 255);
-    /* defines the background color of the image */
-    mask: url(./assets/svg/github.svg) no-repeat center / contain;
-    -webkit-mask: url(./assets/svg/github.svg) no-repeat center / contain;
-    display: inline-block;
-    vertical-align: bottom;
-    margin-right: 5px;
-}
-
-.redirect_icon {
-    height: 24px;
-    width: 24px;
-    background-color: rgb(255, 255, 255);
-    /* defines the background color of the image */
-    mask: url(./assets/svg/redirect.svg) no-repeat center / contain;
-    -webkit-mask: url(./assets/svg/redirect.svg) no-repeat center / contain;
-    display: inline-block;
-    vertical-align: bottom;
-    margin-right: 5px;
-}
-
-.modal_button {
-    background-color: $primary-color !important;
-    color: $secondary-color;
+    @include responsive-image-container-modal(550px, 340px);
 }

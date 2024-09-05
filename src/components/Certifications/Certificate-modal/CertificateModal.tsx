@@ -17,8 +17,8 @@ export default function CertificateModal({id, certificateImg, link, name, skills
                   <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div className="modal-body">
-                  <div className={`${styles.certificate_container}`}>
-                    <img src={certificateImg} className={`d-block ${id == 1 ? `w-auto` : `w-100`} ${styles.certificate_img}`} alt="..." />
+                  <div className={`mb-30px ${styles.certificate_container}`}>
+                    <img src={certificateImg} className={`d-block modal-image`} alt="..." />
                   </div>
                   <div className={`row`}>
                     <div className={`${styles.project_modal_heading}`}>Key Learnings</div>

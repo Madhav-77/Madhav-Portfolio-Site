@@ -13,7 +13,7 @@ const certificateList:CertificateInterface[] = [
     //     link: ""
     // },
     {
-        id: 2,
+        id: 1,
         certificateImg: ".\\assets\\certificates\\systemDesignGFG.png",
         name: "System Design from Low Level to High Level",
         organization: "GeeksForGeeks",
@@ -21,7 +21,7 @@ const certificateList:CertificateInterface[] = [
         link: ""
     },
     {
-        id: 3,
+        id: 2,
         certificateImg: ".\\assets\\certificates\\virtualInternshipFORAGE.png",
         name: "J.P. Morgan's Software Engineering Virtual Experience ",
         organization: "Forage",
@@ -29,7 +29,7 @@ const certificateList:CertificateInterface[] = [
         link: ""
     },
     {
-        id: 4,
+        id: 3,
         certificateImg: ".\\assets\\certificates\\dataAnalysisFCC.png",
         name: "Data Analytics with Python",
         organization: "FreeCodeCamp",
@@ -37,7 +37,7 @@ const certificateList:CertificateInterface[] = [
         link: "https://www.freecodecamp.org/certification/madhavtrivedi77/data-analysis-with-python-v7"
     },
     {
-        id: 5,
+        id: 4,
         certificateImg: ".\\assets\\certificates\\pythonFCC.png",
         name: "Scientific Computing with Python",
         organization: "FreeCodeCamp",
@@ -45,7 +45,7 @@ const certificateList:CertificateInterface[] = [
         link: "https://www.freecodecamp.org/certification/madhavtrivedi77/scientific-computing-with-python-v7"
     },
     {
-        id: 6,
+        id: 5,
         certificateImg: ".\\assets\\certificates\\dataStructureJavaScriptFCC.png",
         name: "JavaScript Algorithms and Data Structures",
         organization: "FreeCodeCamp",
@@ -53,7 +53,7 @@ const certificateList:CertificateInterface[] = [
         link: "https://www.freecodecamp.org/certification/madhavtrivedi77/javascript-algorithms-and-data-structures"
     },
     {
-        id: 7,
+        id: 6,
         certificateImg: ".\\assets\\certificates\\nodejsFCC.png",
         name: "Back End Development and APIs",
         organization: "FreeCodeCamp",
