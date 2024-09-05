@@ -1,6 +1,6 @@
 import styles from "./testimonials.module.scss";
 import { TestimonialModel } from "../../interfaces/TestimonialModel";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const testimonialList:TestimonialModel[] = [
     {
