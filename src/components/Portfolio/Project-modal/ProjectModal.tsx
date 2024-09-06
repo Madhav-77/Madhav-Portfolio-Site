@@ -17,10 +17,10 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                 </div>
                 <div className="modal-body">
                   {data.screenshotsList.length > 0 &&  
-                    <div id="carouselExampleIndicators" className={`carousel slide mb-30px`} data-bs-ride="carousel">
+                    <div id="projectCarousel" className={`carousel slide mb-30px`} data-bs-ride="carousel">
                       <div className={`carousel-indicators ${styles.custom_position}`}>
                       {data.screenshotsList.map((_, index) => ( 
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} className={`${styles.carousel_custom_style} ${index === 0 ? "active" : ""}`} aria-current={index === 0 ? "true" : undefined} aria-label={`Slide ${index+1}`}></button>
+                        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to={index} className={`${styles.carousel_custom_style} ${index === 0 ? "active" : ""}`} aria-current={index === 0 ? "true" : undefined} aria-label={`Slide ${index+1}`}></button>
                       ))}
                       </div>
                       <div className="carousel-inner">

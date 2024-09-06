@@ -50,5 +50,6 @@ a {
 }
 
 .custom_carousel_item {
-    height: 280px;
+    height: auto;
+    min-height: 280px;
 }
