@@ -140,8 +140,8 @@ export default function Testimonials() {
                             <div className="row m-0 justify-content-center">
                                 <div id="testimonialCarousel" className="carousel slide" data-bs-ride="carousel">
                                     <div className={`carousel-indicators ${styles.custom_position}`}>
-                                    {testimonialList.map((_, index) => (
-                                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to={index} className={`carousel-item-button ${index === 0 ? "active" : ""} ${styles.carousel_custom_style}`} aria-current="true" aria-label={`Slide ${index + 1}`}></button>
+                                    {testimonialList.map((obj, index) => (
+                                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to={index} className={`carousel-item-button ${index === 0 ? "active" : ""} ${styles.carousel_custom_style}`} aria-current="true" aria-label={`Slide ${index + 1}`} key={obj.id}></button>
                                     ))}
                                     </div>
                                     <div className="carousel-inner">
@@ -149,7 +149,7 @@ export default function Testimonials() {
                                         <div 
                                         ref={(el) => (elementRefs.current[index] = el)}
                                         style={elementHeight > 0 ? { minHeight: elementHeight } : {}}
-                                        className={`carousel-item ${styles.custom_carousel_item} ${index === 0 ? "active" : ""}`}>
+                                        className={`carousel-item ${styles.custom_carousel_item} ${index === 0 ? "active" : ""}`} key={obj.id}>
                                             <div className={`${styles.profile_picture_container} w-auto text-center`}>
                                                 <a href={obj.linkedIn} target="_blank">
                                                     <img className={`${styles.profile_picture}`} src={obj.profilePicture} alt="" />

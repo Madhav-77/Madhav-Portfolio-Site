@@ -20,12 +20,12 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                     <div id="projectCarousel" className={`carousel slide mb-30px`} data-bs-ride="carousel">
                       <div className={`carousel-indicators ${styles.custom_position}`}>
                       {data.screenshotsList.map((_, index) => ( 
-                        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to={index} className={`${styles.carousel_custom_style} ${index === 0 ? "active" : ""}`} aria-current={index === 0 ? "true" : undefined} aria-label={`Slide ${index+1}`}></button>
+                        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to={index} className={`${styles.carousel_custom_style} ${index === 0 ? "active" : ""}`} aria-current={index === 0 ? "true" : undefined} aria-label={`Slide ${index+1}`} key={index}></button>
                       ))}
                       </div>
                       <div className="carousel-inner">
                         {data.screenshotsList.map((screenshot, index) => (
-                          <div className={`carousel-item ${styles.carousel_container} ${index === 0 ? "active" : ""}`}>
+                          <div className={`carousel-item ${styles.carousel_container} ${index === 0 ? "active" : ""}`} key={index}>
                             <img src={screenshot} className={`d-block modal-image`} alt="..." />
                           </div>
                         ))}
@@ -45,8 +45,8 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                     <div className={`${styles.project_modal_heading} mt-2`}>Key Learnings</div>
                     <div>
                       <ul className="text-justify">
-                        {data.learnings.map((learning) => (
-                          <li><b>{learning.heading}: </b>{learning.data}</li>
+                        {data.learnings.map((learning, index) => (
+                          <li key={index}><b>{learning.heading}: </b>{learning.data}</li>
                         ))}
                       </ul>
                     </div>

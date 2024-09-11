@@ -5,8 +5,9 @@ import styles from "./socialMedia.module.scss";
 export default function SocialMedia() {
     const [alertVisible, setAlertVisible] = useState<boolean>(false);
     const myWorkEmail = "madhavtrivedi.work17@gmail.com";
-    const copyToClipboard = async () => {
+    const copyToClipboard = async (e: React.MouseEvent<HTMLAnchorElement>) => {
         try {
+            e.preventDefault()
             await navigator.clipboard.writeText(myWorkEmail);
             setAlertVisible(true);
             setTimeout(() => {
@@ -22,7 +23,7 @@ export default function SocialMedia() {
             <Alert showAlert={alertVisible}></Alert>
             <div className={`${styles.social_media_links}`}>
                 <span title="madhavtrivedi.work17@gmail.com">
-                    <a href="javascript:void(0)" onClick={copyToClipboard}>
+                    <a href="#" onClick={(e) => copyToClipboard(e)}>
                         <img src="./assets/svg/mail.svg" alt="email" width="30" height="30" />
                     </a>
                 </span>

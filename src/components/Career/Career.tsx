@@ -82,7 +82,7 @@ export default function Career() {
                           <ul className={styles.company_list}>
 
                             {companyList.map((carrer_obj, index) => (
-                              <li className={`${styles.company} ${index == 0 ? styles.current : ``}`}>
+                              <li className={`${styles.company} ${index == 0 ? styles.current : ``}`} key={carrer_obj.id}>
                                 <div className={`${styles.company_heading} row`}>
                                   <div className={`${styles.company_name} col-12 col-md-8`}>
                                     {carrer_obj.companySite != "" &&
@@ -103,13 +103,13 @@ export default function Career() {
                                     <span className="">{carrer_obj.joining} - {carrer_obj.ending}</span>
                                   </div>
                                 </div>
-                                <p className="">
+                                <div className="">
                                   <ul>
-                                    {carrer_obj.summary.map((obj) => (
-                                      <li className="text-justify">{obj}</li>  
+                                    {carrer_obj.summary.map((obj, index) => (
+                                      <li className="text-justify" key={index}>{obj}</li>  
                                     ))}
                                   </ul>
-                                </p>
+                                </div>
                               </li>
                             ))}
                           </ul>

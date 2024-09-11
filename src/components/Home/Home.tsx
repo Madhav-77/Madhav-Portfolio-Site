@@ -18,20 +18,20 @@ export default function Home() {
         if (isDeleting) {
         typingInterval = setTimeout(() => {
             setDisplayedText(currentWord.substring(0, displayedText.length - 1));
-            setTypingSpeed(100); // Speed up when deleting
+            setTypingSpeed(100);
         }, typingSpeed);
         } else {
         typingInterval = setTimeout(() => {
             setDisplayedText(currentWord.substring(0, displayedText.length + 1));
-            setTypingSpeed(150); // Normal speed when typing
+            setTypingSpeed(150);
         }, typingSpeed);
         }
 
         if (!isDeleting && displayedText === currentWord) {
-        setTimeout(() => setIsDeleting(true), 1000); // Pause before starting to delete
+            setTimeout(() => setIsDeleting(true), 1000);
         } else if (isDeleting && displayedText === "") {
-        setIsDeleting(false);
-        setCurrentWordIndex((prev) => (prev + 1) % words.length); // Move to the next word
+            setIsDeleting(false);
+            setCurrentWordIndex((prev) => (prev + 1) % words.length);
         }
 
         return () => clearTimeout(typingInterval);
