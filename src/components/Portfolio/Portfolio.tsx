@@ -6,11 +6,11 @@ import { ProjectModalProps } from "../../interfaces/ProjectModalProps";
 const projectList: ProjectModalProps[] = [
   {
     id: 1,
-    title: 'Tab\'s Archive',
+    title: 'Tab’s Archive',
     logo: '.\\assets\\logos\\portfolios\\tabs-archive.png',
     data: {
       screenshotsList: ['./assets/project-screenshots/Tabs-archive/Home.png', './assets/project-screenshots/Tabs-archive/Open.png', './assets/project-screenshots/Tabs-archive/Archive.png', './assets/project-screenshots/Tabs-archive/Window.png'],
-      description: "Tab's Archive, a Chrome extension designed to close inactive windows and tabs, saving them in local storage for easy retrieval. With Tab's Archive, you can instantly boost RAM performance, enhance browsing speed, and reduce clutter. Perfect for anyone who handles multiple windows and tabs, aiming for a smoother browsing experience. Your saved archive stays intact until you decide to delete it.",
+      description: "Tab’s Archive, a Chrome extension designed to close inactive windows and tabs, saving them in local storage for easy retrieval. With Tab’s Archive, you can instantly boost RAM performance, enhance browsing speed, and reduce clutter. Perfect for anyone who handles multiple windows and tabs, aiming for a smoother browsing experience. Your saved archive stays intact until you decide to delete it.",
       techList: ['HTML', 'CSS', 'JavaScript', 'Chrome APIs', 'Design Patterns', 'Problem solving'],
       learnings: [
         {
@@ -27,7 +27,7 @@ const projectList: ProjectModalProps[] = [
         },
         {
           heading: 'Chrome API',
-          data: 'Utilizing Chrome\'s API for data retrieval and integration.'
+          data: 'Utilizing Chrome’s API for data retrieval and integration.'
         },
         {
           heading: 'JavaScript',
@@ -48,17 +48,17 @@ const projectList: ProjectModalProps[] = [
     logo: '.\\assets\\logos\\portfolios\\curve19.png',
     data: {
       screenshotsList: [
-        './assets/project-screenshots/Curve-19/Dashboard.jpeg', 
-        './assets/project-screenshots/Curve-19/Dashboard2.jpeg', 
-        './assets/project-screenshots/Curve-19/Dashboard3.jpeg', 
-        './assets/project-screenshots/Curve-19/District Details.jpeg', 
-        './assets/project-screenshots/Curve-19/District List Table.jpeg', 
-        './assets/project-screenshots/Curve-19/District List.jpeg', 
-        './assets/project-screenshots/Curve-19/Home.jpeg', 
-        './assets/project-screenshots/Curve-19/Searching.jpeg', 
-        './assets/project-screenshots/Curve-19/State List.jpeg', 
-        './assets/project-screenshots/Curve-19/Watch List.jpeg'],
-      description: "Curve-19 aimed to spread awareness about Covid-19 and monitor its rising cases. Using Flutter, Dart, and Firebase, I developed a mobile app to receive notifications for new cases in selected regions. I utilized an open-source API (https://www.covid19india.org/) for data collection and integrated data visualization libraries for a better user experience. I planned to release Curve on iOS and Android, but work constraints paused development. Taking a real-world problem from concept to 70% completion solo fills me with pride. It's a testament to perseverance, learning, and ability to understand and solve real-world problems.",
+        './assets/project-screenshots/Curve-19/Dashboard.png', 
+        './assets/project-screenshots/Curve-19/Dashboard2.png', 
+        './assets/project-screenshots/Curve-19/Dashboard3.png', 
+        './assets/project-screenshots/Curve-19/District Details.png', 
+        './assets/project-screenshots/Curve-19/District List Table.png', 
+        './assets/project-screenshots/Curve-19/District List.png', 
+        './assets/project-screenshots/Curve-19/Home.png', 
+        './assets/project-screenshots/Curve-19/Searching.png', 
+        './assets/project-screenshots/Curve-19/State List.png', 
+        './assets/project-screenshots/Curve-19/Watch List.png'],
+      description: "Curve-19 aimed to spread awareness about Covid-19 and monitor its rising cases. Using Flutter, Dart, and Firebase, I developed a mobile app to receive notifications for new cases in selected regions. I utilized an open-source API (https://www.covid19india.org/) for data collection and integrated data visualization libraries for a better user experience. I planned to release Curve on iOS and Android, but work constraints paused development. Taking a real-world problem from concept to 70% completion solo fills me with pride. It’s a testament to perseverance, learning, and ability to understand and solve real-world problems.",
       techList: ['Flutter', 'Dart', 'Firebase', 'Data Visualization', 'Design Patterns', 'Problem solving'],
       learnings: [
         {
@@ -180,7 +180,7 @@ export default function Portfolio() {
           </div>
           <div className={`${styles.portfolio_body}`}>
             <div className="row m-0 justify-content-center">
-              <div className={`${styles.content} col-9`}>
+              <div className={`${styles.content} col-9 padding-side-0`}>
                 <div className="row m-0">
                   {projectList.map((obj, index) => (
                     <div className={`col-12 col-sm-6 col-md-4 col-lg-3 ${styles.project}`}>

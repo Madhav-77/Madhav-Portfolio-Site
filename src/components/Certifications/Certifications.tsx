@@ -23,7 +23,7 @@ const certificateList:CertificateInterface[] = [
     {
         id: 2,
         certificateImg: ".\\assets\\certificates\\virtualInternshipFORAGE.png",
-        name: "J.P. Morgan's Software Engineering Virtual Experience ",
+        name: "J.P. Morgan’s Software Engineering Virtual Experience ",
         organization: "Forage",
         skills: ["Python", "Data Analysis", "Data Processing"],
         link: ""
@@ -95,7 +95,7 @@ export default function Certifications() {
                 </div>
                 <div className={`${styles.certification_body}`}>
                     <div className="row m-0 justify-content-center">
-                        <div className={`${styles.content} col-9`}>
+                        <div className={`${styles.content} col-9 padding-side-0`}>
                             <div className="row m-0">
                                 {certificateList.map((obj, index) => (
                                 <div className="col-12 col-sm-6 col-md-4 col-lg-3">

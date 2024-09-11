@@ -21,3 +21,8 @@
 .social_media img {
     filter: $invert-svg-color-filter;
 }
+
+.linkedin_link {
+    text-decoration: none;
+    color: $secondary-color;
+}

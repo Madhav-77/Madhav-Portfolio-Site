@@ -13,3 +13,17 @@
         max-height: $responsive-max-height;
     }
 }
+
+@mixin responsive-header-margin($default-margin, $responsive-margin, $breakpoint: 992px) {
+    margin: $default-margin;
+    @media (max-width: $breakpoint) {
+        margin: $responsive-margin !important;
+    }
+}
+
+@mixin responsive-font-size($default-font, $responsive-font, $breakpoint: 576px) {
+    font-size: $default-font;
+    @media (max-width: $breakpoint) {
+        font-size: $responsive-font !important;
+    }
+}

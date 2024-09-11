@@ -1,4 +1,5 @@
 @import '../../variables';
+@import '../../mixins';
 // Utility Classes
 .background {
     background: transparent url($home-background-image) 0% 0% no-repeat padding-box;
@@ -26,11 +27,26 @@
 }
 
 .name_line_2 {
-    font-size: 64px;
     line-height: 1.2;
     font-weight: 700;
 }
 
+.name_line_2 {
+    @include responsive-font-size(64px, 42px);
+}
+
 .name_line_3 {
-    font-size: 42px;
+    @include responsive-font-size(42px, 30px);
+}
+
+.what_i_do {
+    display: inline-block;
+    border-right: 2px solid $secondary-color;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }

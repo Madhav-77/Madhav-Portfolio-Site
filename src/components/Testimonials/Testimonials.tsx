@@ -27,7 +27,7 @@ const testimonialList:TestimonialModel[] = [
         name: "Abhinav Das",
         designation: "Head of Engineering",
         company: "Stealth",
-        testimony: "Madhav brings strong engineering craft and utmost reliability to his team. At Talent, Inc., he was involved with the successful operation of our core revenue generating products. Madhav has also shown that he's able to pick up new technologies with ease.",
+        testimony: "Madhav brings strong engineering craft and utmost reliability to his team. At Talent, Inc., he was involved with the successful operation of our core revenue generating products. Madhav has also shown that he’s able to pick up new technologies with ease.",
         linkedIn: "https://www.linkedin.com/in/theabhinavdas/"
     },
     {
@@ -36,7 +36,7 @@ const testimonialList:TestimonialModel[] = [
         name: "Cedric Richardeau",
         designation: "Studio Operations Director",
         company: "Ubisoft",
-        testimony: "As Madhav's senior manager at Ubisoft India, I was consistently impressed by his performance as a Junior Web Developer. His work on automating routine emails for our HR Portal reduced manual workload by 40%. Madhav's quick learning, strong coding practices, and collaborative approach made him a valuable asset to our team. I'm confident Madhav would be an excellent addition to any organization.",
+        testimony: "As Madhav’s senior manager at Ubisoft India, I was consistently impressed by his performance as a Junior Web Developer. His work on automating routine emails for our HR Portal reduced manual workload by 40%. Madhav’s quick learning, strong coding practices, and collaborative approach made him a valuable asset to our team. I’m confident Madhav would be an excellent addition to any organization.",
         linkedIn: "https://www.linkedin.com/in/cedric-richardeau/"
     },
     {
@@ -63,7 +63,7 @@ const testimonialList:TestimonialModel[] = [
         name: "Hasmukh Tank",
         designation: "Senior Technical Project Manager",
         company: "career.io",
-        testimony: "Madhav is an exceptionally dedicated professional who consistently goes above and beyond. His problem-solving skills and commitment greatly contributed to our team's success and helped meet critical deadlines. His ability to create efficient solutions and his collaborative spirit made him an invaluable team member. I highly recommend Madhav and would be thrilled to work with him again.",
+        testimony: "Madhav is an exceptionally dedicated professional who consistently goes above and beyond. His problem-solving skills and commitment greatly contributed to our team’s success and helped meet critical deadlines. His ability to create efficient solutions and his collaborative spirit made him an invaluable team member. I highly recommend Madhav and would be thrilled to work with him again.",
         linkedIn: "https://www.linkedin.com/in/hasmukh-tank-5/"
     },
     {
@@ -136,7 +136,7 @@ export default function Testimonials() {
                 </div>
                 <div className={`${styles.testimonial_body}`}>
                     <div className="row m-0 justify-content-center">
-                        <div className={`${styles.content} col-9`}>
+                        <div className={`${styles.content} col-9 padding-side-0`}>
                             <div className="row m-0 justify-content-center">
                                 <div id="testimonialCarousel" className="carousel slide" data-bs-ride="carousel">
                                     <div className={`carousel-indicators ${styles.custom_position}`}>
