@@ -8,7 +8,7 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
     };
     return (
         <>          
-          <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div className="modal fade" id="projectModal" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="projectModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered modal-lg">
               <div className="modal-content">
                 <div className="modal-header">
@@ -26,7 +26,7 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                       <div className="carousel-inner">
                         {data.screenshotsList.map((screenshot, index) => (
                           <div className={`carousel-item ${styles.carousel_container} ${index === 0 ? "active" : ""}`} key={index}>
-                            <img src={screenshot} className={`d-block modal-image`} alt="..." />
+                            <img src={screenshot} className={`d-block modal-image`} alt={`screenshot ${index}`} />
                           </div>
                         ))}
                       </div>
@@ -38,8 +38,10 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                     </div>
                     <div className={`${styles.project_modal_heading} mt-2`}>Technologies and Skills</div>
                     <div>
-                      {data.techList.map((tech) => (
-                        tech + ", "
+                      {data.techList.map((tech, index) => (
+                        <span key={index}>
+                          {tech}{index < data.techList.length - 1 && ', '}
+                        </span>
                       ))}
                     </div>
                     <div className={`${styles.project_modal_heading} mt-2`}>Key Learnings</div>
@@ -57,13 +59,13 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                   <div className="modal-footer">
                     {data.projectURL && 
                       <button type="button" className={`btn btn-primary modal-button`} title="Open project" onClick={() => redirectTo(data.projectURL)}>
-                        <img className={`modal-button-icon`} src="./assets/svg/redirect.svg" alt="free code camp" width="24" height="24" />
+                        <img className={`modal-button-icon`} src="./assets/svg/redirect.svg" alt="icon" width="24" height="24" />
                         Project URL
                       </button>
                     }
                     {data.sourceCode && 
                       <button type="button" className={`btn btn-primary modal-button`} title="GitHub" onClick={() => redirectTo(data.sourceCode)}>
-                        <img className={`modal-button-icon`} src="./assets/svg/github.svg" alt="free code camp" width="24" height="24" />
+                        <img className={`modal-button-icon`} src="./assets/svg/github.svg" alt="icon" width="24" height="24" />
                         Source code
                       </button>
                     }

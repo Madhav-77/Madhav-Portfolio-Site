@@ -185,7 +185,7 @@ export default function Portfolio() {
                   {projectList.map((obj, index) => (
                     <div className={`col-12 col-sm-6 col-md-4 col-lg-3 ${styles.project}`} key={obj.id}>
                       <div className={`card w-auto custom-card-style ${styles.card_margin}`}>
-                        <img src={obj.logo} className="custom-card-style" alt="..." onClick={() => setModalContentFunc(index + 1)} data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+                        <img src={obj.logo} className="custom-card-style" alt={obj.title} onClick={() => setModalContentFunc(index + 1)} data-bs-toggle="modal" data-bs-target="#projectModal"/>
                       </div>
                     </div>
                   ))}

@@ -9,7 +9,7 @@ export default function CertificateModal({id, certificateImg, link, name, skills
 
     return (
         <>          
-          <div className="modal fade" id="certificateModal" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div className="modal fade" id="certificateModal" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="certificateModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered modal-lg">
               <div className="modal-content">
                 <div className="modal-header">
@@ -18,13 +18,15 @@ export default function CertificateModal({id, certificateImg, link, name, skills
                 </div>
                 <div className="modal-body">
                   <div className={`mb-30px ${styles.certificate_container}`}>
-                    <img src={certificateImg} className={`d-block modal-image`} alt="..." />
+                    <img src={certificateImg} className={`d-block modal-image`} alt={name} />
                   </div>
                   <div className={`row`}>
                     <div className={`${styles.project_modal_heading}`}>Key Learnings</div>
                     <div>
-                      {skills.map((skill) => (
-                        skill + ", "
+                      {skills.map((skill, index) => (
+                        <span key={index}>
+                          {skill}{index < skills.length - 1 && ', '}
+                        </span>
                       ))}
                     </div>
                   </div>
@@ -32,7 +34,7 @@ export default function CertificateModal({id, certificateImg, link, name, skills
                 {(link) &&
                   <div className="modal-footer">
                       <button type="button" className={`btn btn-primary modal-button`} title="View certificate" onClick={() => redirectTo(link)}>
-                        <img className={`modal-button-icon`} src="./assets/svg/redirect.svg" alt="free code camp" width="24" height="24" />
+                        <img className={`modal-button-icon`} src="./assets/svg/redirect.svg" alt="icon" width="24" height="24" />
                         View certificate
                       </button>
                   </div>

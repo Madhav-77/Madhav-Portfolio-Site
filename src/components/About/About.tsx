@@ -25,11 +25,11 @@ export default function About() {
                 <div className={`${styles.about_body}`}>
                     <div className="row m-0 justify-content-center">
                         <div className={`${styles.content} col-9 text-justify padding-side-0`}>
-                        <p>
+                        {/* <p>
                             I’m a software engineer with 5 years of experience communicating with machines—and 20+ years with people! My day job is to convince my computer that yes, it can do that. I’m all about building something that makes life easier (or at least makes you say, “Hey, that’s cool!”).
-                        </p>
+                        </p> */}
                         <p>
-                            I’m a Software Engineer with 5 years of experience, currently transitioning into Data Engineering roles. Always ready to take on new challenges, whether it’s building scalable systems or solving complex problems. When I’m away from the screen, you’ll find me hiking trails, looking for a different kind of bugs, or playing guitar.
+                            I’m a Software Engineer with 5 years of experience, currently transitioning into Data Engineering roles. Always up for new challenges, whether it’s building scalable systems or solving complex problems. When I’m away from the screen, you’ll find me hiking trails, looking for a different kind of bugs, or playing guitar.
                         </p>
                         <p>
                             Oh, and if you’re looking to connect over coffee or a beer, I’m your person! Whether it’s tech, global events, or exchanging ideas, I’m always up for a meaningful conversation.

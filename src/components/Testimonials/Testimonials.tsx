@@ -157,7 +157,7 @@ export default function Testimonials() {
                                                 <div className={`${styles.name}`}>{obj.name}</div>
                                                 <div className={`${styles.designation}`}>{obj.designation}, {obj.company}</div>
                                                 <div className={`${styles.testimony}`}>
-                                                    <img src=".\assets\svg\quote-open.svg" alt="" />{obj.testimony}<img src=".\assets\svg\quote-close.svg" alt="" />
+                                                    <img src=".\assets\svg\quote-open.svg" alt="quote open" />{obj.testimony}<img src=".\assets\svg\quote-close.svg" alt="quote close" />
                                                 </div>
                                             </div>
                                         </div>
