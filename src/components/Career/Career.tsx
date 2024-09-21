@@ -19,7 +19,7 @@ const companyList: CompanyInterface[] = [
       "Developed and managed Fintech applications, a Career Service Portal with 1M+ users, and a Product Subscription tool.",
       "Built a maintainable and scalable system with multilingual support (I18N/L10N) and optimized performance by handling data efficiently and implementing caching. Increasing client’s revenue by 2x and expanding the application’s global reach.",
       "Designed a high-performance system for handling a large dataset of 1M+ entries on Client side, and improved the page performance by around 50%.",
-      "Migrated a Monolithic (MVC) Architecture to Microservices, increasing application performance by by 30-40%.",
+      "Migrated a Monolithic (MVC) Architecture to Microservices, increasing application performance by 30-40%.",
       "Implementing CI/CD pipelines, code reviews, task delegation, and training new team members to ensure coding standards and quality."
     ]
   },
