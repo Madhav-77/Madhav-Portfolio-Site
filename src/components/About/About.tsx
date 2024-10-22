@@ -49,8 +49,8 @@ export default function About() {
                                     </div>
                                 </div>
                                 <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("55%")}>
-                                        C# 
+                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("40%")}>
+                                        Azure 
                                     </div>
                                 </div>
                                 <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
