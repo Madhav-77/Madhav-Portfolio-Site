@@ -40,12 +40,14 @@ export default function Home() {
     return <div className={styles.background}>
         <Header />
         <div className={`row m-0 justify-content-center ${styles.name_section_div}`}>
-            <div className={`col-9 padding-side-0`}>
-                <div className={`playfair-font ${styles.name_line_1}`}>Hello world!</div>
-                <div className={`playfair-font ${styles.name_line_2}`}>I’m Madhav Trivedi</div>
-                <div className={`playfair-font ${styles.name_line_3}`}>
-                    <span className="test">A&nbsp;</span>
-                    <span className={styles.what_i_do}>{displayedText}</span>
+            <div className={`col-8 padding-side-0`}>
+                <div className="float-end">
+                    <div className={`playfair-font ${styles.name_line_1}`}>Hello world!</div>
+                    <div className={`playfair-font ${styles.name_line_2}`}>I’m Madhav Trivedi</div>
+                    <div className={`playfair-font ${styles.name_line_3}`}>
+                        <span>A&nbsp;</span>
+                        <span className={styles.what_i_do}>{displayedText}</span>
+                    </div>
                 </div>
             </div>
         </div>

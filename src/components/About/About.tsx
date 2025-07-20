@@ -5,6 +5,84 @@ import styles from "./about.module.scss";
 export default function About() {
     const [progressBarWidth, setModalContent] = useState<string>("0%")
 
+    const techStackProficiency = [
+        {
+            name: "NestJs",
+            proficiency: "75%"
+        },
+        {
+            name: "NodeJs",
+            proficiency: "70%"
+        },
+        {
+            name: "Python",
+            proficiency: "60%"
+        },
+        {
+            name: "AWS (Amazon Web Services)",
+            proficiency: "40%"
+        },
+        {
+            name: "JavaScript",
+            proficiency: "80%"
+        },
+        {
+            name: "TypeScript",
+            proficiency: "80%"
+        },
+        {
+            name: "PostgreSQL",
+            proficiency: "60%"
+        },
+        {
+            name: "MongoDB",
+            proficiency: "40%"
+        },
+        {
+            name: "Docker",
+            proficiency: "40%"
+        },
+        {
+            name: "CI/CD",
+            proficiency: "50%"
+        },
+        {
+            name: "Data structures and Algorithms",
+            proficiency: "60%"
+        },
+        {
+            name: "System Design",
+            proficiency: "65%"
+        },
+        {
+            name: "React",
+            proficiency: "40%"
+        },
+        {
+            name: "Angular",
+            proficiency: "70%"
+        },
+        {
+            name: "Problem solving",
+            proficiency: "90%"
+        },
+        {
+            name: "Debugging and Troubleshooting",
+            proficiency: "90%"
+        }
+    ];
+
+    const interests = [
+        "Global Affairs/Events",
+        "Investment & Trading",
+        "Astrophysics",
+        "Music (Guitar, Ukulele, Singing)",
+        "Reading",
+        "Cooking",
+        "Swimming",
+        "Photography"
+    ];
+
     function updateProgressBar(progress: string) {
         setModalContent(progress)
     }
@@ -29,10 +107,12 @@ export default function About() {
                             I’m a software engineer with 5 years of experience communicating with machines—and 20+ years with people! My day job is to convince my computer that yes, it can do that. I’m all about building something that makes life easier (or at least makes you say, “Hey, that’s cool!”).
                         </p> */}
                         <p>
-                            I’m a Software Engineer with 5 years of experience. Always up for new challenges, whether it’s building scalable systems or solving complex problems. When I’m away from the screen, you’ll find me hiking trails, looking for a different kind of bugs, or playing guitar.
+                            I’m a Software Engineer with 5+ years of experience leading teams, scaling systems, and building features that make a real business impact. I’ve worked across the stack — from designing microservices and AI-driven workflows to setting up CI/CD pipelines and pulling off smooth deployments.
+
                         </p>
                         <p>
-                            Oh, and whether it’s tech, global events, or exchanging good ideas, I’m always up for a meaningful conversation over coffee.
+                            I escapse standups and retros by hiking a trail or jamming on my guitar. <br />
+                            Always up for a good conversation — tech, global events, or startup ideas. Deal is to have coffee involved. 😄
                         </p>
                         </div>
                         <div className={`${styles.social_media} col-9 padding-side-0`}>
@@ -43,66 +123,13 @@ export default function About() {
                         <div className={`${styles.skills} col-9 padding-side-0`}>
                             <div className={`${styles.skills_heading}`}>Skills</div>
                             <div className="row justify-content-center pt-1" onMouseLeave={() => updateProgressBar("0%")}>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("65%")}>
-                                        Python
+                                {techStackProficiency.map((skill, index) => (
+                                    <div key={index} className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                        <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar(skill.proficiency)}>
+                                            {skill.name}
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("40%")}>
-                                        Azure 
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("60%")}>
-                                        .NET                             
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("80%")}>
-                                        JavaScript
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("80%")}>
-                                        TypeScript
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("80%")}>
-                                        Angular 
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("40%")}>
-                                        React 
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("70%")}>
-                                        SQL
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("70%")}>
-                                        Data structures and Algorithms
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("65%")}>
-                                        System Design
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("85%")}>
-                                        Problem solving 
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`cursor-pointer w-fit-content`} onMouseEnter={() => updateProgressBar("88%")}>
-                                        Debugging and Troubleshooting
-                                    </div>
-                                </div>
+                                ))}
                                 <div className={`col-12 pt-3 pb-3`}>
                                     <b>Proficiency</b>
                                     <div className="progress mt-1">
@@ -116,46 +143,13 @@ export default function About() {
                         <div className={`${styles.interests} col-9 padding-side-0`}>
                             <div className={`${styles.interests_heading}`}>Interests</div>
                             <div className="row justify-content-center pt-1">
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`w-fit-content`}>
-                                        Global Affairs/Events
+                                {interests.map((interest, index) => (
+                                    <div key={index} className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
+                                        <div className={`w-fit-content`}>
+                                            {interest}
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`w-fit-content`}>
-                                        Investment & Trading
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`w-fit-content`}>
-                                        Astrophysics                            
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`w-fit-content`}>
-                                        Music (Guitar, Ukulele, Singing)
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`w-fit-content`}>
-                                        Reading
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`w-fit-content`}>
-                                        Cooking 
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`w-fit-content`}>
-                                        Swimming 
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-6 col-md-4 col-xl-3 mb-1">
-                                    <div className={`w-fit-content`}>
-                                        Photography
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>
