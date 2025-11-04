@@ -1,0 +1,26 @@
+@import '../../variables';
+.about_header .heading {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.social_media {
+    padding-bottom: 10px;
+}
+
+.skills_heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.interests_heading {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px
+}
+
+.custom_progress_bar {
+    background-color: $primary-color !important;
+    transition: width 0.7s ease-in-out !important;
+}

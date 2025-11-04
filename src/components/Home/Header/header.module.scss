@@ -1,0 +1,25 @@
+@import '../../../variables';
+@import '../../../mixins';
+nav * {
+    color: $secondary-color !important;
+}
+
+nav {
+    background: $header-color;
+}
+
+.navbar_content_center {
+    @include responsive-header-margin(auto, 0);
+}
+
+.custom_menu_button {
+    background-color: #f3ecdc !important;
+}
+
+.custom_nav_justify {
+    justify-content: flex-end !important;
+}
+
+.custom_text_align {
+    text-align: right !important;
+}

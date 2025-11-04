@@ -1,0 +1,28 @@
+@import '../../variables';
+.footer>* {
+    color: $secondary-color;
+}
+
+.footer {
+    height: auto;
+    background-color: $accent-color;
+    // padding: 20px;
+}
+
+.heading {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.social_media {
+    margin-top: 5px;
+}
+
+.social_media img {
+    filter: $invert-svg-color-filter;
+}
+
+.linkedin_link {
+    text-decoration: none;
+    color: $secondary-color;
+}

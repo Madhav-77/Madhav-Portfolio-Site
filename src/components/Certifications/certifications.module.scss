@@ -1,0 +1,32 @@
+.certification_header .heading {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.custom_image_style {
+    height: 200px;
+    object-fit: contain;
+}
+
+.card_margin {
+    margin: 10px 0px;
+}
+
+.custom_card_body_style {
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.custom_card_title_style {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-size: 18px;
+    font-weight: 500;
+}

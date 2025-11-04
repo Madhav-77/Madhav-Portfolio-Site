@@ -1,0 +1,27 @@
+@import '../../../variables';
+@import '../../../mixins';
+.modal_title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.project_modal_heading {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.project_description_body {
+    text-align: justify;
+}
+
+.custom_position {
+    bottom: -50px !important;
+}
+
+.carousel_custom_style {
+    background-color: #000 !important;
+}
+
+.carousel_container {
+    @include responsive-image-container-modal(550px, 340px);
+}
