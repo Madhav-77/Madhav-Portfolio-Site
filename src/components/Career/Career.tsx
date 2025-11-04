@@ -16,16 +16,14 @@ const companyList: CompanyInterface[] = [
     joining: "Dec 2024",
     ending: "Present",
     summary: [
-      "Strategized the production release plan for 15+ revenue-impacting applications. Initiated a Blue/Green deployment approach and maintained close collaboration with Infrastructure, Development, and QA teams to ensure system stability.",
-      "Designed and delivered a client-specific automated lead-delivery solution that boosted revenue by X%, while ensuring consistent alignment through direct client communication.",
-      "Migrated a monolithic system to microservices for scalability. Designed High/Low level architecture, database schemas, and RESTful APIs. Built AI agents to consume the microservice APIs, enabling process automation and intelligent decision-making.",
-      "Decoupled views and tables from a monolithic database and transitioned them into dedicated microservices, ensuring data consistency using the Outbox Pattern.",
-      "Wrote shell scripts and a GitLab CI stage for automated client SDK generation of microservice APIs using Swagger/OpenAPI Code Gen, and published them to an internal NPM repository. Maintained related documentation and changelogs.",
-      "Set up Kafka with Change Data Capture (CDC) using Debezium, enabling real-time event streaming from the legacy database.",
-      "Built and maintained internal NPM packages within an Nx monorepo, implemented semantic versioning, and managed API versioning to ensure consistency and backward compatibility across evolving microservices.",
-      "Configured Husky and enforced linting and pre-commit hooks to maintain code quality and team-wide consistency.",
-      "Monitored applications using Datadog, including setting up alerts, logs, and custom performance metrics dashboards.",
-      "Set up and maintained CI/CD pipelines using tools like GitHub Actions and GitLab CI, ensuring smooth deployments and integration workflows."
+      "Released 15+ high revenue-impact applications, introducing Blue/Green deployments and maintained inter-team collaboration with Infra, Dev, Salesforce, and QA teams to ensure smooth, stable rollout.",
+      "Migrated a monolith to microservices by designing scalable architecture, DB schemas, and RESTful APIs for modular delivery.",
+      "Built a custom lead delivery system in collaboration with client teams, driving a 35% increase in revenue and significantly improving operational efficiency.",
+      "Designed and developed an end-to-end Lead Scoring System, driving significant positive revenue impact.",
+      "Automated SDK generation with Swagger Codegen using shell scripts and GitLab CI, and managed internal NPM packages with semantic/API versioning in an Nx monorepo.",
+      "Strategised smooth rollouts using A/B testing strategy to have minimum revenue impact.",
+      "Contributed to develop Outbox Pattern with Kafka to achieve data reliability and real-time event streaming across distributed microservices.",
+      "Ensured code quality and performance through Husky pre-commit hooks, GitLab CI pipelines, and application monitoring with Datadog."
     ]
   },
   {
