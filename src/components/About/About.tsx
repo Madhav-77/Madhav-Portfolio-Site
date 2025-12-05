@@ -107,7 +107,7 @@ export default function About() {
                             I’m a software engineer with 5 years of experience communicating with machines—and 20+ years with people! My day job is to convince my computer that yes, it can do that. I’m all about building something that makes life easier (or at least makes you say, “Hey, that’s cool!”).
                         </p> */}
                         <p>
-                            I’m a Software Engineer with 5+ years of experience leading teams, scaling systems, and building features that make a real business impact. I’ve worked across the stack — from designing microservices and AI-driven workflows to setting up CI/CD pipelines and pulling off smooth deployments.
+                            I’m a Software Engineer with 6 years of experience leading teams, scaling systems, and building features that make a real business impact. I’ve worked across the stack — from designing microservices and AI-driven workflows to setting up CI/CD pipelines and pulling off smooth deployments.
 
                         </p>
                         <p>
