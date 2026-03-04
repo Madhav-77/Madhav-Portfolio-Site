@@ -1,89 +1,5 @@
 import styles from "./career.module.scss";
-import { CompanyInterface } from "../../interfaces/CompanyInterface";
-
-const companyList: CompanyInterface[] = [
-  {
-    id: 1,
-    company: "Madison Logic",
-    companySite: "https://www.madisonlogic.com/",
-    companyLogo: ".\\assets\\logos\\company\\thinkbridge.jpeg",
-    position: "Senior Backend Engineer",
-    location: {
-      city: "Pune",
-      state: "MH",
-      country: "India"
-    },
-    joining: "Dec 2024",
-    ending: "Present",
-    summary: [
-      "Released 15+ high revenue-impact applications, introducing Blue/Green deployments and maintained inter-team collaboration with Infra, Dev, Salesforce, and QA teams to ensure smooth, stable rollout.",
-      "Migrated a monolith to microservices by designing scalable architecture, DB schemas, and RESTful APIs for modular delivery.",
-      "Built a custom lead delivery system in collaboration with client teams, driving a 35% increase in revenue and significantly improving operational efficiency.",
-      "Designed and developed an end-to-end Lead Scoring System, driving significant positive revenue impact.",
-      "Automated SDK generation with Swagger Codegen using shell scripts and GitLab CI, and managed internal NPM packages with semantic/API versioning in an Nx monorepo.",
-      "Strategised smooth rollouts using A/B testing strategy to have minimum revenue impact.",
-      "Contributed to develop Outbox Pattern with Kafka to achieve data reliability and real-time event streaming across distributed microservices.",
-      "Ensured code quality and performance through Husky pre-commit hooks, GitLab CI pipelines, and application monitoring with Datadog."
-    ]
-  },
-  {
-    id: 2,
-    company: "ThinkBridge Software",
-    companySite: "https://www.thinkbridge.com/",
-    companyLogo: ".\\assets\\logos\\company\\thinkbridge.jpeg",
-    position: "Software Engineer",
-    location: {
-      city: "Pune",
-      state: "MH",
-      country: "India"
-    },
-    joining: "Nov 2020",
-    ending: "Dec 2024",
-    summary: [
-      "Developed and managed Fintech applications, a Career Service Portal with 1M+ users, and a Product Subscription tool.",
-      "Built a maintainable and scalable system with multilingual support (I18N/L10N) and optimized performance by handling data efficiently and implementing caching. Increasing client’s revenue by 2x and expanding the application’s global reach.",
-      "Designed a high-performance system for handling a large dataset of 1M+ entries on Client side, and improved the page performance by around 50%.",
-      "Migrated a Monolithic (MVC) Architecture to Microservices, increasing application performance by 30-40%.",
-      "Implementing CI/CD pipelines, code reviews, task delegation, and training new team members to ensure coding standards and quality."
-    ]
-  },
-  {
-    id: 3,
-    company: "Ubisoft India",
-    companySite: "https://www.ubisoft.com/en-us/",
-    companyLogo: ".\\assets\\logos\\company\\ubisoft_india.jpeg",
-    position: "Junior Web Developer",
-    location: {
-      city: "Pune",
-      state: "MH",
-      country: "India"
-    },
-    joining: "Jan 2020",
-    ending: "Nov 2020",
-    summary: [
-      "Drove key initiatives at Ubisoft India, crafting responsive UI screens, developing APIs, and optimizing backend systems.", 
-      "Developed an automated HR system, enhancing accuracy by up to 15% and reducing manual workload by 80%."
-    ]
-  },
-  {
-    id: 4,
-    company: "iTalent Management Consultants",
-    companyLogo: ".\\assets\\logos\\company\\iTalent.jpeg",
-    companySite: "",
-    position: "Web Developer Intern",
-    location: {
-      city: "Pune",
-      state: "MH",
-      country: "India"
-    },
-    joining: "May 2019",
-    ending: "Jun 2019",
-    summary: [
-      "As a proactive intern at iTalent India, I contributed effectively in a dynamic environment, gaining hands-on experience with a range of web development technologies.", 
-      "I worked on PHP, Laravel, HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, and MySQL, where I demonstrated adaptability and a commitment to delivering high-quality solutions."
-    ]
-  }
-]
+import { companyList } from "../../constants/appData";
 
 export default function Career() {
     return (
@@ -121,7 +37,7 @@ export default function Career() {
                                     }
                                   </div>
                                   <div className={`${styles.company_name} col-12 col-md-4`}>
-                                    <span className={`${styles.location_float}`}>{carrer_obj.location.city}, {carrer_obj.location.state}, {carrer_obj.location.country}</span>
+                                    <span className={`${styles.location_float}`}>{carrer_obj.location.city} {carrer_obj.location.state} {carrer_obj.location.country}</span>
                                   </div>
                                   <div className={`${styles.company_name} col-12 mb-2`}>
                                     <span className="">{carrer_obj.joining} - {carrer_obj.ending}</span>

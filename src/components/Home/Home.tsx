@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "./Header/Header";
 import styles from "./home.module.scss";
-
-const words = ["Software Engineer", "Musician", "Traveler"];
+import { homePageData } from "../../constants/appData";
 
 export default function Home() {
 
@@ -12,7 +11,7 @@ export default function Home() {
     const [typingSpeed, setTypingSpeed] = useState(150);
 
     useEffect(() => {
-        const currentWord = words[currentWordIndex];
+        const currentWord = homePageData.roles[currentWordIndex];
         let typingInterval;
 
         if (isDeleting) {
@@ -31,7 +30,7 @@ export default function Home() {
             setTimeout(() => setIsDeleting(true), 1000);
         } else if (isDeleting && displayedText === "") {
             setIsDeleting(false);
-            setCurrentWordIndex((prev) => (prev + 1) % words.length);
+            setCurrentWordIndex((prev) => (prev + 1) % homePageData.roles.length);
         }
 
         return () => clearTimeout(typingInterval);
@@ -42,8 +41,8 @@ export default function Home() {
         <div className={`row m-0 justify-content-center ${styles.name_section_div}`}>
             <div className={`col-8 padding-side-0`}>
                 <div className="float-end">
-                    <div className={`playfair-font ${styles.name_line_1}`}>Hello world!</div>
-                    <div className={`playfair-font ${styles.name_line_2}`}>I’m Madhav Trivedi</div>
+                    <div className={`playfair-font ${styles.name_line_1}`}>{homePageData.greeting}</div>
+                    <div className={`playfair-font ${styles.name_line_2}`}>{homePageData.name}</div>
                     <div className={`playfair-font ${styles.name_line_3}`}>
                         <span>A&nbsp;</span>
                         <span className={styles.what_i_do}>{displayedText}</span>
