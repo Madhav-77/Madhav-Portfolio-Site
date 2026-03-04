@@ -1,5 +1,6 @@
 import SocialMedia from "../shared/SocialMedia/SocialMedia";
 import styles from "./footer.module.scss";
+import { footerData } from "../../constants/appData";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -7,8 +8,8 @@ export default function Footer() {
         <div className={`${styles.footer} pt-4 pb-3`} id="footer">
             <div className={`row m-0 justify-content-center`}>
                 <div className={`col-9 text-center padding-side-0`}>
-                    <div className={`${styles.sub_heading}`}>Thanks for stopping by, let’s connect!</div>
-                    <div className={`${styles.heading}`}><a className={`${styles.linkedin_link}`} href="https://www.linkedin.com/in/madhavpt" target="_blank">Madhav Trivedi</a></div>
+                    <div className={`${styles.sub_heading}`}>{footerData.subHeading}</div>
+                    <div className={`${styles.heading}`}><a className={`${styles.linkedin_link}`} href={footerData.linkedInUrl} target="_blank">{footerData.heading}</a></div>
                     <div className={`${styles.social_media}`}><SocialMedia /></div>
                 </div>
                 <div className={`col-9 padding-side-0`}>
@@ -17,10 +18,10 @@ export default function Footer() {
             </div>
             <div className={`row m-0 justify-content-center`}>
                 <div className={`col-9 text-center padding-side-0`}>
-                    &copy; <span>{currentYear}</span> <b><a className={`${styles.linkedin_link}`} href="https://www.linkedin.com/in/madhavpt" target="_blank">Madhav Trivedi</a></b>. All Rights Reserved.
+                    &copy; <span>{currentYear}</span> <b><a className={`${styles.linkedin_link}`} href={footerData.linkedInUrl} target="_blank">{footerData.heading}</a></b>. {footerData.copyrightText}
                 </div>
                 <div className={`col-9 text-center padding-side-0`}>
-                    Built from scratch! 🥂
+                    {footerData.builtFromScratch}
                 </div>
             </div>
         </div>

@@ -2,65 +2,7 @@ import CertificateModal from "./Certificate-modal/CertificateModal";
 import styles from "./certifications.module.scss";
 import { CertificateInterface } from "../../interfaces/CertificateInterface";
 import { useState } from 'react';
-
-const certificateList:CertificateInterface[] = [
-    // {
-    //     id: 1,
-    //     certificateImg: ".\\assets\\certificates\\workInProgress.png",
-    //     name: "Data Structures and Algorithms",
-    //     organization: "GeeksForGeeks",
-    //     skills: ["Python", "Data Structures", "Algorithms", "Problem Solving"],
-    //     link: ""
-    // },
-    {
-        id: 1,
-        certificateImg: ".\\assets\\certificates\\systemDesignGFG.png",
-        name: "System Design from Low Level to High Level",
-        organization: "GeeksForGeeks",
-        skills: ["System Architecture", "High Level System Design", "Low Level System Design", "Design Patterns"],
-        link: ""
-    },
-    {
-        id: 2,
-        certificateImg: ".\\assets\\certificates\\virtualInternshipFORAGE.png",
-        name: "J.P. Morgan’s Software Engineering Virtual Experience ",
-        organization: "Forage",
-        skills: ["Python", "Data Analysis", "Data Processing"],
-        link: ""
-    },
-    {
-        id: 3,
-        certificateImg: ".\\assets\\certificates\\dataAnalysisFCC.png",
-        name: "Data Analytics with Python",
-        organization: "FreeCodeCamp",
-        skills: ["Python", "NumPy", "Pandas", "MatplotLib", "Data Analysis", "Data Visualization"],
-        link: "https://www.freecodecamp.org/certification/madhavtrivedi77/data-analysis-with-python-v7"
-    },
-    {
-        id: 4,
-        certificateImg: ".\\assets\\certificates\\pythonFCC.png",
-        name: "Scientific Computing with Python",
-        organization: "FreeCodeCamp",
-        skills: ["Python", "Problem Solving"],
-        link: "https://www.freecodecamp.org/certification/madhavtrivedi77/scientific-computing-with-python-v7"
-    },
-    {
-        id: 5,
-        certificateImg: ".\\assets\\certificates\\dataStructureJavaScriptFCC.png",
-        name: "JavaScript Algorithms and Data Structures",
-        organization: "FreeCodeCamp",
-        skills: ["JavaScript", "ES6", "Data Structures", "Problem Solving"],
-        link: "https://www.freecodecamp.org/certification/madhavtrivedi77/javascript-algorithms-and-data-structures"
-    },
-    {
-        id: 6,
-        certificateImg: ".\\assets\\certificates\\nodejsFCC.png",
-        name: "Back End Development and APIs",
-        organization: "FreeCodeCamp",
-        skills: ["NodeJS"],
-        link: "https://www.freecodecamp.org/certification/madhavtrivedi77/back-end-development-and-apis"
-    },
-]
+import { certificateList } from "../../constants/appData";
 
 export default function Certifications() {
 
