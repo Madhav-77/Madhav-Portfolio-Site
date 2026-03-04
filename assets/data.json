@@ -1,0 +1,74 @@
+{
+    "sections": [{
+        "about": {
+            "heading": "",
+            "summary": "",
+            "skills": [{
+                "name": "",
+                "proficiency": ""
+            }]
+        },
+        "career": {
+            "heading": "",
+            "companies": [{
+                "id": 3,
+                "company": "iTalent Management Consultants",
+                "companyLogo": ".\\src\\assets\\logos\\company\\iTalent.jpeg",
+                "companySite": "",
+                "position": "Web Developer Intern",
+                "location": {
+                    "city": "Pune",
+                    "state": "MH",
+                    "country": "India"
+                },
+                "joining": "May 2019",
+                "ending": "Jun 2019",
+                "summary": [
+                    "As a proactive intern at iTalent India, I contributed effectively in a dynamic environment, gaining hands-on experience with a range of web development technologies.",
+                    "I worked on PHP, Laravel, HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, and MySQL, where I demonstrated adaptability and a commitment to delivering high-quality solutions."
+                ]
+            }]
+        },
+        "certifications": {
+            "heading": "",
+            "certificates": [{
+                "id": 7,
+                "certificateImg": ".\\src\\assets\\certificates\\nodejsFCC.png",
+                "name": "Back End Development and APIs",
+                "organization": "FreeCodeCamp",
+                "skills": ["NodeJS"],
+                "link": "https://www.freecodecamp.org/certification/madhavtrivedi77/back-end-development-and-apis"
+            }]
+        },
+        "footer": {
+            "text1": "",
+            "name": "",
+            "text2": "",
+            "text3": ""
+        },
+        "home": {
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": []
+        },
+        "header": {
+            "sections": []
+        },
+        "portfolio": {
+            "to-do": ""
+        },
+        "testimonials": {
+            "heading": "",
+            "testimonialsList": [{
+                "id": 1,
+                "profilePicture": ".\\src\\assets\\profile-pictures\\salaad-nur.jpeg",
+                "name": "Salaad Nur",
+                "designation": "Principal & Solution Architect",
+                "company": "Samla Technology, Inc.",
+                "testimony": "I have worked with Madhav on a complex Cash Management solution for Consero Global. He is a consummate professional who understands complex projects. He was a key resource for deliverables. The business need was to manage cash processes for 200+ clients, with combined volumes of tens of thousands of transactions daily, within a 4 hour window. With his support, we delivered a solution that allowed clients to get their updated cash positions by the start of their business day. I would recommend Madhav to anyone looking for a highly skilled developer.",
+                "linkedIn": "https://www.linkedin.com/in/sanur/"
+            }]
+        }
+    }]
+}
