@@ -5,9 +5,7 @@
 }
 
 .career_header .heading {
-    font-size: 30px;
-    line-height: 1.2;
-    font-weight: 700;
+    @include section-heading;
 }
 
 .company_section {

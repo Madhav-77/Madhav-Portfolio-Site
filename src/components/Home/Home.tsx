@@ -34,7 +34,7 @@ export default function Home() {
         }
 
         return () => clearTimeout(typingInterval);
-    }, [displayedText, isDeleting, currentWordIndex]);
+    }, [displayedText, isDeleting, currentWordIndex, typingSpeed]);
 
     return <div className={styles.background}>
         <Header />

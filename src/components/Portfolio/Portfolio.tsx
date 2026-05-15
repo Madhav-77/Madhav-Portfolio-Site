@@ -48,8 +48,16 @@ export default function Portfolio() {
                 <div className="row m-0">
                   {projectList.map((obj, index) => (
                     <div className={`col-12 col-sm-6 col-md-4 col-lg-3 ${styles.project}`} key={obj.id}>
-                      <div className={`card w-auto custom-card-style ${styles.card_margin}`}>
-                        <img src={obj.logo} className="custom-card-style" alt={obj.title} onClick={() => setModalContentFunc(index + 1)} data-bs-toggle="modal" data-bs-target="#projectModal"/>
+                      <div
+                        className={`custom-card-style ${styles.card_item} ${styles.card_margin}`}
+                        onClick={() => setModalContentFunc(index + 1)}
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal"
+                      >
+                        <img src={obj.logo} className={styles.card_img} alt={obj.title} />
+                        <div className={styles.card_title_overlay}>
+                          <span>{obj.title}</span>
+                        </div>
                       </div>
                     </div>
                   ))}

@@ -1,8 +1,8 @@
 @import '../../variables';
+@import '../../mixins';
+
 .about_header .heading {
-    font-size: 30px;
-    line-height: 1.2;
-    font-weight: 700;
+    @include section-heading;
 }
 
 .social_media {
@@ -17,10 +17,30 @@
 .interests_heading {
     font-size: 20px;
     font-weight: bold;
-    padding-top: 10px
+    padding-top: 10px;
 }
 
-.custom_progress_bar {
-    background-color: $primary-color !important;
-    transition: width 0.7s ease-in-out !important;
+.skill_tag {
+    display: inline-block;
+    background-color: $primary-color;
+    color: $secondary-color;
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 4px 4px 4px 0;
+    white-space: nowrap;
+}
+
+.interest_tag {
+    display: inline-block;
+    background-color: transparent;
+    color: $accent-color;
+    border: 1px solid $golden-timeline-highlights;
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 4px 4px 4px 0;
+    white-space: nowrap;
 }

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import styles from "./certificateModal.module.scss";
 import { CertificateInterface } from "../../../interfaces/CertificateInterface";
 

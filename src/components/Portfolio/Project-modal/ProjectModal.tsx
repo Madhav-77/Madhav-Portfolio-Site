@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import styles from "./projectModal.module.scss";
 import { ProjectModalProps } from "../../../interfaces/ProjectModalProps";
 

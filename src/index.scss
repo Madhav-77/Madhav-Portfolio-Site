@@ -28,12 +28,12 @@ hr {
 }
 
 .custom-card-style {
-    transition: transform .2s;
+    transition: transform $transition-fast ease, box-shadow $transition-fast ease;
     cursor: pointer;
     border-radius: 16px !important;
     &:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: translateY(-4px);
+        box-shadow: $shadow-md;
     }
 }
 

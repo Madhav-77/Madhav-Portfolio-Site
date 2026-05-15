@@ -13,7 +13,7 @@ nav {
 }
 
 .custom_menu_button {
-    background-color: #f3ecdc !important;
+    background-color: $secondary-color !important;
 }
 
 .custom_nav_justify {
@@ -22,4 +22,24 @@ nav {
 
 .custom_text_align {
     text-align: right !important;
+}
+
+:global(.nav-link) {
+    position: relative;
+    transition: opacity $transition-fast;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $secondary-color;
+        transition: width $transition-base ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
 }

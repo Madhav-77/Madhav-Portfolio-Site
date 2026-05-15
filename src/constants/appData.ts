@@ -70,7 +70,7 @@ export const companyList: CompanyInterface[] = [
     id: 1,
     company: "Madison Logic",
     companySite: "https://www.madisonlogic.com/",
-    companyLogo: ".\\assets\\logos\\company\\thinkbridge.jpeg",
+    companyLogo: "./assets/logos/company/thinkbridge.jpeg",
     position: "Senior Backend Engineer",
     location: {
       city: "Pune,",
@@ -92,7 +92,7 @@ export const companyList: CompanyInterface[] = [
     id: 2,
     company: "ThinkBridge Software",
     companySite: "https://www.thinkbridge.com/",
-    companyLogo: ".\\assets\\logos\\company\\thinkbridge.jpeg",
+    companyLogo: "./assets/logos/company/thinkbridge.jpeg",
     position: "Software Engineer",
     location: {
       city: "Remote,",
@@ -112,7 +112,7 @@ export const companyList: CompanyInterface[] = [
     id: 3,
     company: "Ubisoft India",
     companySite: "https://www.ubisoft.com/en-us/",
-    companyLogo: ".\\assets\\logos\\company\\ubisoft_india.jpeg",
+    companyLogo: "./assets/logos/company/ubisoft_india.jpeg",
     position: "Junior Web Developer",
     location: {
       city: "Pune,",
@@ -132,7 +132,7 @@ export const companyList: CompanyInterface[] = [
 export const certificateList: CertificateInterface[] = [
   {
     id: 1,
-    certificateImg: ".\\assets\\certificates\\systemDesignGFG.png",
+    certificateImg: "./assets/certificates/systemDesignGFG.png",
     name: "System Design from Low Level to High Level",
     organization: "GeeksForGeeks",
     skills: [
@@ -145,7 +145,7 @@ export const certificateList: CertificateInterface[] = [
   },
   {
     id: 2,
-    certificateImg: ".\\assets\\certificates\\virtualInternshipFORAGE.png",
+    certificateImg: "./assets/certificates/virtualInternshipFORAGE.png",
     name: "J.P. Morgan's Software Engineering Virtual Experience ",
     organization: "Forage",
     skills: ["Python", "Data Analysis", "Data Processing"],
@@ -153,7 +153,7 @@ export const certificateList: CertificateInterface[] = [
   },
   {
     id: 3,
-    certificateImg: ".\\assets\\certificates\\dataAnalysisFCC.png",
+    certificateImg: "./assets/certificates/dataAnalysisFCC.png",
     name: "Data Analytics with Python",
     organization: "FreeCodeCamp",
     skills: [
@@ -168,7 +168,7 @@ export const certificateList: CertificateInterface[] = [
   },
   {
     id: 4,
-    certificateImg: ".\\assets\\certificates\\pythonFCC.png",
+    certificateImg: "./assets/certificates/pythonFCC.png",
     name: "Scientific Computing with Python",
     organization: "FreeCodeCamp",
     skills: ["Python", "Problem Solving"],
@@ -176,7 +176,7 @@ export const certificateList: CertificateInterface[] = [
   },
   {
     id: 5,
-    certificateImg: ".\\assets\\certificates\\dataStructureJavaScriptFCC.png",
+    certificateImg: "./assets/certificates/dataStructureJavaScriptFCC.png",
     name: "JavaScript Algorithms and Data Structures",
     organization: "FreeCodeCamp",
     skills: ["JavaScript", "ES6", "Data Structures", "Problem Solving"],
@@ -184,7 +184,7 @@ export const certificateList: CertificateInterface[] = [
   },
   {
     id: 6,
-    certificateImg: ".\\assets\\certificates\\nodejsFCC.png",
+    certificateImg: "./assets/certificates/nodejsFCC.png",
     name: "Back End Development and APIs",
     organization: "FreeCodeCamp",
     skills: ["NodeJS"],
@@ -196,7 +196,7 @@ export const certificateList: CertificateInterface[] = [
 export const testimonialList: TestimonialModel[] = [
   {
     id: 1,
-    profilePicture: ".\\assets\\profile-pictures\\salaad-nur.jpeg",
+    profilePicture: "./assets/profile-pictures/salaad-nur.jpeg",
     name: "Salaad Nur",
     designation: "Principal & Solution Architect",
     company: "Samla Technology, Inc.",
@@ -206,7 +206,7 @@ export const testimonialList: TestimonialModel[] = [
   },
   {
     id: 2,
-    profilePicture: ".\\assets\\profile-pictures\\thomas-hessler.jpeg",
+    profilePicture: "./assets/profile-pictures/thomas-hessler.jpeg",
     name: "Thomas Hessler",
     designation: "Co-Founder & Managing Director",
     company: "One Stop German Shop Inc.",
@@ -216,7 +216,7 @@ export const testimonialList: TestimonialModel[] = [
   },
   {
     id: 3,
-    profilePicture: ".\\assets\\profile-pictures\\abhinav-das.jpeg",
+    profilePicture: "./assets/profile-pictures/abhinav-das.jpeg",
     name: "Abhinav Das",
     designation: "Head of Engineering",
     company: "Stealth",
@@ -226,7 +226,7 @@ export const testimonialList: TestimonialModel[] = [
   },
   {
     id: 4,
-    profilePicture: ".\\assets\\profile-pictures\\cedric-richardeau.jpeg",
+    profilePicture: "./assets/profile-pictures/cedric-richardeau.jpeg",
     name: "Cedric Richardeau",
     designation: "Studio Operations Director",
     company: "Ubisoft",
@@ -236,7 +236,7 @@ export const testimonialList: TestimonialModel[] = [
   },
   {
     id: 5,
-    profilePicture: ".\\assets\\profile-pictures\\rishi-nanda.jpeg",
+    profilePicture: "./assets/profile-pictures/rishi-nanda.jpeg",
     name: "Rishi Nanda",
     designation: "IT Manager Enterprise",
     company: "Ubisoft",
@@ -246,7 +246,7 @@ export const testimonialList: TestimonialModel[] = [
   },
   {
     id: 6,
-    profilePicture: ".\\assets\\profile-pictures\\rajneesh-bali.jpeg",
+    profilePicture: "./assets/profile-pictures/rajneesh-bali.jpeg",
     name: "Rajneesh Bali",
     designation: "Associate Director Corporate Relations",
     company: "Indira Group of Institutes, Pune",
@@ -256,7 +256,7 @@ export const testimonialList: TestimonialModel[] = [
   },
   {
     id: 7,
-    profilePicture: ".\\assets\\profile-pictures\\hasmukh-tank.jpeg",
+    profilePicture: "./assets/profile-pictures/hasmukh-tank.jpeg",
     name: "Hasmukh Tank",
     designation: "Senior Technical Project Manager",
     company: "career.io",
@@ -266,7 +266,7 @@ export const testimonialList: TestimonialModel[] = [
   },
   {
     id: 8,
-    profilePicture: ".\\assets\\profile-pictures\\priyanka-raikar.jpeg",
+    profilePicture: "./assets/profile-pictures/priyanka-raikar.jpeg",
     name: "Priyanka Raikar",
     designation: "Senior Test Engineer",
     company: "Visa",
@@ -276,7 +276,7 @@ export const testimonialList: TestimonialModel[] = [
   },
   {
     id: 9,
-    profilePicture: ".\\assets\\profile-pictures\\rakesh-kodagali.jpeg",
+    profilePicture: "./assets/profile-pictures/rakesh-kodagali.jpeg",
     name: "Rakesh Kodagali",
     designation: "Senior Engineer - Product Development",
     company: "Harman Connected Services",
@@ -291,7 +291,7 @@ export const projectList: ProjectModalProps[] = [
   {
     id: 1,
     title: "Tab's Archive",
-    logo: ".\\assets\\logos\\portfolios\\tabs-archive.png",
+    logo: "./assets/logos/portfolios/tabs-archive.png",
     data: {
       screenshotsList: [
         "./assets/project-screenshots/Tabs-archive/Home.png",
@@ -343,7 +343,7 @@ export const projectList: ProjectModalProps[] = [
   {
     id: 2,
     title: "Curve 19",
-    logo: ".\\assets\\logos\\portfolios\\curve19.png",
+    logo: "./assets/logos/portfolios/curve19.png",
     data: {
       screenshotsList: [
         "./assets/project-screenshots/Curve-19/Dashboard.png",
@@ -396,7 +396,7 @@ export const projectList: ProjectModalProps[] = [
   {
     id: 3,
     title: "Face Detection System",
-    logo: ".\\assets\\logos\\portfolios\\face-detection-attendance.png",
+    logo: "./assets/logos/portfolios/face-detection-attendance.png",
     data: {
       screenshotsList: [],
       description:
@@ -424,7 +424,7 @@ export const projectList: ProjectModalProps[] = [
   {
     id: 4,
     title: "Fund GOGO",
-    logo: ".\\assets\\logos\\portfolios\\fund-gogo.png",
+    logo: "./assets/logos/portfolios/fund-gogo.png",
     data: {
       screenshotsList: [],
       description:

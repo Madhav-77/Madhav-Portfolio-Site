@@ -1,18 +1,18 @@
 @import '../../variables';
+@import '../../mixins';
+
 .testimonials {
     background-color: $gray-background;
 }
 
 .testimonial_header .heading {
-    font-size: 30px;
-    line-height: 1.2;
-    font-weight: 700;
+    @include section-heading;
 }
 
 .profile_picture {
     height: 100px;
     width: 100px;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 a {

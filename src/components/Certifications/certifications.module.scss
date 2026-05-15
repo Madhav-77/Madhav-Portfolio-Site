@@ -1,7 +1,7 @@
+@import '../../mixins';
+
 .certification_header .heading {
-    font-size: 30px;
-    line-height: 1.2;
-    font-weight: 700;
+    @include section-heading;
 }
 
 .custom_image_style {
@@ -10,14 +10,15 @@
 }
 
 .card_margin {
-    margin: 10px 0px;
+    @include card-margin;
 }
 
 .custom_card_body_style {
-    height: 118px;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 12px;
 }
 
 .custom_card_title_style {

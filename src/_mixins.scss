@@ -27,3 +27,13 @@
         font-size: $responsive-font !important;
     }
 }
+
+@mixin section-heading {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+@mixin card-margin {
+    margin: 10px 0px;
+}
