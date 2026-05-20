@@ -1,18 +1,24 @@
+@import '../../../variables';
+
 .custom_alert {
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    background-color: $accent-color !important;
+    color: $secondary-color !important;
+    border: 1px solid rgba($secondary-color, 0.15) !important;
+    border-radius: 8px !important;
+    font-family: $font-body;
+    font-size: 0.85rem;
+    box-shadow: $shadow-md;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
     opacity: 0;
-    transform: translateX(100%);
-    /* Start off-screen */
+    transform: translateX(110%);
 }
 
 .custom_alert.show {
     opacity: 1;
     transform: translateX(0);
-    /* Slide into view */
 }
 
 .custom_alert.hide {
     opacity: 0;
-    transform: translateX(100%);
-    /* Slide out of view */
+    transform: translateX(110%);
 }
