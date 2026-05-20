@@ -1,14 +1,23 @@
 @import 'variables';
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    margin: 0px;
+    margin: 0;
+    background-color: $bg-base;
+    color: $text-primary;
+    font-family: $font-body;
 }
 
 * {
-    font-family: $font-family;
+    font-family: $font-body;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, .custom-header {
+    font-family: $font-display;
 }
 
 .text-justify {
@@ -16,7 +25,12 @@ body {
 }
 
 hr {
-    margin: 1rem auto !important;
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba($accent, 0.45), transparent);
+    opacity: 1;
+    margin: 0.6rem auto 0 !important;
+    max-width: 48px;
 }
 
 .cursor-pointer {
@@ -28,12 +42,14 @@ hr {
 }
 
 .custom-card-style {
-    transition: transform $transition-fast ease, box-shadow $transition-fast ease;
+    transition: transform $transition-fast ease, box-shadow $transition-fast ease, border-color $transition-base ease;
     cursor: pointer;
-    border-radius: 16px !important;
+    border-radius: 12px !important;
+
     &:hover {
-        transform: translateY(-4px);
+        transform: translateY(-5px);
         box-shadow: $shadow-md;
+        border-color: $border-accent !important;
     }
 }
 
@@ -45,6 +61,7 @@ hr {
 
 .modal-button {
     background-color: $primary-color !important;
+    border-color: $primary-color !important;
     color: $secondary-color;
 }
 
@@ -63,6 +80,6 @@ hr {
 }
 
 .padding-side-0 {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }

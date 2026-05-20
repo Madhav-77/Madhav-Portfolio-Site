@@ -14,9 +14,9 @@ export const personalInfo = {
 
 // Home Page Data
 export const homePageData = {
-  greeting: "Hello world!",
+  greeting: "Engineer • Explorer • Musician",
   name: "I'm Madhav Trivedi",
-  roles: ["Software Engineer", "Musician", "Traveler"],
+  roles: ["Building Products.", "Exploring the World.", "Living Through Music."],
 };
 
 // Navigation Items
@@ -32,11 +32,10 @@ export const navigationItems = [
 // About Page Data
 export const aboutPageData = {
   description: [
-    
-    "Software Engineer with 6+ years of experience designing and scaling high-performance distributed systems and full-stack applications. Strong in Node.js, Python, React, and microservices architecture, with deep expertise in system design, reliability, and performance optimization.",
-    "Product-centric engineer who owns features end-to-end from design to deployment and building scalable platforms that drive measurable business impact.",
-    "I escapse standups and retros by hiking a trail or jamming on my guitar.",
-    "Always up for a good conversation on tech, global events, or startup ideas. Deal is to have coffee involved.",
+    "Software Engineer with 6+ years of experience building scalable distributed systems and full-stack applications. I enjoy designing reliable systems, solving complex problems, and creating products that are both performant and revenue-driving.",
+    "Over the years, I’ve worked across backend architecture, frontend development, and product engineering - building products from concept to deployment while focusing on scalability, performance, and real-world impact.",
+    "Open to collaborating on thoughtful products for businesses, startups, and ambitious ideas.",
+    "If you're building something meaningful, let’s talk.",
   ],
   techStackProficiency: [
     { name: "NestJs", proficiency: "85%" },
@@ -525,9 +524,8 @@ export const socialMediaLinks = [
 
 // Footer Data
 export const footerData = {
-  subHeading: "Thanks for stopping by, let's connect!",
+  subHeading: "Open to ideas, collaboration, and good conversations.",
   heading: personalInfo.name,
   linkedInUrl: personalInfo.linkedInUrl,
-  copyrightText: "All Rights Reserved.",
-  builtFromScratch: "Built from scratch! >B",
+  builtFromScratch: "Built from scratch.",
 };

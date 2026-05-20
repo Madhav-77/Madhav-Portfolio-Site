@@ -1,20 +1,46 @@
 @import '../../variables';
 @import '../../mixins';
-// Utility Classes
+
 .background {
-    background: transparent url($home-background-image) 0% 0% no-repeat padding-box;
-    background-size: cover;
+    position: relative;
+    background: url($home-background-image) center center / cover no-repeat;
+    background-image: image-set(
+        url('/assets/Home-bg-2-desktop.avif') type('image/avif'),
+        url($home-background-image) type('image/jpeg')
+    );
     height: 100vh;
-    opacity: 0.83;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba($accent-color, 0.45) 0%, rgba($accent-color, 0.30) 100%);
+        z-index: 0;
+    }
+
+    & > * {
+        position: relative;
+        z-index: 1;
+    }
+
     & * {
         color: $secondary-color !important;
     }
+
+    @media (max-width: 768px) {
+        background-position: 20% center;
+    }
 }
 
-// Name Lines
+.name_section_div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
 .name_line_1,
 .name_line_2,
 .name_line_3 {
@@ -22,27 +48,36 @@
 }
 
 .name_line_1 {
-    font-size: 22px;
-    font-weight: 600;
+    font-family: $font-body !important;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    // text-transform: uppercase;
+    color: $secondary-color !important;
+    margin-bottom: 0.75rem;
+    opacity: 0.75;
 }
 
 .name_line_2 {
-    line-height: 1.2;
-    font-weight: 700;
-}
-
-.name_line_2 {
-    @include responsive-font-size(64px, 42px);
+    font-family: $font-display;
+    line-height: 1.1;
+    font-weight: 200;
+    @include responsive-font-size(3.5rem, 2.25rem);
 }
 
 .name_line_3 {
-    @include responsive-font-size(42px, 30px);
+    font-weight: 100;
+    color: $text-secondary !important;
+    @include responsive-font-size(1.5rem, 1.1rem);
 }
 
 .what_i_do {
+    font-family: $font-display !important;
     display: inline-block;
+    color: $secondary-color !important;
     border-right: 2px solid $secondary-color;
     animation: blink 0.7s step-end infinite;
+    font-weight: 200;
 }
 
 @keyframes blink {

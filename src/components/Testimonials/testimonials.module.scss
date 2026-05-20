@@ -2,7 +2,7 @@
 @import '../../mixins';
 
 .testimonials {
-    background-color: $gray-background;
+    background-color: $bg-raised;
 }
 
 .testimonial_header .heading {
@@ -10,9 +10,11 @@
 }
 
 .profile_picture {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
+    border: 2px solid $border-accent;
+    object-fit: cover;
 }
 
 a {
@@ -20,22 +22,32 @@ a {
 }
 
 .name {
-    font-size: 20px;
-    font-weight: 500;
-    padding-top: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: $text-primary;
+    padding-top: 0.75rem;
+    font-family: $font-display;
 }
 
 .designation {
-    font-size: 16px;
+    font-size: 0.78rem;
     font-weight: 400;
+    color: $text-secondary;
+    font-family: $font-body;
 }
 
 .testimony {
-    padding-top: 15px;
-}
+    padding: 1.25rem 1.5rem;
+    color: $text-secondary;
+    line-height: 1.85;
+    font-size: 0.875rem;
+    font-style: italic;
 
-.testimony>img {
-    padding: 0 5px;
+    img {
+        opacity: 0.2;
+        vertical-align: middle;
+        padding: 0 4px;
+    }
 }
 
 .custom_position {
@@ -43,13 +55,37 @@ a {
 }
 
 .carousel_custom_style {
-    background-color: $text-color !important;
-    height: 12px !important;
-    width: 12px !important;
+    background-color: rgba($text-primary, 0.2) !important;
+    height: 8px !important;
+    width: 8px !important;
     border-radius: 50%;
+    transition: background-color $transition-base;
 }
 
-.custom_carousel_item {
-    height: auto;
-    min-height: 280px;
+.carousel_inner_grid {
+    display: grid;
+
+    :global(.carousel-item) {
+        grid-area: 1 / 1;
+        display: block !important;
+        visibility: hidden;
+        pointer-events: none;
+
+        &:global(.active),
+        &:global(.carousel-item-next),
+        &:global(.carousel-item-prev) {
+            visibility: visible;
+            pointer-events: auto;
+        }
+    }
+
+    // Bootstrap's transition is active on display:block items at all times, so
+    // when .carousel-item-next/.prev is added the item would animate FROM 0 TO
+    // translateX(100%) instead of jumping there. Suppress the transition during
+    // that positioning step; the real slide animation fires once .carousel-item-start
+    // / .carousel-item-end is added (which no longer matches :not() below).
+    :global(.carousel-item-next:not(.carousel-item-start)),
+    :global(.carousel-item-prev:not(.carousel-item-end)) {
+        transition: none !important;
+    }
 }

@@ -1,13 +1,42 @@
 @import '../../../variables';
 @import '../../../mixins';
+
 .modal_title {
-    font-size: 24px;
+    font-family: $font-display;
+    font-size: 1.3rem;
     font-weight: 700;
+    color: $text-color;
 }
 
 .project_modal_heading {
-    font-size: 18px;
-    font-weight: 700;
+    font-family: $font-body;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $accent;
+    margin-top: 1.25rem;
+    margin-bottom: 0.65rem;
+}
+
+.skill_tag {
+    display: inline-block;
+    background-color: rgba($primary-color, 0.1);
+    color: $primary-color;
+    border: 1px solid rgba($primary-color, 0.22);
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    margin: 3px;
+    white-space: nowrap;
+    font-family: $font-body;
+    transition: background-color $transition-fast, border-color $transition-fast;
+
+    &:hover {
+        background-color: rgba($accent, 0.2);
+        border-color: rgba($accent, 0.45);
+    }
 }
 
 .certificate_container {

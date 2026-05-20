@@ -1,28 +1,40 @@
 @import '../../../variables';
+
 .scrollToTopButton {
-    display: flex !important;
+    display: flex;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: $secondary-color !important;
-    background-color: $primary-color !important;
-    border: none !important;
-    border-radius: 50% !important;
-    width: 50px;
-    height: 50px;
+    bottom: 24px;
+    right: 24px;
     align-items: center;
     justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba($accent, 0.3);
+    background-color: rgba($accent, 0.85);
+    color: $secondary-color;
     box-shadow: $shadow-sm;
+    cursor: pointer;
     opacity: 0;
-    transition: opacity $transition-base !important;
+    pointer-events: none;
+    transition: opacity $transition-base, background-color $transition-fast, transform $transition-fast;
     z-index: 1000;
+    backdrop-filter: blur(4px);
+
+    img {
+        display: block;
+        flex-shrink: 0;
+        filter: $invert-svg-color-filter;
+    }
+
+    &:hover {
+        background-color: $accent;
+        transform: translateY(-2px);
+        box-shadow: $shadow-md;
+    }
 }
 
 .scrollToTopButton.visible {
     opacity: 1;
-}
-
-.scrollToTopButtonText {
-    font-size: 35px;
-    font-weight: bold;
+    pointer-events: auto;
 }

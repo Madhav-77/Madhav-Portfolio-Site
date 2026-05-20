@@ -5,42 +5,92 @@
     @include section-heading;
 }
 
-.social_media {
-    padding-bottom: 10px;
+.two_col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: start;
+    text-align: justify;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
-.skills_heading {
-    font-size: 20px;
-    font-weight: bold;
+.description {
+    color: $text-secondary;
+    line-height: 1.85;
+    font-size: 0.95rem;
+
+    p {
+        margin-bottom: 0.75rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    & + & {
+        margin-top: 1.75rem;
+    }
+}
+
+.social_media {
+    padding-top: 1.25rem;
+}
+
+.skills_heading,
+.interests_heading {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $accent;
+    margin-bottom: 0.65rem;
+    font-family: $font-body;
 }
 
 .interests_heading {
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 10px;
+    margin-top: 1.75rem;
 }
 
 .skill_tag {
     display: inline-block;
-    background-color: $primary-color;
-    color: $secondary-color;
-    border-radius: 20px;
-    padding: 4px 14px;
-    font-size: 13px;
+    background-color: rgba($accent, 0.1);
+    color: $accent;
+    border: 1px solid rgba($accent, 0.22);
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 0.78rem;
     font-weight: 500;
-    margin: 4px 4px 4px 0;
+    margin: 3px;
     white-space: nowrap;
+    transition: background-color $transition-fast, border-color $transition-fast;
+    font-family: $font-body;
+
+    &:hover {
+        background-color: rgba($accent, 0.2);
+        border-color: rgba($accent, 0.45);
+    }
 }
 
 .interest_tag {
     display: inline-block;
     background-color: transparent;
-    color: $accent-color;
-    border: 1px solid $golden-timeline-highlights;
-    border-radius: 20px;
-    padding: 4px 14px;
-    font-size: 13px;
+    color: $text-secondary;
+    border: 1px solid $border-subtle;
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 0.78rem;
     font-weight: 500;
-    margin: 4px 4px 4px 0;
+    margin: 3px;
     white-space: nowrap;
+    transition: border-color $transition-fast, color $transition-fast;
+    font-family: $font-body;
+
+    &:hover {
+        border-color: rgba($accent-warm, 0.45);
+        color: $accent-warm;
+    }
 }

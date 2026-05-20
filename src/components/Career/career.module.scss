@@ -1,7 +1,8 @@
 @import '../../variables';
 @import '../../mixins';
+
 .career {
-    background-color: $gray-background;
+    background-color: $bg-raised;
 }
 
 .career_header .heading {
@@ -10,51 +11,103 @@
 
 .company_section {
     .company_list {
-        border-left: 1px solid $golden-timeline-highlights;
+        border-left: 2px solid rgba($accent-warm, 0.25);
         position: relative;
         list-style: none;
         padding-left: 32px;
+
         .company {
             position: relative;
             padding-left: 20px;
+
             &:not(:last-child) {
-                margin-bottom: 3rem; // Adjust as needed
+                margin-bottom: 3rem;
             }
-            &:after {
+
+            &::after {
                 position: absolute;
                 display: block;
-                top: 6px;
-                left: -38px;
+                top: 8px;
+                left: -40px;
                 content: "";
-                background-color: $golden-timeline-highlights;
+                background-color: $accent-warm;
+                border: 2px solid $bg-raised;
                 border-radius: 50%;
-                height: 11px;
-                width: 11px;
+                height: 12px;
+                width: 12px;
+                box-shadow: 0 0 0 3px rgba($accent-warm, 0.18);
             }
-            .company_name {
-                a,
-                span {
-                    text-decoration: none;
-                    color: $text-color;
-                    font-size: 18px;
-                    font-weight: bold;
+
+            .company_name_text {
+                color: $text-primary;
+                font-size: 1.1rem;
+                font-weight: 700;
+                font-family: $font-display;
+            }
+
+            .company_link {
+                text-decoration: none;
+
+                .company_name_text {
+                    transition: color $transition-fast;
+                }
+
+                &:hover .company_name_text {
+                    color: $accent;
                 }
             }
-        }
-        .company.current {
-            &:after {
-                background-color: $primary-color;
+
+            .company_role {
+                color: $accent;
+                font-size: 0.875rem;
+                font-weight: 500;
+                margin-top: 3px;
+                font-family: $font-body;
+            }
+
+            .company_dates {
+                color: $text-muted;
+                font-size: 0.78rem;
+                font-weight: 400;
+                font-family: $font-body;
+                margin-top: 2px;
             }
         }
+
+        .company.current {
+            &::after {
+                background-color: $accent;
+                border-color: $bg-raised;
+                box-shadow: 0 0 0 3px rgba($accent, 0.2), 0 0 12px rgba($accent, 0.3);
+            }
+        }
+    }
+}
+
+.company_summary {
+    font-family: $font-display;
+    font-size: 0.9rem;
+    color: $text-secondary;
+    line-height: 1.75;
+    padding-left: 1.25rem;
+    margin-top: 0.5rem;
+
+    li {
+        margin-bottom: 0.4rem;
+        text-align: justify;
     }
 }
 
 .company_logo {
     img {
-        height: 35px;
+        height: 32px;
+        opacity: 0.85;
     }
 }
 
 .location_float {
+    color: $text-muted;
+    font-size: 0.78rem;
+    font-family: $font-body;
     @include responsive-float(right, left);
 }

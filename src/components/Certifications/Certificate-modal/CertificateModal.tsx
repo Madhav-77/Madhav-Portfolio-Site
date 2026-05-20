@@ -19,13 +19,11 @@ export default function CertificateModal({id, certificateImg, link, name, skills
                   <div className={`mb-30px ${styles.certificate_container}`}>
                     <img src={certificateImg} className={`d-block modal-image`} alt={name} />
                   </div>
-                  <div className={`row`}>
-                    <div className={`${styles.project_modal_heading}`}>Key Learnings</div>
+                  <div>
+                    <div className={`${styles.project_modal_heading}`}>Skills</div>
                     <div>
                       {skills.map((skill, index) => (
-                        <span key={index}>
-                          {skill}{index < skills.length - 1 && ', '}
-                        </span>
+                        <span key={index} className={styles.skill_tag}>{skill}</span>
                       ))}
                     </div>
                   </div>

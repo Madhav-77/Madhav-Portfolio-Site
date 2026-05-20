@@ -31,26 +31,25 @@ export default function ProjectModal({ title, data, id }: ProjectModalProps) {
                       </div>
                     </div>
                   }
-                  <div className={`row`}>
+                  <div>
                     <div className={`${styles.project_modal_heading}`}>Description</div>
                     <div className={`${styles.project_description_body}`} dangerouslySetInnerHTML={{ __html: data.description }}>
                     </div>
-                    <div className={`${styles.project_modal_heading} mt-2`}>Technologies and Skills</div>
+                    <div className={`${styles.project_modal_heading}`}>Technologies and Skills</div>
                     <div>
                       {data.techList.map((tech, index) => (
-                        <span key={index}>
-                          {tech}{index < data.techList.length - 1 && ', '}
-                        </span>
+                        <span key={index} className={styles.tech_tag}>{tech}</span>
                       ))}
                     </div>
-                    <div className={`${styles.project_modal_heading} mt-2`}>Key Learnings</div>
-                    <div>
-                      <ul className="text-justify">
-                        {data.learnings.map((learning, index) => (
-                          <li key={index}><b>{learning.heading}: </b>{learning.data}</li>
-                        ))}
-                      </ul>
-                    </div>
+                    <div className={`${styles.project_modal_heading}`}>Key Learnings</div>
+                    <ul className={styles.learnings_list}>
+                      {data.learnings.map((learning, index) => (
+                        <li key={index} className={styles.learning_item}>
+                          <div className={styles.learning_heading}>{learning.heading}</div>
+                          <div className={styles.learning_data}>{learning.data}</div>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
                 {

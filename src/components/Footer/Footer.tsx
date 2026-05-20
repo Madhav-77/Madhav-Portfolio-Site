@@ -9,16 +9,16 @@ export default function Footer() {
             <div className={`row m-0 justify-content-center`}>
                 <div className={`col-9 text-center padding-side-0`}>
                     <div className={`${styles.sub_heading}`}>{footerData.subHeading}</div>
-                    <div className={`${styles.heading}`}><a className={`${styles.linkedin_link}`} href={footerData.linkedInUrl} target="_blank">{footerData.heading}</a></div>
+                    <div className={`${styles.heading}`}><a className={`${styles.linkedin_link} custom-header`} href={footerData.linkedInUrl} target="_blank">{footerData.heading}</a></div>
                     <div className={`${styles.social_media}`}><SocialMedia /></div>
                 </div>
-                <div className={`col-9 padding-side-0`}>
+                <div className={`col-6 padding-side-0`}>
                     <hr />
                 </div>
             </div>
-            <div className={`row m-0 justify-content-center`}>
+            <div className={`row m-0 justify-content-center ${styles.copyright_row}`}>
                 <div className={`col-9 text-center padding-side-0`}>
-                    &copy; <span>{currentYear}</span> <b><a className={`${styles.linkedin_link}`} href={footerData.linkedInUrl} target="_blank">{footerData.heading}</a></b>. {footerData.copyrightText}
+                    &copy; <span>{currentYear}</span> <b><a className={`${styles.linkedin_link}`} href={footerData.linkedInUrl} target="_blank">{footerData.heading}</a></b>
                 </div>
                 <div className={`col-9 text-center padding-side-0`}>
                     {footerData.builtFromScratch}

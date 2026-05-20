@@ -1,3 +1,4 @@
+@import '../../variables';
 @import '../../mixins';
 
 .certification_header .heading {
@@ -5,8 +6,10 @@
 }
 
 .custom_image_style {
-    height: 200px;
+    height: 180px;
     object-fit: contain;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
 }
 
 .card_margin {
@@ -18,7 +21,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 12px;
+    padding: 0.9rem 1rem 1rem;
+    border-top: 1px solid $border-subtle;
 }
 
 .custom_card_title_style {
@@ -28,6 +32,17 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-    font-size: 18px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $text-primary;
+    line-height: 1.45;
+    font-family: $font-body;
+}
+
+.custom_card_sub_title_style {
+    font-size: 0.72rem;
+    color: $text-secondary;
     font-weight: 500;
+    margin-top: 4px;
+    font-family: $font-body;
 }

@@ -13,44 +13,42 @@ export default function About() {
                         <div className={`col-12 ${styles.heading}`}>
                             About
                         </div>
-                        <div className={`col-3`}>
+                        <div className="col-3">
                             <hr />
                         </div>
                     </div>
                 </div>
-                <div className={`${styles.about_body}`}>
+                <div className={`${styles.about_body} mt-4`}>
                     <div className="row m-0 justify-content-center">
-                        <div className={`${styles.content} col-9 text-justify padding-side-0`}>
-                        <p>
-                            {description[0]} <br />
-                            {description[1]}
-                        </p>
-                        <p>
-                            {description[2]} <br />
-                            {description[3]}
-                        </p>
-                        </div>
-                        <div className={`${styles.social_media} col-9 padding-side-0`}>
-                            <SocialMedia />
-                        </div>
-                    </div>
-                    <div className="row m-0 justify-content-center">
-                        <div className={`${styles.skills} col-9 padding-side-0`}>
-                            <div className={`${styles.skills_heading}`}>Skills</div>
-                            <div className="pt-1">
-                                {techStackProficiency.map((skill, index) => (
-                                    <span key={index} className={styles.skill_tag}>{skill.name}</span>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row m-0 justify-content-center">
-                        <div className={`${styles.interests} col-9 padding-side-0`}>
-                            <div className={`${styles.interests_heading}`}>Interests</div>
-                            <div className="pt-1">
-                                {interests.map((interest, index) => (
-                                    <span key={index} className={styles.interest_tag}>{interest}</span>
-                                ))}
+                        <div className="col-11 col-lg-9 padding-side-0">
+                            <div className={styles.two_col}>
+                                <div>
+                                    <div className={styles.description}>
+                                        <p>{description[0]}</p>
+                                        <p>{description[1]}</p>
+                                    </div>
+                                    <div className={styles.description}>
+                                        <p>{description[2]}</p>
+                                        <p>{description[3]}</p>
+                                    </div>
+                                    <div className={styles.social_media}>
+                                        <SocialMedia />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className={styles.skills_heading}>Skills</div>
+                                    <div>
+                                        {techStackProficiency.map((skill, index) => (
+                                            <span key={index} className={styles.skill_tag}>{skill.name}</span>
+                                        ))}
+                                    </div>
+                                    <div className={styles.interests_heading}>Interests</div>
+                                    <div>
+                                        {interests.map((interest, index) => (
+                                            <span key={index} className={styles.interest_tag}>{interest}</span>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -27,7 +27,7 @@ export default function Home() {
         }
 
         if (!isDeleting && displayedText === currentWord) {
-            setTimeout(() => setIsDeleting(true), 1000);
+            setTimeout(() => setIsDeleting(true), 600);
         } else if (isDeleting && displayedText === "") {
             setIsDeleting(false);
             setCurrentWordIndex((prev) => (prev + 1) % homePageData.roles.length);
@@ -44,7 +44,6 @@ export default function Home() {
                     <div className={`playfair-font ${styles.name_line_1}`}>{homePageData.greeting}</div>
                     <div className={`playfair-font ${styles.name_line_2}`}>{homePageData.name}</div>
                     <div className={`playfair-font ${styles.name_line_3}`}>
-                        <span>A&nbsp;</span>
                         <span className={styles.what_i_do}>{displayedText}</span>
                     </div>
                 </div>

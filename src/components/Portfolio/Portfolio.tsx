@@ -49,7 +49,7 @@ export default function Portfolio() {
                   {projectList.map((obj, index) => (
                     <div className={`col-12 col-sm-6 col-md-4 col-lg-3 ${styles.project}`} key={obj.id}>
                       <div
-                        className={`custom-card-style ${styles.card_item} ${styles.card_margin}`}
+                        className={`${styles.card_item} ${styles.card_margin}`}
                         onClick={() => setModalContentFunc(index + 1)}
                         data-bs-toggle="modal"
                         data-bs-target="#projectModal"

@@ -1,28 +1,66 @@
 @import '../../variables';
-.footer>* {
+
+.footer > * {
     color: $secondary-color;
 }
 
 .footer {
     height: auto;
     background-color: $accent-color;
-    // padding: 20px;
+    font-family: $font-display;
+}
+
+.sub_heading {
+    font-size: 0.8rem;
+    color: $secondary-color;
+    font-family: $font-body;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
 }
 
 .heading {
-    font-size: 34px;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: $font-display !important;
+    color: $secondary-color;
 }
 
-.social_media {
-    margin-top: 5px;
+// .social_media {
+//     margin-top: 0.1rem;
+// }
+
+.copyright_row {
+    font-family: $font-body;
+    font-size: 0.78rem;
+    opacity: 0.45;
+    padding-top: 0.25rem;
+
+    div + div {
+        margin-top: 0.1rem;
+    }
 }
 
 .social_media img {
     filter: $invert-svg-color-filter;
+    transition: opacity $transition-fast;
+
+    &:hover {
+        opacity: 0.65;
+    }
 }
 
 .linkedin_link {
     text-decoration: none;
     color: $secondary-color;
+    transition: opacity $transition-fast;
+
+    &:hover {
+        opacity: 0.75;
+    }
+}
+
+hr {
+    max-width: inherit !important;
+    opacity: 0.15 !important;
 }

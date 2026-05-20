@@ -23,8 +23,8 @@ export default function ScrollToTop() {
 
     return (
         <>
-            <button className={`btn btn-primary ${styles.scrollToTopButton} ${isVisible ? styles.visible : ''}`} onClick={scrollToTop} aria-label="Scroll to top">
-                <span className={styles.scrollToTopButtonText}>^</span>
+            <button className={`${styles.scrollToTopButton} ${isVisible ? styles.visible : ''}`} onClick={scrollToTop} aria-label="Scroll to top">
+                <img src="./assets/svg/chevron-up.svg" alt="" width="20" height="20" aria-hidden="true" />
             </button>
         </>
     )

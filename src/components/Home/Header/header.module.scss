@@ -1,11 +1,15 @@
 @import '../../../variables';
 @import '../../../mixins';
+
 nav * {
     color: $secondary-color !important;
+    font-family: $font-body !important;
 }
 
 nav {
-    background: $header-color;
+    background: rgba($accent-color, 0.25) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .navbar_content_center {
@@ -13,7 +17,8 @@ nav {
 }
 
 .custom_menu_button {
-    background-color: $secondary-color !important;
+    background-color: transparent !important;
+    border: 1px solid $border-subtle !important;
 }
 
 .custom_nav_justify {
@@ -26,7 +31,12 @@ nav {
 
 :global(.nav-link) {
     position: relative;
-    transition: opacity $transition-fast;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    font-family: $font-display;
+    transition: color $transition-fast;
+    padding-bottom: 4px !important;
 
     &::after {
         content: '';
@@ -35,11 +45,16 @@ nav {
         left: 0;
         width: 0;
         height: 2px;
-        background-color: $secondary-color;
+        background: linear-gradient(90deg, $accent, $accent-warm);
         transition: width $transition-base ease;
+        border-radius: 1px;
     }
 
-    &:hover::after {
-        width: 100%;
+    &:hover {
+        opacity: 0.8;
+
+        &::after {
+            width: 100%;
+        }
     }
 }

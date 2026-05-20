@@ -1,41 +1,7 @@
 import styles from "./testimonials.module.scss";
-import { useEffect, useRef, useState } from "react";
 import { testimonialList } from "../../constants/appData";
 
 export default function Testimonials() {
-    const elementRefs = useRef<(HTMLDivElement | null)[]>([]);
-    const [elementHeight, setElementHeight] = useState(0);
-  
-    const updateHeight = () => {
-      if (elementRefs.current[0]) {
-        const height = elementRefs.current[0].offsetHeight;
-        setElementHeight(height);
-      }
-    };
-  
-    useEffect(() => {
-        updateHeight();
-        const handleResize = () => {
-            const carouselList = document.querySelectorAll<HTMLDivElement>(`#testimonials .carousel-item`);
-            const carouselButtonList = document.querySelectorAll<HTMLDivElement>(`#testimonials .carousel-item-button`);
-            carouselList.forEach((div, index) => {
-                if(index > 0) {
-                    if (div.classList.contains('active') && index > 0) {
-                        div.classList.remove('active');
-                        carouselButtonList[index].classList.remove('active');
-                    }
-                } else {
-                    div.classList.add('active');
-                    carouselButtonList[index].classList.add('active');
-                }
-            });
-            updateHeight();
-        };
-        window.addEventListener('resize', handleResize);
-        return () => {
-            // window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
     return (
         <>
@@ -60,12 +26,10 @@ export default function Testimonials() {
                                         <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to={index} className={`carousel-item-button ${index === 0 ? "active" : ""} ${styles.carousel_custom_style}`} aria-current="true" aria-label={`Slide ${index + 1}`} key={obj.id}></button>
                                     ))}
                                     </div>
-                                    <div className="carousel-inner">
+                                    <div className={`carousel-inner ${styles.carousel_inner_grid}`}>
                                         {testimonialList.map((obj, index) => (
-                                        <div 
-                                        ref={(el) => (elementRefs.current[index] = el)}
-                                        style={elementHeight > 0 ? { minHeight: elementHeight } : {}}
-                                        className={`carousel-item ${styles.custom_carousel_item} ${index === 0 ? "active" : ""}`} key={obj.id}>
+                                        <div
+                                        className={`carousel-item ${index === 0 ? "active" : ""}`} key={obj.id}>
                                             <div className={`${styles.profile_picture_container} w-auto text-center`}>
                                                 <a href={obj.linkedIn} target="_blank">
                                                     <img className={`${styles.profile_picture}`} src={obj.profilePicture} alt="" />
