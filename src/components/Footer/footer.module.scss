@@ -31,7 +31,6 @@
 // }
 
 .copyright_row {
-    font-family: $font-body;
     font-size: 0.78rem;
     opacity: 0.45;
     padding-top: 0.25rem;
@@ -39,6 +38,10 @@
     div + div {
         margin-top: 0.1rem;
     }
+}
+
+.copyright_row a {
+    font-family: $font-display !important;
 }
 
 .social_media img {
