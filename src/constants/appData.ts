@@ -2,6 +2,7 @@ import { CompanyInterface } from "../interfaces/CompanyInterface";
 import { CertificateInterface } from "../interfaces/CertificateInterface";
 import { TestimonialModel } from "../interfaces/TestimonialModel";
 import { ProjectModalProps } from "../interfaces/ProjectModalProps";
+import { BlogInterface } from "../interfaces/BlogInterface";
 
 // Personal Information
 export const personalInfo = {
@@ -26,16 +27,16 @@ export const navigationItems = [
   { label: "Portfolio", href: "#portfolio" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Certifications", href: "#certifications" },
+  { label: "Blogs", href: "#blogs" },
   { label: "Contact", href: "#footer" },
 ];
 
 // About Page Data
 export const aboutPageData = {
   description: [
-    "Software Engineer with 6+ years of experience building scalable distributed systems and full-stack applications. I enjoy designing reliable systems, solving complex problems, and creating products that are both performant and revenue-driving.",
-    "Over the years, I’ve worked across backend architecture, frontend development, and product engineering - building products from concept to deployment while focusing on scalability, performance, and real-world impact.",
-    "Open to collaborating on thoughtful products for businesses, startups, and ambitious ideas.",
-    "If you're building something meaningful, let’s talk.",
+    "I'm a Senior Backend/AI Engineer with 7 years of experience building scalable products from 0-to-1, designing high-performance distributed systems, and leading engineering projects and teams.",
+    "My work spans backend architecture, system design, and production AI infrastructure, with a focus on LLMOps, Agentic AI, AI observability, governance, and cost-efficient scaling. I enjoy solving complex engineering problems, building reliable systems, and taking ownership of products and features end-to-end, from concept and architecture to deployment.",
+    "Always open to interesting ideas, ambitious projects, and opportunities to collaborate. If you're building something exciting, let's talk.",
   ],
   techStackProficiency: [
     { name: "NestJs", proficiency: "85%" },
@@ -70,7 +71,7 @@ export const companyList: CompanyInterface[] = [
     company: "Madison Logic",
     companySite: "https://www.madisonlogic.com/",
     companyLogo: "./assets/logos/company/thinkbridge.jpeg",
-    position: "Senior Backend Engineer",
+    position: "Senior Backend/AI Engineer",
     location: {
       city: "Pune,",
       state: "MH,",
@@ -79,12 +80,12 @@ export const companyList: CompanyInterface[] = [
     joining: "Dec 2024",
     ending: "Present",
     summary: [
-      "Led migration from monolithic architecture to highly scalable distributed microservices, defining service boundaries, API contracts, and deployment strategies to improve system resilience and independent scalability.",
-      "Owned and delivered a custom lead delivery platform in collaboration with client teams, driving a 50% revenue increase and doubling operational efficiency.",
-      "Designed and built a data-driven Lead Scoring Engine leveraging predictive scoring models to enable real-time decision making and optimize campaign performance.",
-      "Owned production release strategy for 15+ revenue impacting applications, introducing Blue/Green deployments and controlled A/B rollouts to minimize downtime and business risk.",
+      "Built and managed organisation’s AI infrastructure by setting up an AI Gateway, supporting multiple LLM providers, becoming the company's standard AI infrastructure, adopted across all teams, processing 1M+ requests/month.",
+      "Built the AI Gateway platform: model abstraction layer eliminating vendor lock-in with fallback routing, semantic caching, real-time cost monitoring, AI observability, and PII-detection guardrails for data safety and compliance.",
+      "Led migration from monolithic architecture to distributed microservices, defining service boundaries, API contracts, and deployment strategies that improved resilience and enabled independent, scalable releases.",
+      "Designed and built a scalable Lead Scoring service combining a deterministic algorithm with an ML-based predictive model, architected with a pluggable interface for adding new scoring methods without reworking the core service.",
+      "Owned a custom lead delivery platform end-to-end (70% revenue increase, 2x operational efficiency) and led production release strategy for 15+ revenue-impacting apps - Blue/Green deployments, controlled A/B rollouts, and standardized Datadog observability, cutting incident resolution time in half.",
       "Implemented the Outbox Pattern with Kafka and orchestrated Saga workflows, ensuring guaranteed event delivery, eliminating distributed locking, and achieving eventual consistency.",
-      "Built and standardized Datadog observability for backend services, reducing incident resolution time and enabling proactive monitoring through APM and infrastructure-level metrics.",
     ],
   },
   {
@@ -519,6 +520,18 @@ export const socialMediaLinks = [
     width: 30,
     height: 30,
     download: "Madhav_Trivedi_Resume.pdf",
+  },
+];
+
+// Blog List
+export const blogList: BlogInterface[] = [
+  {
+    id: 1,
+    title: "Your Blog Title Here",
+    description: "A short description of what this blog post is about. Keep it concise — two or three sentences that give the reader a clear sense of what they will learn.",
+    tags: ["Tag1", "Tag2"],
+    date: "Jan 2025",
+    link: "https://",
   },
 ];
 

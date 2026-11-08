@@ -1,6 +1,10 @@
 @import '../../variables';
 @import '../../mixins';
 
+.certification {
+    background-color: $bg-raised;
+}
+
 .certification_header .heading {
     @include section-heading;
 }

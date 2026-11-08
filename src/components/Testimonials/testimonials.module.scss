@@ -1,10 +1,6 @@
 @import '../../variables';
 @import '../../mixins';
 
-.testimonials {
-    background-color: $bg-raised;
-}
-
 .testimonial_header .heading {
     @include section-heading;
 }
